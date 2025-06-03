@@ -4,41 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crymbo.com Clone</title>
-    <link rel="stylesheet" href="util/css/styles.css" />
+    <link rel="stylesheet" href="util/css/components/reusable-components.css" />
+    <link rel="stylesheet" href="util/css/pages/index.css" />
+    <link rel="stylesheet" href="util/css/pages/styles.css" />
+
+    <script src="JS/components/header.js" type="text/javascript" defer></script>
+    <script
+      src="JS/components/scroll-bar.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script src="JS/components/footer.js" type="text/javascript" defer></script>
+    <script
+      src="JS/components/contact-us.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script src="JS/scripts/navigation-dropdown.js" defer></script>
   </head>
 
   <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="logo-div">
-        <img src="/util/media/logo.svg" alt="logo" />
-        <nav>
-          <a href="/">Crymbo Oracle</a>
-          <a href="/crymbo-connect.html">Crymbo Connect</a>
-          <a href="#">Documentation</a>
-          <a href="#">Ecosystem</a>
-          <a href="#">Blog</a>
-        </nav>
-        <button>Request demo</button>
-      </div>
-    </header>
+    <header-component></header-component>
 
-    <!-- Hero -->
     <section class="hero-section">
-      <div>
+      <div class="hero-title-div">
         <h1 class="hero-header">
           Offer DeFi users automated on-chain compliance
         </h1>
         <p class="hero-paragraph">
           Crymbo Oracle automates on-chain Travel Rule compliance, secure
-          transaction data sharing and regulatory checks.
-        </p>
-        <p>
+          transaction data sharing and regulatory checks.<br />
           Perfect for RWA, stablecoins, and DeFI users who choose to be ready
           for new regulations.
         </p>
       </div>
-      <div>
+      <div id="video-div">
         <video autoplay muted playsinline loop class="hero-video">
           <source src="/util/media/hero-video.mp4" type="video/mp4" />
           Source video not supported
@@ -46,34 +46,34 @@
       </div>
     </section>
 
-    <!-- scroll-bar  -->
-    <section>
-      <div>
-        <!-- Scroll bar vid -->
-      </div>
-    </section>
+    <scroll-bar-component></scroll-bar-component>
 
-    <!-- summup  -->
     <section class="summup-section">
       <div class="summup-div">
-        <h2 class="summup-h2">Today, DeFi, CeFi, & TradFi</h2>
-        <h2 class="summup-h2">do not speak the same</h2>
-        <h2 class="summup-h2">regulatory language.</h2>
+        <h2 class="summup-h2">
+          <span
+            >Today, <span>DeFi</span>, <span>CeFi</span>, & <span>TradFi</span>
+          </span>
+          do not speak the same regulatory language.
+        </h2>
       </div>
     </section>
 
-    <!-- unification layer -->
-    <section class="uni-layer-section">
+    <section class="uni-layer-section font-inter">
+      <img
+        src="/util/media/white-block-backgroud.webp"
+        class="uni-layer-background"
+      />
       <div class="uni-layer-title-div">
-        <h3>Crymbo's Unification Layer</h3>
+        <h2>Crymbo's Unification Layer</h2>
         <p>
           Achieve real-time, on-chain, privacy-preserving regulatory compliance,
+          interoperable across TradFi, CeFi, and DeFi markets.
         </p>
-        <p>interoperable across TradFi, CeFi, and DeFi markets.</p>
       </div>
       <div class="uni-layer-div-main">
         <div class="uni-layer-content-div">
-          <h4>Identity</h4>
+          <h3>Identity</h3>
           <p>
             By leveraging cryptographically secure identity binding, Crymbo
             enables financial institutions to meet regulatory compliance
@@ -82,8 +82,8 @@
             while unlocking access to permissionless blockchain liquidity.
           </p>
         </div>
-        <div class="uni-layer-content-div">
-          <h4>PII Handling</h4>
+        <div class="uni-layer-content-div" id="special">
+          <h3>PII Handling</h3>
           <p>
             Crymbo Oracle prioritizes privacy by ensuring Personally
             Identifiable Information (PII) is never shared openly across the
@@ -93,7 +93,7 @@
           </p>
         </div>
         <div class="uni-layer-content-div">
-          <h4>Auditable</h4>
+          <h3>Auditable</h3>
           <p>
             The Crymbo Explorer provides a powerful tool for auditable
             transparency. It enables transaction references and compliance data
@@ -103,8 +103,8 @@
           </p>
         </div>
         <div class="uni-layer-content-div">
-          <h4>Localised</h4>
-          <p>
+          <h3>Localised</h3>
+          <p >
             Crymbo Oracle is designed to adapt to local regulations, enabling
             institutions to operate within specific regional compliance
             frameworks. This localized approach ensures Crymbo remains flexible
@@ -114,40 +114,46 @@
         </div>
       </div>
       <div class="uni-layer-button-div">
-        <button class="uni-layer-button">Integrate today</button>
+        <button class="uni-layer-button">
+          <div id="uni-button-div">
+            <div>Integrate Today</div>
+          </div>
+          <div class="arrow-raise-container" id="uni-layer-arrow">
+            <img src="/util/media/svg/button-arrow.svg" class="arrow-raise" />
+          </div>
+        </button>
       </div>
     </section>
 
-    <!-- compliance infrastructure  -->
     <section class="compliance-section">
       <div class="compliance-title-div">
-        <h3>Today's compliance infrastructure is</h3>
-        <h3>manual, incomplete & expensive</h3>
+        <h2>
+          Today's compliance infrastructure is manual, incomplete & expensive
+        </h2>
       </div>
       <div class="compliance-data-div">
-        <div class="compliance-data-inner-div">
+        <div class="compliance-data-inner-div" id="compliance-margin">
           <p>Today's Compliance Data Sharing</p>
           <img
-            src="/util/media/compliance-data-sharing.svg"
+            src="/util/media/svg/compliance-data-sharing.svg"
             alt="data sharing"
           />
         </div>
         <div class="compliance-data-inner-div">
           <p>With Crymbo Oracle Contextual real time on & off chain data</p>
           <img
-            src="/util/media/contextual-real-time-datasharing.svg"
+            src="/util/media/svg/contextual-real-time-datasharing.svg"
             alt="data chain"
           />
         </div>
       </div>
     </section>
 
-    <!-- use cases  -->
     <section class="use-cases-section">
-      <h3>Use Cases</h3>
+      <h2>Use Cases</h2>
       <div class="use-cases-content-div">
         <div>
-          <h4>Next Gen Travel Rule</h4>
+          <h3>Next Gen Travel Rule</h3>
           <p>
             Crymbo Oracle links off-chain identity verification with on-chain
             activity, enabling compliance across DeFi, CeFi, and TradFi. It
@@ -155,13 +161,13 @@
           </p>
         </div>
         <img
-          src="/util/media/next-gen-travel-rule.svg"
+          src="/util/media/svg/next-gen-travel-rule.svg"
           alt="next gen travel rule"
         />
       </div>
-      <div class="use-cases-content-div flip">
+      <div class="use-cases-content-div" id="flip">
         <div>
-          <h4>Compliant DeFi</h4>
+          <h3>Compliant DeFi</h3>
           <p>
             Crymbo removes compliance barriers, offering automated onboarding
             and instant KYC without traditional documentation. It maximizes
@@ -172,7 +178,7 @@
       </div>
       <div class="use-cases-content-div">
         <div>
-          <h4>Explore Auditable Data</h4>
+          <h3>Explore Auditable Data</h3>
           <p>
             Crymbo Explorer unifies on-chain and off-chain data into a
             tamper-proof platform. It simplifies audits, compliance, and
@@ -180,62 +186,14 @@
           </p>
         </div>
         <img
-          src="/util/media/explore-auditable-data.svg"
+          src="/util/media/svg/explore-auditable-data.svg"
           alt="explore auditable data"
         />
       </div>
     </section>
 
-    <!-- contact us -->
-    <section class="contact-us-section">
-      <div class="contact-us-div">
-        <p>CONTACT US NOW</p>
-        <h3>Ready to streamline your</h3>
-        <h3>digital asset compliance?</h3>
-        <button>Request Demo</button>
-      </div>
-    </section>
+    <contact-us-component></contact-us-component>
 
-    <!-- footer -->
-    <footer class="footer">
-      <div class="footer-content-div">
-        <div>
-          <h4>COMPANY</h4>
-          <p>3rd Floor 86-90</p>
-          <p>Paul Street,</p>
-          <p>London, England,</p>
-          <p>EC2A 4NE</p>
-          <p>-</p>
-          <p>info@crymbo.com</p>
-          <p>-</p>
-          <p>X (Twitter)</p>
-          <p>LinkedIn</p>
-        </div>
-        <div>
-          <h4>PRODUCTS</h4>
-          <p>Crymbo Orcale</p>
-          <p>Crymbo Connect</p>
-        </div>
-        <div>
-          <h4>USE CASES</h4>
-          <p>Launch crypto products, fast</p>
-          <p>Scale operations & tech with ease</p>
-          <p>Control multiple wallets & custodians</p>
-          <p>Improve Capital Efficiency</p>
-          <p>Intelligent Risk Managament</p>
-          <p>Know your data</p>
-        </div>
-        <div>
-          <h4>DEVELOPER</h4>
-          <p>Docs</p>
-          <p>API Reference</p>
-          <p>Join Crymbo Marketplace</p>
-          <h4>COMPANY</h4>
-          <p>Privacy Policy</p>
-          <p>© 2024 Crymbo Ltd.</p>
-        </div>
-      </div>
-      <img src="/util/media/crymbo-footer-logo.svg" />
-    </footer>
+    <footer-component></footer-component>
   </body>
 </html>

@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "main";
+  src: url("/util/media/fonts/InterTight-Regular.woff2");
+}
+@font-face {
+  font-family: "main-bold";
+  src: url("/util/media/fonts/InterTight-Medium.woff2");
+}
+@font-face {
+  font-family: "pixel";
+  src: url("/util/media/fonts/PPNeueBit-Bold.woff2");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "main", Arial, sans-serif;
+  font-weight: 500;
+}
+
+body {
+  padding-top: 8rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  word-spacing: -1px;
+  color: black;
+  font-family: "main-bold", Arial, sans-serif;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 0.5rem;
+  letter-spacing: 0px;
+  line-height: 1rem;
+  font-family: "main", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.font-inter {
+  font-family: "main";
+}
+
+.font-pp-neuebit {
+  font-family: "pixel";
+}
+
