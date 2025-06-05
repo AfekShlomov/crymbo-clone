@@ -2,12 +2,13 @@
   display: block;
   background-color: white;
   justify-items: center;
-
+  
   @media (min-width: 700px) {
     display: flex;
     flex-direction: row;
-    margin: 0 0 0 16rem;
-    padding: 6.7em 0;
+    width: 100%;
+    max-width: 78rem;
+    margin: 5rem auto 0 auto;
   }
 }
 
@@ -22,14 +23,14 @@
 }
 
 .hero-header {
-  font-size: 2.21rem;
+  font-size: 2.2rem;
   text-align: left;
   letter-spacing: -0.5px;
   line-height: 1.15;
   padding-bottom: 0.9rem;
 
   @media (min-width: 700px) {
-    font-size: 3.22rem;
+    font-size: 2.95rem;
     letter-spacing: 0.8px;
     line-height: 1.2;
     padding-bottom: 1.3rem;
@@ -49,19 +50,34 @@
   }
 }
 
+.video-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 20rem;
+  overflow: visible;
+
+  @media (min-width: 700px) {
+    max-width: none;
+    height: auto;
+    position: absolute;
+    margin: 0 auto;
+  }
+}
+
 .hero-video {
   position: relative;
-  width: 420px;
+  width: 100%;
+  max-width: 20rem;
   height: 21rem;
   object-fit: cover;
   pointer-events: none;
 
   @media (min-width: 700px) {
     position: absolute;
-    left: 59.5vh;
-    top: -2.2rem;
-    object-fit: cover;
-    width: 80%;
+    object-fit:cover;
     height: 46.8rem;
   }
 }
