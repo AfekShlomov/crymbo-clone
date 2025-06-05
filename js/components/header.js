@@ -8,7 +8,7 @@ class Header extends HTMLElement {
       <header class="header">
       <div>
         <div class="logo-div">
-          <img src="/util/media/svg/logo.svg" alt="logo" href="/index.html" />
+          <img src="/media/svg/logo.svg" alt="logo" href="/index.html" />
         </div>
         <div id="header-navigation">
           <nav>
@@ -26,7 +26,7 @@ class Header extends HTMLElement {
               >Request demo
               <div class="arrow-raise-container">
                 <img
-                  src="/util/media/svg/button-arrow.svg"
+                  src="/media/svg/button-arrow.svg"
                   class="arrow-raise invert-img"
                 /></div
             ></a>
@@ -34,7 +34,7 @@ class Header extends HTMLElement {
               <img
                 id="dropdown-menu-img"
                 type="button"
-                src="/util/media/svg/hamburger-menu.svg"
+                src="/media/svg/hamburger-menu.svg"
                 alt="menu"
               />
             </button>
@@ -56,7 +56,7 @@ class Header extends HTMLElement {
             >Request demo
             <div class="arrow-raise-container">
               <img
-                src="/util/media/svg/button-arrow.svg"
+                src="/media/svg/button-arrow.svg"
                 class="arrow-raise invert-img"
               /></div
           ></a>

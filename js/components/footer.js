@@ -21,7 +21,7 @@ class Footer extends HTMLElement {
           <p>X (Twitter)</p>
           <p>LinkedIn</p>
           <div id="img-div">
-            <img src="/util/media/Certification-logo.webp" />
+            <img src="/media/Certification-logo.webp" />
           </div>
         </div>
         <div class="footer-column shorter-col footer-linkable">
@@ -48,7 +48,7 @@ class Footer extends HTMLElement {
           <p>© 2024 Crymbo Ltd.</p>
         </div>
       </div>
-      <img src="/util/media/svg/crymbo-footer-logo.svg" />
+      <img src="/media/svg/crymbo-footer-logo.svg" />
     </footer>
     `;
   }
