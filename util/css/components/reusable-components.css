@@ -33,7 +33,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 5.5rem;
+    height: 5rem;
   }
 }
 
@@ -42,6 +42,7 @@
   justify-content: space-between;
   margin: 0 auto;
   width: 100%;
+  align-content: center;
 
   @media (min-width: 700px) {
     justify-content: space-between;
@@ -114,6 +115,7 @@
 #header-navigation > nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 1.975rem;
 }
 
@@ -146,6 +148,8 @@
 }
 
 .logo-div {
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
 
