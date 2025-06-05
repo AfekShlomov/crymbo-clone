@@ -15,12 +15,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "main", Arial, sans-serif;
+  font-family: "main", sans-serif;
   font-weight: 500;
 }
 
 body {
   padding-top: 8rem;
+  overflow-x: hidden;
 }
 
 h1,
