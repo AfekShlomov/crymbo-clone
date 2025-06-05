@@ -77,7 +77,7 @@
 
   @media (min-width: 700px) {
     position: absolute;
-    object-fit: cover;
+    object-fit:cover;
     height: 46.8rem;
   }
 }
