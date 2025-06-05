@@ -14,7 +14,7 @@ class ContactUs extends HTMLElement {
             <div>Request Demo</div>
           </div>
           <div class="arrow-raise-container" id="uni-layer-arrow">
-            <img src="/util/media/svg/button-arrow.svg" class="arrow-raise" />
+            <img src="/media/svg/button-arrow.svg" class="arrow-raise" />
           </div>
         </button>
       </div>
