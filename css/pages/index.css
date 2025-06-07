@@ -2,83 +2,83 @@
   display: block;
   background-color: white;
   justify-items: center;
-  
+  z-index: 2;
+
   @media (min-width: 700px) {
     display: flex;
     flex-direction: row;
     width: 100%;
     max-width: 78rem;
-    margin: 5rem auto 0 auto;
+    margin: 0 auto;
+    padding: 12rem 0;
   }
 }
 
 .hero-title-div {
   display: block;
-  margin: 0 1rem 1rem 0.7rem;
-  z-index: 1;
+  z-index: 3;
 
-  @media (min-width: 700px) {
-    width: 35%;
+  @media (min-width: 867px) {
+    width: 71%;
   }
 }
 
 .hero-header {
-  font-size: 2.2rem;
+  font-size: 3.8rem;
   text-align: left;
   letter-spacing: -0.5px;
-  line-height: 1.15;
-  padding-bottom: 0.9rem;
+  line-height: 1.15rem;
+  padding-bottom: 1.5rem;
 
-  @media (min-width: 700px) {
-    font-size: 2.95rem;
+  @media (min-width: 867px) {
+    font-size: 5.4rem;
     letter-spacing: 0.8px;
-    line-height: 1.2;
-    padding-bottom: 1.3rem;
+    line-height: 6.25rem;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    padding-bottom: 1.75rem;
   }
 }
 
 .hero-paragraph {
-  font-size: 0.9rem;
+  font-size: 1.525rem;
   letter-spacing: -0.2px;
-  line-height: 1.35rem;
+  line-height: 2.35rem;
   padding-right: 1rem;
+  z-index: 2;
+  font-family: "InterTight", sans-serif;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
 
-  @media (min-width: 700px) {
-    font-size: 1.3rem;
-    letter-spacing: -0.3px;
-    line-height: 1.93rem;
+  @media (min-width: 867px) {
+    font-size: 2.1rem;
+    line-height: 3.1rem;
+    margin-bottom: 0rem;
   }
 }
 
 .video-div {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
   width: 100%;
-  max-width: 20rem;
   overflow: visible;
-
-  @media (min-width: 700px) {
-    max-width: none;
-    height: auto;
-    position: absolute;
-    margin: 0 auto;
-  }
 }
 
 .hero-video {
-  position: relative;
-  width: 100%;
-  max-width: 20rem;
-  height: 21rem;
-  object-fit: cover;
   pointer-events: none;
-
-  @media (min-width: 700px) {
+  object-fit: cover;
+  z-index: 1;
+  width: 110%;
+  top: -5%;
+  
+  @media (min-width: 867px) {
     position: absolute;
-    object-fit:cover;
-    height: 46.8rem;
+    width: 80%;
+    top: -85%;
+    left: -37%;
+    width: 200%;
   }
 }
 

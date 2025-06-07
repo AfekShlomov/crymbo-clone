@@ -1,11 +1,15 @@
 @font-face {
   font-family: "InterTight";
   src: url("/media/fonts/InterTight-Regular.woff2");
+  font-weight: 400;
 }
+
 @font-face {
-  font-family: "InterTight-Medium";
+  font-family: "InterTight";
   src: url("/media/fonts/InterTight-Medium.woff2");
+  font-weight: 500;
 }
+
 @font-face {
   font-family: "PPNeueBit";
   src: url("/media/fonts/PPNeueBit-Bold.woff2");
@@ -23,21 +27,34 @@ html {
 
 body {
   overflow-x: hidden;
+  margin-top: 12rem;
+
+  @media (min-width: 866px) {
+    margin-top: 12rem;
+  }
 }
 
 h1,
 h2,
 h3 {
-  font-family: "InterTight-Medium", sans-serif;
+  font-family: "InterTight", sans-serif;
+  font-weight: 500;
 }
 
 p {
-  font-size: 1rem;
   font-family: "InterTight", sans-serif;
+  font-weight: 400;
 }
 
-.max-width-container {
-  width: 100%;
-  max-width: 136.8rem;
-  margin: 0 auto;
+@media (max-width: 866px) {
+  .max-width-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 867px) {
+  .max-width-container {
+    width: 100%;
+    max-width: 136.8rem;
+  }
 }
