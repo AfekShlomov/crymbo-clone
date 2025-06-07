@@ -1,55 +1,43 @@
 @font-face {
-  font-family: "main";
-  src: url("/util/media/fonts/InterTight-Regular.woff2");
+  font-family: "InterTight";
+  src: url("/media/fonts/InterTight-Regular.woff2");
 }
 @font-face {
-  font-family: "main-bold";
-  src: url("/util/media/fonts/InterTight-Medium.woff2");
+  font-family: "InterTight-Medium";
+  src: url("/media/fonts/InterTight-Medium.woff2");
 }
 @font-face {
-  font-family: "pixel";
-  src: url("/util/media/fonts/PPNeueBit-Bold.woff2");
+  font-family: "PPNeueBit";
+  src: url("/media/fonts/PPNeueBit-Bold.woff2");
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "main", sans-serif;
-  font-weight: 500;
+}
+
+html {
+  font-size: 10px;
 }
 
 body {
-  padding-top: 8rem;
   overflow-x: hidden;
 }
 
 h1,
 h2,
 h3 {
-  font-weight: 500;
-  word-spacing: -1px;
-  color: black;
-  font-family: "main-bold", Arial, sans-serif;
-}
-
-h2 {
-  font-size: 2em;
+  font-family: "InterTight-Medium", sans-serif;
 }
 
 p {
-  font-size: 0.5rem;
-  letter-spacing: 0px;
-  line-height: 1rem;
-  font-family: "main", Arial, sans-serif;
-  font-weight: 400;
+  font-size: 1rem;
+  font-family: "InterTight", sans-serif;
 }
 
-.font-inter {
-  font-family: "main";
+.max-width-container {
+  width: 100%;
+  max-width: 136.8rem;
+  margin: 0 auto;
 }
-
-.font-pp-neuebit {
-  font-family: "pixel";
-}
-

@@ -1,39 +1,16 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: fixed;
-  top: 0;
-  padding: 1rem 1.5rem;
-  margin-bottom: 5rem;
   width: 100%;
+  top: 0;
   height: 4rem;
+  height: auto;
   background-color: white;
-  z-index: 10;
-}
+  z-index: 100;
 
-@media (max-width: 480px) {
-  .header {
-    padding: 0.5rem;
-    height: 3.5rem;
-  }
-
-  .header > div {
-    margin: 0;
-  }
-
-  #header-req-button {
-    display: none;
-  }
-}
-
-@media (min-width: 700px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 5rem;
+  @media (min-width: 768px) {
+    padding: 1.8rem 2.7rem;
   }
 }
 
@@ -42,33 +19,36 @@
   justify-content: space-between;
   margin: 0 auto;
   width: 100%;
+  height: auto;
+  min-height: 5.4rem;
   align-content: center;
 
-  @media (min-width: 700px) {
-    justify-content: space-between;
-    max-width: 76rem;
+  @media (max-width: 480px) {
+    width: 100%;
+    min-height: 3.5rem;
+    padding: 0.75rem 1.5rem;
   }
 }
 
 .header-dropdown-navigation {
   display: flex;
   justify-content: center;
-  position: fixed;
-  width: 40%;
-  left: 50%;
-  top: 4rem;
-  z-index: 9;
-  transform: translate(-50%, -100%);
+  align-self: center;
+  transform: translate(0, -90%);
   transition: transform 0.2s ease;
   opacity: 1;
+  height: 100%;
   pointer-events: none;
-  align-self: center;
   background-color: white;
+
+  @media (min-width: 480px) {
+    display: none;
+  }
 }
 
 .header-dropdown-navigation.open {
   opacity: 1;
-  transform: translate(-50%, 0);
+  transform: translate(0, 18%);
   pointer-events: auto;
 }
 
@@ -76,7 +56,19 @@
   display: flex;
   flex-direction: column;
   opacity: 1;
+  align-items: left;
   pointer-events: auto;
+  width: 20rem;
+}
+
+.header-dropdown-navigation > nav > a {
+  display: block;
+  text-align: start;
+  padding: 1.65rem 2.8rem 1.65rem 1.52rem;
+  color: black;
+  font-size: 1.7rem;
+  text-decoration: none;
+  font-family: "InterTight-Medium", sans-serif;
 }
 
 .header-dropdown-navigation > nav > div {
@@ -92,22 +84,13 @@
   max-width: 90%;
 }
 
-.header-dropdown-navigation > nav > a {
-  display: block;
-  text-align: start;
-  padding: 0.67rem 0.3rem;
-  color: black;
-  font-size: 1rem;
-  text-decoration: none;
-}
-
 #highligthed {
   text-decoration: underline;
 }
 
 #header-navigation {
   display: none;
-  @media (min-width: 700px) {
+  @media (min-width: 1205px) {
     display: flex;
   }
 }
@@ -116,17 +99,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1.975rem;
 }
 
 #header-navigation > nav > a {
   display: inline;
   text-align: start;
-  padding: 0.67rem 0rem;
+  padding: 0 1.8rem;
   color: rgb(41, 41, 41);
-  font-size: 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
   text-decoration: none;
-  font-family: "main-bold", Arial, sans-serif;
+  font-family: "InterTight-Medium", sans-serif;
 }
 
 #header-navigation nav:has(a:hover) a:not(:hover) {
@@ -153,6 +136,13 @@
   cursor: pointer;
 }
 
+.logo-div img {
+  @media (max-width: 480px) {
+    height: 2.25rem;
+    width: auto;
+  }
+}
+
 #header-buttons-div {
   display: flex;
   gap: 0.6rem;
@@ -165,18 +155,13 @@
   background-color: black;
   border: none;
   cursor: pointer;
-  padding: 0.9rem 1.4rem;
+  padding: 1.7rem 2.7rem;
   border-radius: 50px;
-  font-size: 0.75rem;
+  font-size: 1.8rem;
   white-space: nowrap;
   color: white;
   text-decoration: none;
   font-family: "main", sans-serif;
-
-  @media (min-width: 700px) {
-    font-size: 1rem;
-    padding: 0.95rem 1.575rem;
-  }
 
   @media (max-width: 480px) {
     display: none;
@@ -191,13 +176,24 @@
   animation: lowerDown 0.3s forwards;
 }
 
+.header-dropdown-navigation #header-req-button {
+  @media (max-width: 480px) {
+    display: flex;
+    font-size: 1.5rem;
+    font-family: "InterTight", sans-serif;
+    padding: 1.5rem 2.3rem;
+    margin-top: 2.28rem;
+  }
+}
+
 #dropdown-menu-button {
   border: 1px solid black;
   border-radius: 50%;
   cursor: pointer;
-  width: 2.7rem;
-  height: 2.7rem;
+  width: 3.8rem;
+  height: 3.8rem;
   justify-content: center;
+  align-items: center;
 
   @media (min-width: 700px) {
     display: none;
@@ -205,8 +201,8 @@
 }
 
 #dropdown-menu-img {
-  height: 1.3rem;
-  width: 1.3rem;
+  height: 2.3rem;
+  width: 2.3rem;
 }
 
 .footer {
@@ -511,7 +507,9 @@ h4 {
 }
 
 .arrow-raise-container {
-  width: 0.75rem;
+  width: 1.8rem;
+  height: auto;
+  padding: 0.25rem;
   overflow: hidden;
   display: inline-block;
   position: relative;
