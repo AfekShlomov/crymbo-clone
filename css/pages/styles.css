@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "InterTight";
+  font-family: "Intertight";
   src: url("/media/fonts/InterTight-Regular.woff2");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "InterTight";
+  font-family: "Intertight";
   src: url("/media/fonts/InterTight-Medium.woff2");
   font-weight: 500;
 }
@@ -22,39 +22,61 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 16px;
+}
+
+html {
+  font-size: calc(0.625rem + 0.41666666666666663vw);
+}
+
+@media (max-width: 1920px) {
+  html {
+    font-size: calc(0.625rem + 0.41666666666666674vw);
+  }
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: calc(0.625rem + 0.41666666666666674vw);
+  }
+}
+
+@media (max-width: 479px) {
+    html {
+        font-size: calc(0.7494769874476988rem + 0.8368200836820083vw);
+    }
 }
 
 body {
   overflow-x: hidden;
-  margin-top: 12rem;
-
-  @media (min-width: 866px) {
-    margin-top: 12rem;
-  }
 }
 
 h1,
 h2,
 h3 {
-  font-family: "InterTight", sans-serif;
-  font-weight: 500;
+  font-family: Intertight, sans-serif;
+  font-weight: 400;
 }
 
 p {
-  font-family: "InterTight", sans-serif;
+  font-family: Intertight, sans-serif;
   font-weight: 400;
 }
 
 @media (max-width: 866px) {
   .max-width-container {
-    padding: 0 1.5rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
   }
 }
 
 @media (min-width: 867px) {
   .max-width-container {
     width: 100%;
-    max-width: 136.8rem;
+    max-width: 76rem;
+    margin: 0 auto;
+    
   }
 }

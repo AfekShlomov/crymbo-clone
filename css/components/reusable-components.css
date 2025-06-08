@@ -10,7 +10,7 @@
   z-index: 100;
 
   @media (min-width: 768px) {
-    padding: 1.8rem 2.7rem;
+    padding: 1rem 1.5rem;
   }
 }
 
@@ -18,14 +18,13 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 100%;
   height: auto;
-  min-height: 5.4rem;
+  min-height: 3rem;
   align-content: center;
 
   @media (max-width: 480px) {
     min-height: 3.5rem;
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -35,7 +34,7 @@
   align-self: center;
   position: absolute;
   left: 25%;
-  transform: translate(0, -120%);
+  transform: translate(0, -135%);
   transition: transform 0.2s ease;
   opacity: 1;
   pointer-events: none;
@@ -49,7 +48,7 @@
 
 .header-dropdown-navigation.open {
   opacity: 1;
-  transform: translate(0, -10%);
+  transform: translate(0, 20%);
   pointer-events: auto;
 }
 
@@ -59,15 +58,16 @@
   opacity: 1;
   align-items: left;
   pointer-events: auto;
-  width: 20rem;
+  width: 13rem;
+  padding-bottom: 1rem;
 }
 
 .header-dropdown-navigation > nav > a {
   display: block;
   text-align: start;
-  padding: 1.65rem 2.8rem 1.65rem 1.52rem;
-  color: black;
-  font-size: 1.7rem;
+  padding: 1rem 1.875rem 1rem 1rem;
+  color: rgb(41, 41, 41);
+  font-size: 1.125rem;
   text-decoration: none;
   font-family: "InterTight", sans-serif;
   font-weight: 500;
@@ -86,10 +86,6 @@
   max-width: 90%;
 }
 
-#highligthed {
-  text-decoration: underline;
-}
-
 #header-navigation {
   display: none;
   @media (min-width: 1205px) {
@@ -106,9 +102,9 @@
 #header-navigation > nav > a {
   display: inline;
   text-align: start;
-  padding: 0 1.8rem;
+  padding: 0 1rem;
   color: rgb(41, 41, 41);
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
   font-family: "InterTight", sans-serif;
@@ -140,7 +136,7 @@
 
 .logo-div img {
   @media (max-width: 480px) {
-    height: 2.25rem;
+    height: 1.5rem;
     width: auto;
   }
 }
@@ -151,19 +147,20 @@
 }
 
 #header-req-button {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 150%;
+  gap: 0.6rem;
   display: flex;
-  gap: 1rem;
   align-items: center;
-  background-color: black;
   border: none;
   cursor: pointer;
-  padding: 1.7rem 2.7rem;
+  padding: 0.85rem 1.55rem;
   border-radius: 50px;
-  font-size: 1.8rem;
-  white-space: nowrap;
+  background-color: black;
   color: white;
   text-decoration: none;
-  font-family: "main", sans-serif;
+  font-family: "InterTight", sans-serif;
 
   @media (max-width: 480px) {
     display: none;
@@ -181,10 +178,11 @@
 .header-dropdown-navigation #header-req-button {
   @media (max-width: 480px) {
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: "InterTight", sans-serif;
-    padding: 1.5rem 2.3rem;
-    margin-top: 2.28rem;
+    fontweight: 400;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
   }
 }
 
@@ -192,8 +190,8 @@
   border: 1px solid black;
   border-radius: 50%;
   cursor: pointer;
-  width: 3.8rem;
-  height: 3.8rem;
+  width: 2.5rem;
+  height: 2.5rem;
   justify-content: center;
   align-items: center;
 
@@ -203,8 +201,8 @@
 }
 
 #dropdown-menu-img {
-  height: 2.3rem;
-  width: 2.3rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .footer {
@@ -454,22 +452,17 @@ h4 {
 
 .scroll-bar-section {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   border-radius: 0;
-  height: 15vh;
+  height: auto;
   margin-bottom: 3rem;
-  position: relative;
+  padding: 3rem 0;
   z-index: 2;
   background-color: white;
-  margin: 1.5rem 0;
-  margin-bottom: 5rem;
-
-  @media (min-width: 700px) {
-    height: 17vh;
-  }
 }
 
 .scroll-bar-section div {
@@ -479,13 +472,13 @@ h4 {
 
 .scroll-bar-section img {
   display: inline;
-  width: 8rem;
-  margin: 0 1.75rem;
+  width: 5rem;
+  margin: 0 2rem;
   object-fit: contain;
 
   @media (min-width: 867px) {
-    width: 12rem;
-    margin: 0 5rem;
+    width: 7rem;
+    margin: 0 2.5rem;
   }
 }
 
@@ -509,7 +502,7 @@ h4 {
 }
 
 .arrow-raise-container {
-  width: 1.8rem;
+  width: 1.25rem;
   height: auto;
   padding: 0.25rem;
   overflow: hidden;
