@@ -4,7 +4,7 @@
   justify-items: center;
   z-index: 2;
 
-  @media (min-width: 867px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -19,7 +19,7 @@
   z-index: 3;
   padding: 7.5rem 0 5rem 0;
 
-  @media (min-width: 867px) {
+  @media (min-width: 768px) {
     padding: 0;
     width: 71%;
   }
@@ -33,7 +33,7 @@
   line-height: 1.2;
   padding-bottom: 0.8rem;
 
-  @media (max-width: 867px) {
+  @media (max-width: 768px) {
     font-size: 2.5rem;
   }
 }
@@ -48,7 +48,7 @@
   font-weight: 300;
   margin-bottom: 1rem;
 
-  @media (max-width: 867px) {
+  @media (max-width: 768px) {
     font-size: 1rem;
   }
 }
@@ -62,7 +62,7 @@
   overflow-y: visible;
   overflow-x: visible;
 
-  @media (max-width: 867px) {
+  @media (max-width: 768px) {
     padding-top: 1rem;
     padding-bottom: 6rem;
   }
@@ -76,7 +76,7 @@
   width: 110%;
   overflow: hidden;
 
-  @media (min-width: 867px) {
+  @media (min-width: 768px) {
     width: 165%;
     left: -28%;
   }
@@ -89,7 +89,7 @@
   justify-content: center;
   margin: 13rem 0;
 
-  @media (max-width: 867px) {
+  @media (max-width: 768px) {
     margin: 8rem 0 5.5rem 0;
   }
 }
@@ -101,7 +101,7 @@
   text-align: center;
   padding: 0 1rem;
 
-  @media (min-width: 867px) {
+  @media (min-width: 768px) {
     width: 55%;
     padding: 0;
   }
@@ -113,11 +113,11 @@
   font-weight: 500;
   line-height: 118%;
 
-  @media (max-width: 867px) {
+  @media (max-width: 768px) {
     font-size: 3rem;
   }
 }
- 
+
 .summup-h2 > span {
   font-size: 100%;
   font-family: "InterTight", sans-serif;
@@ -128,7 +128,7 @@
   font-size: 5.5rem;
   font-weight: 400;
 
-  @media (max-width: 867px) {
+  @media (max-width: 768px) {
     font-size: 4.5rem;
   }
 }
@@ -142,7 +142,7 @@
   overflow: hidden;
   margin-bottom: 6em;
 
-  @media (min-width: 867px) {
+  @media (min-width: 768px) {
     margin-bottom: 8rem;
   }
 }
@@ -151,7 +151,7 @@
   width: 110%;
   overflow-x: hidden;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     position: absolute;
     width: 100vw;
     max-width: 100vw;
@@ -174,7 +174,7 @@
   justify-items: center;
   text-align: center;
 
-  @media (min-width: 867px) {
+  @media (min-width: 768px) {
     margin-bottom: 3.5rem;
   }
 }
@@ -185,7 +185,7 @@
   padding-bottom: 1rem;
   font-weight: 500;
 
-  @media (min-width: 867px) {
+  @media (min-width: 768px) {
     font-size: 2.5rem;
     padding-bottom: 1.25rem;
   }
@@ -198,7 +198,7 @@
   color: rgb(20, 20, 20);
   margin-bottom: 2rem;
 
-  @media (min-width: 867px) {
+  @media (min-width: 768px) {
     margin-bottom: 0;
     font-size: 1.125rem;
     max-width: 50%;
@@ -213,10 +213,10 @@
   grid-template-columns: repeat(1, 1fr);
   margin-bottom: 2rem;
 
-  @media (min-width: 876px) {
+  @media (min-width: 768px) {
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 4rem;
-  } 
+  }
 }
 
 .uni-layer-content-div {
@@ -225,7 +225,7 @@
   border-radius: 1rem;
   background: white;
 
-  @media (min-width: 867px) {
+  @media (min-width: 768px) {
     padding: 9% 8%;
     border-radius: 20px;
   }
@@ -235,7 +235,7 @@
   font-size: 1.25rem;
   margin-bottom: 1.15rem;
 
-  @media (min-width: 867px) {
+  @media (min-width: 768px) {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
   }
@@ -247,7 +247,7 @@
   color: rgb(30, 29, 29);
   font-weight: 400;
 
-  @media (min-width: 867px) {
+  @media (min-width: 768px) {
     font-size: 1.125rem;
   }
 }
@@ -270,12 +270,12 @@
   gap: 1.8rem;
   border-radius: 50px;
   font-size: 1rem;
+  font-weight: 400;
 
-  @media (min-width: 867px) {
-    font-size: 18px;
-    padding: 10px 8px;
-    border-radius: 50px;
-    gap: 2.5rem;
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 1.25rem;
+    gap: 2rem;
     padding-left: 1.5rem;
   }
 }
@@ -296,9 +296,9 @@
   align-items: center;
   justify-content: center;
 
-  @media (min-width: 867px) {
-    width: 45px;
-    height: 45px;
+  @media (min-width: 768px) {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 
@@ -322,28 +322,31 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 0 1rem 6em 1rem;
+  padding-bottom: 6rem;
+
+  @media (max-width: 767px) {
+    padding-bottom: 8rem;
+  }
 }
 
 .compliance-title-div {
   justify-items: center;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   line-height: 0.8;
-  @media (min-width: 700px) {
-    margin-bottom: 4.5rem;
+  @media (min-width: 768px) {
+    margin-bottom: 4rem;
   }
 }
 
 .compliance-title-div h2 {
-  font-size: 1.95rem;
-  line-height: 2.4rem;
-  padding-bottom: 10px;
+  font-size: 2.225rem;
+  line-height: 120%;
+  font-weight: 500;
 
-  @media (min-width: 1000px) {
-    font-size: 2.8rem;
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
     max-width: 60%;
-    line-height: 3.35rem;
   }
 }
 
@@ -351,11 +354,9 @@
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(1, 1fr);
-  max-width: 1200px;
-  @media (min-width: 1000px) {
+  @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 100%;
-    gap: 8rem;
+    gap: 4rem;
   }
 }
 
@@ -364,13 +365,17 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+
+  @media (max-width: 767px) {
+    width: 80%;
+  }
 }
 
 .compliance-data-inner-div p {
-  font-size: 0.875rem;
+  font-size: 1rem;
 
-  @media (min-width: 700px) {
-    font-size: 1.265rem;
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
     margin-bottom: 0.45rem;
   }
 }
@@ -380,7 +385,7 @@
   max-width: 35rem;
   max-height: 35rem;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     max-width: 40rem;
     max-height: 40rem;
   }
@@ -389,7 +394,7 @@
 #compliance-margin {
   margin-bottom: 4rem;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     margin-bottom: 0;
   }
 }
@@ -400,21 +405,21 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 0.9rem;
+  margin: 0 auto;
   margin-bottom: 2.5rem;
 
-  @media (min-width: 700px) {
-    margin-bottom: 3.25rem;
+  @media (min-width: 768px) {
+    margin-bottom: 2rem;
   }
 }
 
 .use-cases-section h2 {
   margin-bottom: 0.9rem;
-  font-size: 2rem;
+  font-size: 2.25rem;
 
-  @media (min-width: 700px) {
-    font-size: 2;
-    margin-bottom: 2.275rem;
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -425,15 +430,12 @@
   text-align: left;
   border: 1px solid lightgray;
   border-radius: 18px;
-  padding-bottom: 1.6rem;
   margin-bottom: 0.875rem;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    width: 56.75%;
-    padding: 0.5rem;
-    padding-bottom: 1.65rem;
+    max-width: 60rem;
     margin-bottom: 2.25rem;
   }
 }
@@ -443,60 +445,61 @@
   flex-direction: column;
   justify-content: center;
   font-size: 1em;
-  margin: 1.275rem 1.25rem;
+  margin: 1rem;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     width: 50%;
-    margin: 2.1rem 0 0 1.125rem;
+    margin: 1.5rem;
   }
 }
 
 .use-cases-content-div h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.55rem;
-  word-spacing: 0.1px;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 
-  @media (min-width: 700px) {
-    font-size: 1.685rem;
-    margin-bottom: 0.8rem;
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
   }
 }
 
 .use-cases-content-div p {
-  font-size: 0.875em;
-  line-height: 1.4rem;
+  font-size: 1rem;
+  line-height: 155%;
   margin-bottom: 0.75rem;
 
-  @media (min-width: 700px) {
-    font-size: 1.2575rem;
-    word-spacing: 0.5px;
-    line-height: 1.95rem;
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+    line-height: 155%;
   }
 }
 
 .use-cases-content-div img {
-  width: 100%;
-  max-width: 62%;
-  height: auto;
+  height: 12rem;
+  width: auto;
   justify-content: center;
+  margin: 0.5rem 0;
 
-  @media (min-width: 700px) {
-    max-width: 34%;
-    margin-right: 3.75rem;
-    margin-top: 1.1rem;
+  @media (min-width: 768px) {
+    height: 20rem;
+    width: auto;
+    margin: 1.5rem 3.5rem 1.5rem 0;
   }
 }
 
 #flip {
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
   }
 }
 
 #flip > img {
-  @media (min-width: 700px) {
+  height: 16rem;
+
+  @media (min-width: 768px) {
+    height: 20rem;
     margin-left: 3.75rem;
-    margin-right: 0;
+    margin-right: 5rem;
   }
 }
