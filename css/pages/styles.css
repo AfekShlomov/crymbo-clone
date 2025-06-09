@@ -42,25 +42,24 @@ html {
 }
 
 @media (max-width: 479px) {
-    html {
-        font-size: calc(0.7494769874476988rem + 0.8368200836820083vw);
-    }
+  html {
+    font-size: calc(0.7494769874476988rem + 0.8368200836820083vw);
+  }
 }
 
 body {
   overflow-x: hidden;
+  font-weight: 400;
 }
 
 h1,
 h2,
 h3 {
   font-family: Intertight, sans-serif;
-  font-weight: 400;
 }
 
 p {
   font-family: Intertight, sans-serif;
-  font-weight: 400;
 }
 
 @media (max-width: 866px) {
@@ -77,6 +76,5 @@ p {
     width: 100%;
     max-width: 76rem;
     margin: 0 auto;
-    
   }
 }

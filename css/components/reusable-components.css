@@ -372,7 +372,7 @@ h4 {
 }
 
 .contact-us-section p {
-  display: inline;
+  display: inline-block;
   font-size: 0.75em;
   padding: 0.4rem 0.8rem;
   border: 1px solid black;
@@ -383,7 +383,8 @@ h4 {
 
   @media (min-width: 768px) {
     font-size: 0.75rem;
-    padding: 0.5rem 0.75rem;
+    padding: 0.45rem 0.75rem;
+    margin-bottom: rem;
   }
 }
 
@@ -399,7 +400,7 @@ h4 {
     font-size: 3rem;
     max-width: 50%;
     line-height: 115%;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.125rem;
     text-align: left;
   }
 }
@@ -410,7 +411,7 @@ h4 {
   letter-spacing: -0.3px;
 
   @media (min-width: 768px) {
-    font-size: 158%;
+    font-size: 155%;
   }
 }
 
@@ -432,7 +433,7 @@ h4 {
     font-size: 1rem;
     border-radius: 50px;
     gap: 1.75rem;
-    padding-left: 1.5rem;
+    padding-left: 1.25rem;
   }
 }
 

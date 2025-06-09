@@ -1,80 +1,93 @@
 body {
-  margin-top: 2rem;
+  padding-top: 9rem;
+
+  @media (max-width: 768px) {
+    padding-top: 7.5rem;
+  }
 }
 
 .hero-section {
   padding: 0 1rem;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
+    margin: 0 auto;
     padding: 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
     justify-self: center;
     align-items: center;
-    width: 50%;
-    gap: 4.5em;
-    margin-left: 1.75rem;
+    width: 100%;
+    gap: 0rem;
   }
 }
 
 .hero-section img {
-  max-width: 66%;
-  margin-bottom: 1.4rem;
+  max-width: 90%;
+  margin-bottom: 1.75rem;
 
-  @media (min-width: 700px) {
-    width: 40.5%;
+  @media (min-width: 768px) {
+    height: 26rem;
+    justify-self: end;
+    margin-right: 4rem;
     margin-bottom: 0rem;
+    object-position: 100% 100% 50% 50%;
   }
 }
 
 .hero-section h1 {
-  margin-bottom: 0.7rem;
-  font-size: 1.75rem;
-
-  @media (min-width: 700px) {
-    font-size: 2.25rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 125%;
+  @media (min-width: 768px) {
+    font-size: 2rem;
     margin-bottom: 1rem;
   }
 }
 
 .hero-section p {
-  font-size: 0.87rem;
+  font-size: 1rem;
   word-spacing: 0.5px;
-  line-height: 1.375rem;
+  line-height: 155%;
 
-  @media (min-width: 700px) {
-    font-size: 1.25rem;
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
     word-spacing: 1px;
-    line-height: 2rem;
-    width: 92%;
   }
 }
 
 .hero-section div {
-  @media (min-width: 700px) {
-    width: 50%;
+  @media (min-width: 768px) {
+    max-width: 65%;
   }
 }
 
 .hero-section span {
   font-size: 139.2%;
-  font-family: "pixel", Arial, sans-serif;
+  font-family: "PPNeueBit", sans-serif;
 
-  @media (min-width: 700px) {
-    font-size: 152%;
+  @media (min-width: 768px) {
+    font-size: 150%;
   }
 }
 
 .scroll-bar-section {
   border: none;
-  margin-bottom: 1rem;
+  padding: 3rem 0;
+  margin-bottom: 0;
+
+  @media (min-width: 768px) {
+    padding: 1.5rem 0;
+  }
 }
 
 .scroll-bar-section img {
   width: 5rem;
-  margin: 0 1rem;
-  @media (min-width: 700px) {
-    width: 8rem;
-    margin: 0 3rem;
+  margin: 0 2rem;
+  @media (min-width: 768px) {
+    width: 7rem;
+    margin: 2.5rem;
   }
 }
 
@@ -84,19 +97,23 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 0.9rem;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
 
-  @media (min-width: 700px) {
-    margin-bottom: 3.25rem;
+  @media (min-width: 768px) {
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
   }
 }
 
 .use-cases-section h2 {
   margin-bottom: 0.9rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
 
-  @media (min-width: 700px) {
-    margin-bottom: 2.275rem;
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -107,16 +124,13 @@ body {
   text-align: left;
   border: 1px solid lightgray;
   border-radius: 18px;
-  padding-bottom: 1.6rem;
   margin-bottom: 0.875rem;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    width: 56.75%;
-    padding: 0.5rem;
-    padding-bottom: 1.65rem;
-    margin-bottom: 2.25rem;
+    max-width: 60rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -125,75 +139,74 @@ body {
   flex-direction: column;
   justify-content: center;
   font-size: 1em;
-  margin: 1.275rem 1.25rem;
+  margin: 1rem;
 
-  @media (min-width: 700px) {
-    width: 50%;
-    margin: 2.1rem 0 0 1.125rem;
+  @media (min-width: 768px) {
+    width: 48.5%;
+    margin: 1.5rem;
   }
 }
 
 .use-cases-content-div h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.55rem;
-  word-spacing: 0.1px;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 
-  @media (min-width: 700px) {
-    font-size: 1.685rem;
-    margin-bottom: 0.8rem;
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
   }
 }
 
 .use-cases-content-div p {
-  font-size: 0.875em;
-  line-height: 1.4rem;
-  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  line-height: 155%;
+  margin-bottom: 0.75rem;
 
-  @media (min-width: 700px) {
-    font-size: 1.2575rem;
-    word-spacing: 0.5px;
-    line-height: 1.95rem;
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+    line-height: 155%;
   }
 }
 
 .use-cases-content-div img {
-  width: 100%;
-  max-width: 62%;
-  height: auto;
+  height: 12rem;
+  width: auto;
   justify-content: center;
-  margin-bottom: -0.33rem;
+  margin: 0.5rem 0;
 
-  @media (min-width: 700px) {
-    max-width: 34%;
-    margin-right: 3.75rem;
-    margin-top: 1.1rem;
-    margin-bottom: 0rem;
+  @media (min-width: 768px) {
+    height: 20rem;
+    width: auto;
+    margin: 1.5rem 3.5rem 1.5rem 0;
   }
 }
 
 #flip {
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
   }
 }
 
 #flip > img {
-  @media (min-width: 700px) {
+  height: 16rem;
+
+  @media (min-width: 768px) {
+    height: 20rem;
     margin-left: 3.75rem;
-    margin-right: 0;
+    margin-right: 5rem;
   }
 }
 
 .short-width-para {
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     width: 98%;
   }
 }
 
 .problem-section {
-  padding: 1rem;
-  margin-bottom: 10rem;
+  position: relative;
+  padding-bottom: 10rem;
   z-index: 1;
 }
 
@@ -202,8 +215,8 @@ body {
   margin-bottom: 2.6rem;
   z-index: 1;
 
-  @media (min-width: 700px) {
-    margin-bottom: 8.25rem;
+  @media (min-width: 768px) {
+    margin-bottom: 8rem;
   }
 }
 
@@ -211,10 +224,11 @@ body {
   font-size: 1.75rem;
   margin-bottom: -0.33rem;
   z-index: 1;
+  font-weight: 400;
 
-  @media (min-width: 700px) {
-    font-size: 2.225rem;
-    margin-bottom: 0.5rem;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -227,39 +241,41 @@ body {
   border-radius: 100px;
   margin-bottom: 0.55rem;
   z-index: 1;
+  font-family: "Intertight", sans-serif;
 
-  @media (min-width: 700px) {
-    font-size: 0.8875rem;
-    padding: 0.5rem 0.875rem 0.45rem 0.875rem;
-    margin-bottom: 1.2rem;
-    font-family: "main-bold";
+  @media (min-width: 768px) {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    padding: 0.4rem 0.75rem 0.4rem 0.75rem;
+    margin-bottom: 1rem;
     margin-bottom: 0.75rem;
   }
 }
 
 .problem-section-div span {
   font-size: 2.4rem;
-  font-family: "pixel", Arial, sans-serif;
+  font-family: "PPNeueBit", sans-serif;
   z-index: 1;
 
-  @media (min-width: 700px) {
-    font-size: 3.4rem;
+  @media (min-width: 768px) {
+    font-size: 3rem;
   }
 }
 
 #problem-section-div-description {
   font-size: 0.875rem;
-  line-height: 1.45rem;
+  line-height: 155%;
   border: none;
-  font-family: "main";
+  font-family: "Intertight", sans-serif;
+  font-weight: 400;
   z-index: 1;
+  padding: 0;
 
-  @media (min-width: 700px) {
-    font-size: 1.2675rem;
-    line-height: 1.95rem;
-    width: 90%;
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+    letter-spacing: 0;
+    width: 35rem;
     margin: 0 auto;
-    width: 35%;
   }
 }
 
@@ -268,10 +284,8 @@ body {
   margin-bottom: 1.6rem;
   z-index: 1;
 
-  @media (min-width: 700px) {
-    width: 6%;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
+  @media (min-width: 768px) {
+    width: 1.25rem;
   }
 }
 
@@ -281,42 +295,45 @@ body {
   margin-bottom: 1.5rem;
   z-index: 1;
 
-  @media (min-width: 700px) {
-    font-size: 1.275rem;
-    line-height: 1.95rem;
-    width: 90%;
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+    line-height: 155%;
+    width: 100%;
     margin: 0 auto;
   }
 }
 
 .problem-content-div {
   z-index: 1;
-  @media (min-width: 700px) {
-    width: 20%;
+  @media (min-width: 768px) {
+    width: 27%;
   }
 }
 
 .problem-content-divs {
   z-index: 1;
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
     width: 100%;
-    gap: 4.75rem;
+    max-width: 69rem;
+    gap: 5rem;
   }
 }
 
 .problem-background {
   display: none;
+  position: absolute;
   z-index: 0;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     display: block;
-    position: absolute;
-    top: 253.5vh;
-    width: 95vw;
+    top: 15%;
+    left: -10%;
+    width: 100vw;
     height: auto;
     pointer-events: none;
   }
@@ -346,7 +363,7 @@ body {
 }
 
 .itr-big-div {
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     flex: 0 0 70%;
     padding: 2rem 2.25rem;
     border: 1px lightgray solid;
