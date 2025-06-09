@@ -280,35 +280,6 @@
   }
 }
 
-#uni-button-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-#uni-layer-arrow {
-  background: white;
-  border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @media (min-width: 768px) {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-}
-
-#uni-layer-arrow img {
-  display: block;
-  width: 40%;
-  height: 40%;
-  margin: 0 auto;
-}
-
 .uni-layer-button:hover .arrow-raise {
   animation: raiseUp 0.3s forwards;
 }

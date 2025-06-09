@@ -55,18 +55,17 @@ body {
 h1,
 h2,
 h3 {
-  font-family: Intertight, sans-serif;
+  font-family: "Intertight", sans-serif;
 }
 
 p {
-  font-family: Intertight, sans-serif;
+  font-family: "Intertight", sans-serif;
 }
 
 @media (max-width: 866px) {
   .max-width-container {
     width: 100%;
     max-width: 100%;
-    margin: 0 auto;
     padding: 0 1rem;
   }
 }
