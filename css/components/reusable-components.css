@@ -328,13 +328,6 @@ h4 {
   transition: all 0.3s ease;
 }
 
-.form-section {
-  display: inline;
-  justify-content: center;
-  align-items: center;
-  align-items: stretch;
-}
-
 .footer img {
   display: block;
   margin: 0 auto;
