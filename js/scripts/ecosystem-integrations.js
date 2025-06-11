@@ -21,6 +21,8 @@ resetBtn.addEventListener("click", () => {
     buttons[buttonClass].classList.remove("active");
   });
   selectedButtons.length = 0;
+  searchInput.value = "";
+  searchTerm = "";
   filterItems();
 });
 
@@ -93,7 +95,7 @@ function filterItems() {
       item.style.display = tagInclusion ? "flex" : "none";
     } else {
       // both search bar and buttons filled
-      item.style.display = (titleInclusion && tagInclusion) ? "flex" : "none";
+      item.style.display = titleInclusion && tagInclusion ? "flex" : "none";
     }
   });
 }
