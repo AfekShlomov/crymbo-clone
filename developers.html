@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crymbo.com Clone</title>
-    <link rel="stylesheet" href="/css/components/reusable-components.css" />
-    <link rel="stylesheet" href="/css/pages/developers.css" />
     <link rel="stylesheet" href="/css/pages/styles.css" />
+    <link rel="stylesheet" href="/css/pages/developers.css" />
+    <link rel="stylesheet" href="/css/components/reusable-components.css" />
 
     <script src="js/scripts/navigation-dropdown.js" defer></script>
     <script
@@ -95,11 +95,12 @@
             <img src="/media/svg/button-arrow.svg" class="arrow-raise" />
           </div>
         </button>
-        <button id="intergrations-button">See our Integrations</button>
+        <button id="integrations-button">See our Integrations</button>
       </div>
     </section>
+    
 
-    <section class="dev-buttons-section">
+    <section class="max-width-container dev-buttons-section">
       <div class="dev-buttons-content-div">
         <div class="dev-buttons-images-div">
           <img
@@ -113,12 +114,6 @@
         </div>
         <h2>Don't see your name?</h2>
         <p>Join out marketplace</p>
-        <div class="rising-arrow-div">
-          <img
-            src="/media/svg/button-arrow.svg"
-            class="dev-buttons-rising-arrow"
-          />
-        </div>
       </div>
       <div class="dev-buttons-content-div">
         <div class="dev-buttons-images-div">
@@ -133,12 +128,7 @@
         </div>
         <h2>API Reference</h2>
         <p>Browse the API</p>
-        <div class="rising-arrow-div">
-          <img
-            src="/media/svg/button-arrow.svg"
-            class="dev-buttons-rising-arrow"
-          />
-        </div>
+       
       </div>
       <div class="dev-buttons-content-div">
         <div class="dev-buttons-images-div">
@@ -152,22 +142,18 @@
           />
         </div>
         <h2>Integration Guide</h2>
-        <p>Learn how to activate the new infrastructure of Crymbo API</p>
-        <div class="rising-arrow-div">
-          <img
-            src="/media/svg/button-arrow.svg"
-            class="dev-buttons-rising-arrow"
-          />
-        </div>
+        <p>Learn how to activate new infrastructure with the Crymbo API</p>
+        
       </div>
     </section>
 
-    <section class="dev-ecosystem-section">
-      <div>
-        <div><h2>Explore CRYMBO ecosystem 30+ ready integrations</h2></div>
+    
+    <section class=" dev-ecosystem-section">
+      <div class="max-width-container" >
+        <div><h2>Explore CRYMBO ecosystem <br> 30+  ready integrations</h2></div>
         <div class="ecosystem-search-div">
           <div class="search-bar-div">
-            <input type="text" placeholder="Search" /><img
+            <input type="text" placeholder="Search" id="search-bar" /><img
               src="/media/search-bar-logo.png"
               class="search-icon"
             />
@@ -181,13 +167,15 @@
               <button class="Custody">Custody</button>
               <button class="Liquidity">Liquidity</button>
             </div>
+
+
             <div id="reset-filters-button-div">
               <button class="Reset">Reset Filters</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="ecosystem-content-div">
+      <div class="max-width-container ecosystem-content-div">
         <div class="item-div">
           <div class="item-header-div">
             <div>
@@ -828,7 +816,9 @@
       </div>
     </section>
 
-    <section class="dev-integration-section">
+    
+
+    <section class="max-width-container dev-integration-section">
       <h2>Integration Gaps? No Worries! We'll Bridge It for You!</h2>
       <div class="dev-integration-content-div">
         <div class="dev-integration-title-div">
@@ -843,9 +833,9 @@
     </section>
 
     <section class="contact-us-section">
-      <div class="contact-us-div">
+      <div class="max-width-container contact-us-div">
         <p>CONTACT US NOW</p>
-        <h2>Ready to streamline your <span>digital asset compliance?</span></h2>
+        <h2>Ready to optimize your <span>digital asset operations?</span></h2>
         <button>
           <div id="uni-button-div">
             <div>Request Demo</div>
@@ -857,8 +847,8 @@
       </div>
     </section>
 
-<footer class="footer">
-      <div class="footer-div">
+    <footer class=" footer">
+      <div class="max-width-container footer-div">
         <div class="footer-column footer-adress wide-col">
           <h4>COMPANY</h4>
           <p>
@@ -876,7 +866,7 @@
             <img src="/media/Certification-logo.webp" />
           </div>
         </div>
-        <div class="footer-column shorter-col footer-linkable">
+        <div class="footer-column short-col footer-linkable">
           <h4>PRODUCTS</h4>
           <p>Crymbo Oracle</p>
           <p>Crymbo Connect</p>
@@ -901,5 +891,6 @@
         </div>
       </div>
       <img src="/media/svg/crymbo-footer-logo.svg" />
-    </footer>  </body>
+    </footer>
+  </body>
 </html>

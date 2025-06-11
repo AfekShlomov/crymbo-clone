@@ -1,80 +1,93 @@
 body {
-  margin-top: 2rem;
+  padding-top: 9rem;
+
+  @media (max-width: 768px) {
+    padding-top: 7.5rem;
+  }
 }
 
 .hero-section {
   padding: 0 1rem;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
+    margin: 0 auto;
     padding: 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
     justify-self: center;
     align-items: center;
-    width: 50%;
-    gap: 4.5em;
-    margin-left: 1.75rem;
+    width: 100%;
+    gap: 0rem;
   }
 }
 
 .hero-section img {
-  max-width: 66%;
-  margin-bottom: 1.4rem;
+  max-width: 90%;
+  margin-bottom: 1.75rem;
 
-  @media (min-width: 700px) {
-    width: 40.5%;
+  @media (min-width: 768px) {
+    height: 26rem;
+    justify-self: end;
+    margin-right: 4rem;
     margin-bottom: 0rem;
+    object-position: 100% 100% 50% 50%;
   }
 }
 
 .hero-section h1 {
-  margin-bottom: 0.7rem;
-  font-size: 1.75rem;
-
-  @media (min-width: 700px) {
-    font-size: 2.25rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 125%;
+  @media (min-width: 768px) {
+    font-size: 2rem;
     margin-bottom: 1rem;
   }
 }
 
 .hero-section p {
-  font-size: 0.87rem;
+  font-size: 1rem;
   word-spacing: 0.5px;
-  line-height: 1.375rem;
+  line-height: 155%;
 
-  @media (min-width: 700px) {
-    font-size: 1.25rem;
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
     word-spacing: 1px;
-    line-height: 2rem;
-    width: 92%;
   }
 }
 
 .hero-section div {
-  @media (min-width: 700px) {
-    width: 50%;
+  @media (min-width: 768px) {
+    max-width: 65%;
   }
 }
 
 .hero-section span {
   font-size: 139.2%;
-  font-family: "pixel", Arial, sans-serif;
+  font-family: "PPNeueBit", sans-serif;
 
-  @media (min-width: 700px) {
-    font-size: 152%;
+  @media (min-width: 768px) {
+    font-size: 150%;
   }
 }
 
 .scroll-bar-section {
   border: none;
-  margin-bottom: 1rem;
+  padding: 3rem 0;
+  margin-bottom: 0;
+
+  @media (min-width: 768px) {
+    padding: 1.5rem 0;
+  }
 }
 
 .scroll-bar-section img {
   width: 5rem;
-  margin: 0 1rem;
-  @media (min-width: 700px) {
-    width: 8rem;
-    margin: 0 3rem;
+  margin: 0 2rem;
+  @media (min-width: 768px) {
+    width: 7rem;
+    margin: 2.5rem;
   }
 }
 
@@ -84,19 +97,22 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 0.9rem;
+  margin: 0 auto;
+  margin-bottom: 3.5rem;
 
-  @media (min-width: 700px) {
-    margin-bottom: 3.25rem;
+  @media (min-width: 768px) {
+    margin-bottom: 2rem;
   }
 }
 
 .use-cases-section h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
   margin-bottom: 0.9rem;
-  font-size: 2rem;
 
-  @media (min-width: 700px) {
-    margin-bottom: 2.275rem;
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -107,16 +123,13 @@ body {
   text-align: left;
   border: 1px solid lightgray;
   border-radius: 18px;
-  padding-bottom: 1.6rem;
   margin-bottom: 0.875rem;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    width: 56.75%;
-    padding: 0.5rem;
-    padding-bottom: 1.65rem;
-    margin-bottom: 2.25rem;
+    max-width: 60rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -125,230 +138,240 @@ body {
   flex-direction: column;
   justify-content: center;
   font-size: 1em;
-  margin: 1.275rem 1.25rem;
+  margin: 1rem;
 
-  @media (min-width: 700px) {
-    width: 50%;
-    margin: 2.1rem 0 0 1.125rem;
+  @media (min-width: 768px) {
+    width: 48%;
+    margin: 1.5rem;
   }
 }
 
 .use-cases-content-div h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.55rem;
-  word-spacing: 0.1px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 
-  @media (min-width: 700px) {
-    font-size: 1.685rem;
-    margin-bottom: 0.8rem;
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
   }
 }
 
 .use-cases-content-div p {
-  font-size: 0.875em;
-  line-height: 1.4rem;
-  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  line-height: 155%;
+  margin-bottom: 0.75rem;
 
-  @media (min-width: 700px) {
-    font-size: 1.2575rem;
-    word-spacing: 0.5px;
-    line-height: 1.95rem;
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+    line-height: 155%;
   }
 }
 
 .use-cases-content-div img {
-  width: 100%;
-  max-width: 62%;
-  height: auto;
+  height: 12rem;
+  width: auto;
   justify-content: center;
-  margin-bottom: -0.33rem;
+  margin: 0.5rem 0;
 
-  @media (min-width: 700px) {
-    max-width: 34%;
-    margin-right: 3.75rem;
-    margin-top: 1.1rem;
-    margin-bottom: 0rem;
+  @media (min-width: 768px) {
+    height: 20rem;
+    width: auto;
+    margin: 1.5rem 3.5rem 1.5rem 0;
   }
 }
 
 #flip {
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
   }
 }
 
 #flip > img {
-  @media (min-width: 700px) {
+  height: 16rem;
+
+  @media (min-width: 768px) {
+    height: 20rem;
     margin-left: 3.75rem;
-    margin-right: 0;
+    margin-right: 4.5rem;
+  }
+}
+
+#flip > div {
+  @media (min-width: 768px) {
+    margin: 1.5rem 1rem 1.5rem 1.5rem;
   }
 }
 
 .short-width-para {
-  @media (min-width: 700px) {
-    width: 98%;
+  @media (min-width: 768px) {
+    width: 99%;
   }
 }
 
 .problem-section {
-  padding: 1rem;
-  margin-bottom: 10rem;
-  z-index: 1;
+  position: relative;
+  margin-bottom: 7rem;
+  z-index: 0;
+  overflow-x: hidden;
+
+  @media (min-width: 768px) {
+    padding-bottom: 3rem;
+  }
 }
 
 .problem-section-div {
   text-align: center;
-  margin-bottom: 2.6rem;
+  margin-bottom: 3rem;
   z-index: 1;
 
-  @media (min-width: 700px) {
-    margin-bottom: 8.25rem;
+  @media (min-width: 768px) {
+    margin-bottom: 8rem;
   }
 }
 
 .problem-section-div > h2 {
-  font-size: 1.75rem;
-  margin-bottom: -0.33rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
   z-index: 1;
 
-  @media (min-width: 700px) {
-    font-size: 2.225rem;
-    margin-bottom: 0.5rem;
+  @media (min-width: 768px) {
+    font-size: 2rem;
   }
 }
 
 .problem-section-div p {
   display: inline-block;
-  font-size: 0.715rem;
-  margin: 1rem 0 1rem 0;
-  padding: 0.25rem 0.715rem 0.3rem 0.715rem;
+  font-size: 0.75rem;
+  font-family: "Intertight", sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  margin: 0 0 1rem 0;
+  padding: 0.35rem 0.715rem 0.4rem 0.715rem;
   border: 1px solid black;
   border-radius: 100px;
-  margin-bottom: 0.55rem;
   z-index: 1;
 
-  @media (min-width: 700px) {
-    font-size: 0.8875rem;
-    padding: 0.5rem 0.875rem 0.45rem 0.875rem;
-    margin-bottom: 1.2rem;
-    font-family: "main-bold";
+  @media (min-width: 768px) {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.75rem 0.4rem 0.75rem;
+    margin-bottom: 1rem;
     margin-bottom: 0.75rem;
   }
 }
 
 .problem-section-div span {
-  font-size: 2.4rem;
-  font-family: "pixel", Arial, sans-serif;
+  font-size: 2.25rem;
+  font-family: "PPNeueBit", sans-serif;
+  font-weight: 400;
   z-index: 1;
 
-  @media (min-width: 700px) {
-    font-size: 3.4rem;
+  @media (min-width: 768px) {
+    font-size: 3rem;
   }
 }
 
 #problem-section-div-description {
-  font-size: 0.875rem;
-  line-height: 1.45rem;
+  font-size: 0.925rem;
+  font-family: "Intertight", sans-serif;
+  font-weight: 400;
+  line-height: 155%;
   border: none;
-  font-family: "main";
   z-index: 1;
+  padding: 0;
 
-  @media (min-width: 700px) {
-    font-size: 1.2675rem;
-    line-height: 1.95rem;
-    width: 90%;
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+    letter-spacing: 0;
+    width: 35rem;
     margin: 0 auto;
-    width: 35%;
   }
 }
 
 .problem-content-div > img {
-  width: 4%;
-  margin-bottom: 1.6rem;
-  z-index: 1;
-
-  @media (min-width: 700px) {
-    width: 6%;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
-  }
+  width: 1.25rem;
+  margin-bottom: 1.75rem;
 }
 
 .problem-content-div > p {
-  font-size: 0.875rem;
-  line-height: 1.315rem;
-  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 155%;
+  margin-bottom: 2.25rem;
   z-index: 1;
 
-  @media (min-width: 700px) {
-    font-size: 1.275rem;
-    line-height: 1.95rem;
-    width: 90%;
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+    line-height: 155%;
+    width: 100%;
     margin: 0 auto;
   }
 }
 
 .problem-content-div {
   z-index: 1;
-  @media (min-width: 700px) {
-    width: 20%;
+  @media (min-width: 768px) {
+    width: 27%;
   }
 }
 
 .problem-content-divs {
   z-index: 1;
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
     width: 100%;
-    gap: 4.75rem;
+    max-width: 69rem;
+    gap: 5rem;
   }
 }
 
 .problem-background {
-  display: none;
-  z-index: 0;
+  display: inline-block;
+  position: absolute;
+  width: 100vw;
+  max-width: 100vw;
+  z-index: -1;
+  pointer-events: none;
 
-  @media (min-width: 700px) {
-    display: block;
-    position: absolute;
-    top: 253.5vh;
-    width: 95vw;
+  @media (min-width: 768px) {
+    top: 12%;
     height: auto;
-    pointer-events: none;
   }
 }
 
 .itr-section {
-  margin: 0 1rem;
-  border-top: 1px lightgray solid;
   margin-bottom: 5rem;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 72%;
     border: none;
     gap: 2rem;
-    margin-bottom: 10rem;
+    margin-bottom: 0;
+    padding-bottom: 12rem;
   }
 }
 
 .itr-div {
   border-bottom: 1px lightgray solid;
   padding: 1.75rem 0 3rem 0;
+
+  @media (min-width: 768px) {
+    padding: 2rem 0 3rem 0;
+  }
 }
 
 .itr-big-div {
-  @media (min-width: 700px) {
-    flex: 0 0 70%;
-    padding: 2rem 2.25rem;
+  border-top: 1px lightgray solid;
+
+  @media (min-width: 768px) {
+    padding: 2rem 2rem;
     border: 1px lightgray solid;
     border-radius: 20px;
     width: 95%;
@@ -359,15 +382,15 @@ body {
   padding-bottom: 1.75rem;
   cursor: pointer;
 
-  @media (min-width: 700px) {
-    padding-bottom: 3rem;
+  @media (min-width: 768px) {
+    padding-bottom: 2.475rem;
     border: none;
   }
 }
 
 .itr-small-divs {
-  @media (min-width: 700px) {
-    flex: 0 0 30%;
+  @media (min-width: 768px) {
+    flex: 0 0 28%;
     border-top: 1px lightgray solid;
     border-bottom: 1px lightgray solid;
     padding: 0 2rem;
@@ -375,24 +398,31 @@ body {
 }
 
 .itr-div > h2 {
-  font-size: 1.775rem;
+  font-size: 1.5rem;
+  font-weight: 500;
   margin-bottom: 1.55rem;
   margin-top: 1rem;
 
-  @media (min-width: 700px) {
-    font-size: 2.25rem;
-    margin-bottom: 2.25rem;
-    margin-top: 1.75rem;
-    width: 90%;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+#itr-small-div h2 {
+  @media (min-width: 768px) {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 .itr-div > p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: gray;
 
-  @media (min-width: 700px) {
-    font-size: 1.275rem;
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
   }
 }
 
@@ -435,14 +465,16 @@ body {
 
 .quotes-section {
   position: relative;
+  height: 25rem;
   margin: 0 1rem;
-  margin-top: 10rem;
-  margin-bottom: 30rem;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
 
-  @media (min-width: 700px) {
-    width: 48%;
+  @media (min-width: 768px) {
+    width: 47.625rem;
+    height: 40rem;
     margin: 0 auto;
-    margin-bottom: 55rem;
+    margin-bottom: 12rem;
   }
 }
 
@@ -450,9 +482,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
   height: 23rem;
   opacity: 0;
   visibility: hidden;
@@ -474,40 +506,40 @@ body {
 .quote-div #first-quote-img {
   display: none;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     display: inline;
-    height: 2.25rem;
+    height: 2rem;
     transform: translate(-140%, 120%);
   }
 }
 
 .quote-div .second-quote-img {
-  height: 1.725rem;
+  height: 2rem;
   justify-content: end;
   margin-bottom: 0.8rem;
-  transform: rotate(180deg) translate(40%, -10%);
+  transform: rotate(180deg);
 
-  @media (min-width: 700px) {
-    height: 2.25rem;
+  @media (min-width: 768px) {
+    height: 2rem;
     margin-bottom: 5.65rem;
-    transform: rotate(180deg) translate(150%, -10%);
+    transform: rotate(180deg);
   }
 }
 
 .quote-div h3 {
-  font-size: 1.775rem;
-  line-height: 2.1rem;
+  font-size: 1.5rem;
+  line-height: 125%;
+  font-weight: 500;
 
-  @media (min-width: 700px) {
-    font-size: 2.825rem;
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
     word-spacing: 0px;
-    line-height: 3.35rem;
-    width: 94%;
   }
 }
 
 .quote-div .second-img-div {
   display: flex;
+
   justify-content: end;
 }
 
@@ -516,16 +548,17 @@ body {
   flex-direction: column;
   gap: 0.35rem;
 
-  @media (min-width: 700px) {
-    gap: 0.9rem;
+  @media (min-width: 768px) {
+    gap: 0.5rem;
   }
 }
 
 .quote-div p {
-  font-size: 0.875rem;
+  font-size: 1rem;
+  font-weight: 400;
 
-  @media (min-width: 700px) {
-    font-size: 1.275rem;
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
   }
 }
 
@@ -534,32 +567,36 @@ body {
 }
 
 .quote-div #company-para {
-  @media (min-width: 700px) {
-    font-size: 1.125rem;
+  @media (min-width: 768px) {
+    font-size: 1rem;
   }
 }
 
 .quotes-section .buttons-div {
+  position: absolute;
+  bottom: 0;
+  right: 20%;
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  transform: translate(20%, 865%);
 
-  @media (min-width: 700px) {
-    transform: translate(34.4%, 1185%);
+  @media (min-width: 768px) {
+    right: 30%;
     gap: 0.75rem;
+    transform: translateX(200%);
   }
 }
 
 .quotes-section .buttons-div button {
   border-radius: 100px;
   border: none;
-  padding: 0.5rem 0.6rem;
+  padding: 0.3rem 0.45rem;
+  align-items: center;
   justify-items: center;
   cursor: pointer;
 
-  @media (min-width: 700px) {
-    padding: 0.8rem 1rem;
+  @media (min-width: 768px) {
+    padding: 0.5rem 0.7rem;
   }
 }
 
@@ -574,9 +611,8 @@ body {
 .value-section {
   display: flex;
   flex-direction: column;
-  padding: 0 0.875rem;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     display: none;
   }
 }
@@ -587,11 +623,13 @@ body {
 
 .value-section .title-div div {
   display: inline;
-  font-family: "main-bold";
-  font-size: 0.7125rem;
+  font-size: 0.75rem;
+  font-family: "Intertight", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0.35rem 0.7rem;
   border: 1px solid black;
   border-radius: 50px;
-  padding: 0.35rem 0.65rem;
 }
 
 .value-title-div div {
@@ -599,7 +637,7 @@ body {
 }
 
 .value-section .img-div {
-  margin-bottom: 2.25rem;
+  margin-bottom: 5rem;
 }
 
 .value-section .img-div img {
@@ -614,7 +652,8 @@ body {
 }
 
 .value-section .buttons-div h3 {
-  font-size: 1.765rem;
+  font-size: 1.5rem;
+  font-weight: 500;
   cursor: pointer;
   color: lightgray;
 }
@@ -629,8 +668,8 @@ body {
 }
 
 .value-section .para-div p {
-  font-size: 0.8675rem;
-  line-height: 1.35rem;
+  font-size: 1rem;
+  line-height: 155%;
   word-spacing: 0.5px;
 }
 
@@ -641,18 +680,18 @@ body {
   border: none;
   cursor: pointer;
   justify-content: space-between;
-  padding: 7px 9px;
-  padding-left: 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+
   gap: 1.8rem;
   border-radius: 50px;
-  font-size: 14px;
+  font-size: 1rem;
+  font-weight: 400;
 
-  @media (min-width: 700px) {
-    font-size: 18px;
-    padding: 10px 8px;
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    padding: 0.45rem 0.5rem 0.45rem 1.25rem;
     border-radius: 50px;
-    gap: 2.5rem;
-    padding-left: 1.5rem;
+    gap: 1.75rem;
   }
 }
 
@@ -665,46 +704,59 @@ body {
 
 .value-simple-button {
   display: flex;
-  flex-direction: row;
-  border: none;
-  gap: 0.5rem;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
   background-color: white;
-  border-bottom: 2px solid black;
+  border: none;
+  border-bottom: 1px solid black;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
   cursor: pointer;
+  width: 100%;
 
-  @media (min-width: 700px) {
-    border-bottom: 1px solid black;
+  @media (min-width: 768px) {
+    border-bottom: 1.5px solid black;
     padding-bottom: 0.25rem;
+    gap: 0;
   }
 }
 
-.value-simple-button #value-button-div div {
-  font-size: 0.9rem;
+.value-simple-button #value-button-div {
+  flex: 0 1 auto;
+  width: auto;
+}
 
-  @media (min-width: 700px) {
-    font-size: 1.125rem;
+.value-simple-button #value-button-div div {
+  font-size: 1rem;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
   }
 }
 
 .value-simple-button #value-arrow {
   border: none;
+  flex: 0 0 auto;
   width: 2rem;
-  margin: 0 auto;
-  @media (min-width: 700px) {
-    width: 1rem;
+  margin: 0;
+  @media (min-width: 768px) {
+    align-items: center;
+    width: 1.5rem;
   }
 }
 
 .value-section .value-simple-button #value-arrow {
+  display: flex;
+  justify-content: flex-start;
+  left: 0;
   border-radius: 0;
   background: transparent;
   height: 6%;
   width: 6%;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     height: 8%;
     width: 8%;
   }
@@ -715,10 +767,10 @@ body {
 }
 
 .value-simple-button #value-arrow img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     height: 70%;
     width: 70%;
   }
@@ -735,22 +787,22 @@ body {
 #value-arrow {
   background: white;
   border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  width: 2.5rem;
+  height: 2.5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 
-  @media (min-width: 700px) {
-    width: 45px;
-    height: 45px;
+  @media (min-width: 768px) {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 
 #value-arrow img {
   display: block;
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: 40%;
   margin: 0 auto;
 }
 
@@ -765,11 +817,10 @@ body {
 .full-value-section {
   display: none;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     display: flex;
-    width: 72%;
     margin: 0 auto;
-    margin-bottom: 20rem;
+    padding-bottom: 16rem;
   }
 }
 
@@ -780,9 +831,10 @@ body {
 
 .full-value-section .content-div {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  padding-left: 7.125rem;
-  gap: 1rem;
+  align-items: start;
+  padding-left: 6.5rem;
 }
 
 .full-value-section img {
@@ -791,8 +843,9 @@ body {
 
 .full-value-section .title-div .title div {
   display: inline;
-  font-family: "main-bold";
-  font-size: 0.9rem;
+  font-family: "Intertight";
+  font-weight: 500;
+  font-size: 0.75rem;
   border: 1px solid black;
   border-radius: 50px;
   padding: 0.45rem 0.825rem;
@@ -812,17 +865,24 @@ body {
 }
 
 .full-value-section .buttons-div h3 {
-  font-size: 2.25rem;
+  font-size: 2rem;
+  font-weight: 500;
   cursor: pointer;
   color: lightgray;
 }
 
 .full-value-section .para-div {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   width: 80%;
 }
 
 .full-value-section .para-div p {
-  font-size: 1.25rem;
-  line-height: 1.95rem;
+  font-size: 1.125rem;
+  line-height: 155%;
+}
+
+.contact-us-section h2 {
+  @media (min-width: 768px) {
+    max-width: 55%;
+  }
 }
