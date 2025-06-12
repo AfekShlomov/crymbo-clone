@@ -70,18 +70,30 @@ p {
   font-family: "Intertight", sans-serif;
 }
 
-@media (max-width: 866px) {
+@media (max-width: 1024px) {
   .max-width-container {
     width: 100%;
     max-width: 100%;
     padding: 0 1rem;
   }
+
+  .header > div { 
+    padding: 0;
+  }
 }
 
-@media (min-width: 867px) {
+@media (min-width: 768px) {
   .max-width-container {
     width: 100%;
     max-width: 76rem;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 76rem) {
+  .small-screen-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

@@ -25,6 +25,11 @@ body {
     max-width: 50%;
   }
 }
+@media (min-width: 480px) {
+  .form-main-div form{
+    max-width: 100%;
+  }
+}
 
 .form-main-div form {
   display: flex;

@@ -224,12 +224,20 @@
 .uni-layer-div-main {
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin-bottom: 2rem;
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 1024px) {
+  .uni-layer-div-main {
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .uni-layer-div-main {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
