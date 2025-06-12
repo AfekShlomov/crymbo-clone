@@ -156,10 +156,6 @@
   display: flex;
   height: 100%;
   gap: 0.6rem;
-
-  @media (max-width: 480px) {
-    height: rem;
-  }
 }
 
 #header-req-button {
@@ -432,12 +428,11 @@ h4 {
 .contact-us-section button {
   display: flex;
   background-color: black;
-  border: 2px solid black;
   color: white;
   border: none;
   cursor: pointer;
   justify-content: space-between;
-  padding: 0.55rem 0.5rem 0.55rem 1.2rem;
+  padding: 0.55rem 0.5rem 0.55rem 1.25rem;
   border-radius: 50px;
   font-size: 1rem;
   font-weight: 400;
@@ -561,7 +556,6 @@ h4 {
   height: 100%;
   display: block;
   transition: none;
-
   transform: translateY(0);
   opacity: 1;
   animation: none;

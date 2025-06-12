@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crymbo.com Clone</title>
-    <link rel="stylesheet" href="/css/pages/index.css" />
-    <link rel="stylesheet" href="/css/components/reusable-components.css" />
-    <link rel="stylesheet" href="/css/pages/styles.css" />
+    <link rel="stylesheet" href="/css/pages/index.scss" />
+    <link href="/scss/components/header.scss" />
 
     <script src="js/scripts/navigation-dropdown.js" defer></script>
   </head>
@@ -17,7 +16,7 @@
         <div class="logo-div">
           <img src="/media/svg/logo.svg" alt="logo" href="/index.html" />
         </div>
-        <div id="header-navigation">
+        <div class="header-navigation">
           <nav>
             <a id="highligthed" href="/">Crymbo Oracle</a>
             <a href="/crymbo-connect">Crymbo Connect</a>
@@ -73,10 +72,8 @@
 
     <section class="max-width-container hero-section small-screen-padding">
       <div class="hero-title-div">
-        <h1 class="hero-header">
-          Offer DeFi users automated on-chain compliance
-        </h1>
-        <p class="hero-paragraph">
+        <h1>Offer DeFi users automated on-chain compliance</h1>
+        <p>
           Crymbo Oracle automates on-chain Travel Rule compliance, secure
           transaction data sharing and regulatory checks.<br />
           Perfect for RWA, stablecoins, and DeFI users who choose to be ready
@@ -84,7 +81,7 @@
         </p>
       </div>
       <div class="video-div">
-        <video autoplay muted playsinline loop class="hero-video">
+        <video autoplay muted playsinline loop>
           <source src="/media/hero-video.mp4" type="video/mp4" />
           Source video not supported
         </video>
@@ -123,8 +120,8 @@
     </section>
 
     <section class="summup-section">
-      <div class="summup-div">
-        <h2 class="summup-h2">
+      <div>
+        <h2>
           <span
             >Today, <span>DeFi</span>, <span>CeFi</span>, & <span>TradFi</span>
           </span>
@@ -134,18 +131,15 @@
     </section>
 
     <section class="uni-layer-section">
-      <img
-        src="/media/white-block-backgroud.webp"
-        class="uni-layer-background"
-      />
-      <div class="max-width-container uni-layer-title-div">
+      <img src="/media/white-block-backgroud.webp" class="background" />
+      <div class="max-width-container title-div">
         <h2>Crymbo's Unification Layer</h2>
         <p>
           Achieve real-time, on-chain, privacy-preserving regulatory compliance,
           interoperable across TradFi, CeFi, and DeFi markets.
         </p>
       </div>
-      <div class="max-width-container uni-layer-div-main">
+      <div class="max-width-container main-div">
         <div class="uni-layer-content-div">
           <h3>Identity</h3>
           <p>
@@ -176,7 +170,7 @@
             compromising decentralized principles.
           </p>
         </div>
-        <div class="uni-layer-content-div">
+        <div class="content-div">
           <h3>Localised</h3>
           <p>
             Crymbo Oracle is designed to adapt to local regulations, enabling
@@ -187,8 +181,8 @@
           </p>
         </div>
       </div>
-      <div class="uni-layer-button-div">
-        <button class="uni-layer-button">
+      <div class="button-div">
+        <button>
           <div id="uni-button-div">
             <div>Integrate Today</div>
           </div>
@@ -200,20 +194,20 @@
     </section>
 
     <section class="max-width-container compliance-section">
-      <div class="compliance-title-div">
+      <div class="title-div">
         <h2>
           Today's compliance infrastructure is manual, incomplete & expensive
         </h2>
       </div>
-      <div class="compliance-data-div">
-        <div class="compliance-data-inner-div" id="compliance-margin">
+      <div class="data-div">
+        <div>
           <p>Today's Compliance Data Sharing</p>
           <img
             src="/media/svg/compliance-data-sharing.svg"
             alt="data sharing"
           />
         </div>
-        <div class="compliance-data-inner-div">
+        <div>
           <p>With Crymbo Oracle Contextual real time on & off chain data</p>
           <img
             src="/media/svg/contextual-real-time-datasharing.svg"
@@ -225,7 +219,7 @@
 
     <section class="max-width-container use-cases-section">
       <h2>Use Cases</h2>
-      <div class="use-cases-content-div">
+      <div class="content-div">
         <div>
           <h3>Next Gen Travel Rule</h3>
           <p>
@@ -239,7 +233,7 @@
           alt="next gen travel rule"
         />
       </div>
-      <div class="use-cases-content-div" id="flip">
+      <div class="content-div" id="flip">
         <div>
           <h3>Compliant DeFi</h3>
           <p>
@@ -250,7 +244,7 @@
         </div>
         <img src="/media/compliant-defi.png" />
       </div>
-      <div class="use-cases-content-div">
+      <div class="content-div">
         <div>
           <h3>Explore Auditable Data</h3>
           <p>
@@ -267,14 +261,14 @@
     </section>
 
     <section class="contact-us-section">
-      <div class="max-width-container contact-us-div">
+      <div class="max-width-container">
         <p>CONTACT US NOW</p>
         <h2>Ready to streamline your <span>digital asset compliance?</span></h2>
         <button>
           <div id="uni-button-div">
             <div>Request Demo</div>
           </div>
-          <div class="arrow-raise-container" id="uni-layer-arrow">
+          <div class="arrow-raise-container" id="arrow">
             <img src="/media/svg/button-arrow.svg" class="arrow-raise" />
           </div>
         </button>
@@ -283,7 +277,7 @@
 
     <footer class="footer">
       <div class="max-width-container footer-div">
-        <div class="footer-column footer-adress wide-col">
+        <div class="footer-adress wide-col">
           <h4>COMPANY</h4>
           <p>
             3rd Floor 86-90 <br />
@@ -300,12 +294,12 @@
             <img src="/media/Certification-logo.webp" />
           </div>
         </div>
-        <div class="footer-column short-col footer-linkable">
+        <div class="short-col footer-linkable">
           <h4>PRODUCTS</h4>
           <p>Crymbo Oracle</p>
           <p>Crymbo Connect</p>
         </div>
-        <div class="footer-column short-col footer-linkable">
+        <div class="short-col footer-linkable">
           <h4>USE CASES</h4>
           <p>Launch crypto products, fast</p>
           <p>Scale operations & tech with ease</p>
@@ -314,10 +308,11 @@
           <p>Intelligent Risk Managament</p>
           <p>Know your data</p>
         </div>
-        <div class="footer-column short-col footer-linkable">
+        <div class="short-col footer-linkable">
           <h4>DEVELOPER</h4>
           <p>Docs</p>
           <p>API Reference</p>
+          ƒƒ
           <p id="margin-para">Join Crymbo Marketplace</p>
           <h4>COMPANY</h4>
           <p>Privacy Policy</p>
