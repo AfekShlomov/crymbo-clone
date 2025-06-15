@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Intertight";
+  src: url("/media/fonts/InterTight-Regular.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Intertight";
+  src: url("/media/fonts/InterTight-Medium.woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "PPNeueBit";
+  src: url("/media/fonts/PPNeueBit-Bold.woff2");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --headerHeight: 3.5rem;
+}
+@media (min-width: 768px) {
+  :root {
+    --headerHeight: 5.125rem;
+  }
+}
+
+html {
+  font-size: 16px;
+  font-size: calc(0.625rem + 0.4166666667vw);
+}
+@media (max-width: 1920px) {
+  html html {
+    font-size: calc(0.625rem + 0.4166666667vw);
+  }
+}
+@media (max-width: 1440px) {
+  html html {
+    font-size: calc(0.625rem + 0.4166666667vw);
+  }
+}
+@media (max-width: 479px) {
+  html html {
+    font-size: calc(0.7494769874rem + 0.8368200837vw);
+  }
+}
+
+body {
+  overflow-x: hidden;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Intertight", sans-serif;
+}
+
+p {
+  font-family: "Intertight", sans-serif;
+}
+
+.max-width-containter {
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .max-width-containter {
+    padding: 0 1rem;
+  }
+  .max-width-containter .header > div {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .max-width-containter {
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .max-width-containter {
+    max-width: 76rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.scroll-bar-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: auto;
+  background-color: white;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-radius: 0;
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+  z-index: 2;
+}
+.scroll-bar-section div {
+  display: flex;
+}
+.scroll-bar-section > .scroll-bar-slider {
+  overflow: hidden;
+}
+.scroll-bar-section > .scroll-bar-slider > .scroll-bar-track {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+.scroll-bar-section > .scroll-bar-slider > .scroll-bar-track > img {
+  display: inline;
+  width: 5rem;
+  margin: 0 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (min-width: 867px) {
+  .scroll-bar-section > .scroll-bar-slider > .scroll-bar-track > img {
+    width: 7rem;
+    margin: 0 2.5rem;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}/*# sourceMappingURL=scroll-bar.css.map */

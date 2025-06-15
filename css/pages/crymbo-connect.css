@@ -378,7 +378,7 @@ body {
   }
 }
 
-#itr-small-div {
+.itr-small-div {
   padding-bottom: 1.75rem;
   cursor: pointer;
 
@@ -513,7 +513,7 @@ body {
   }
 }
 
-.quote-div .second-quote-img {
+.quote-div #second-quote-img {
   height: 2rem;
   justify-content: end;
   margin-bottom: 0.8rem;

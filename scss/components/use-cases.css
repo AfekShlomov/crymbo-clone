@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "Intertight";
+  src: url("/media/fonts/InterTight-Regular.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Intertight";
+  src: url("/media/fonts/InterTight-Medium.woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "PPNeueBit";
+  src: url("/media/fonts/PPNeueBit-Bold.woff2");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --headerHeight: 3.5rem;
+}
+@media (min-width: 768px) {
+  :root {
+    --headerHeight: 5.125rem;
+  }
+}
+
+html {
+  font-size: 16px;
+  font-size: calc(0.625rem + 0.4166666667vw);
+}
+@media (max-width: 1920px) {
+  html html {
+    font-size: calc(0.625rem + 0.4166666667vw);
+  }
+}
+@media (max-width: 1440px) {
+  html html {
+    font-size: calc(0.625rem + 0.4166666667vw);
+  }
+}
+@media (max-width: 479px) {
+  html html {
+    font-size: calc(0.7494769874rem + 0.8368200837vw);
+  }
+}
+
+body {
+  overflow-x: hidden;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Intertight", sans-serif;
+}
+
+p {
+  font-family: "Intertight", sans-serif;
+}
+
+.max-width-containter {
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .max-width-containter {
+    padding: 0 1rem;
+  }
+  .max-width-containter .header > div {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .max-width-containter {
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .max-width-containter {
+    max-width: 76rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.use-cases-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 768px) {
+  .use-cases-section {
+    margin-bottom: 2rem;
+  }
+}
+.use-cases-section h2 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin-bottom: 0.9rem;
+}
+@media (min-width: 768px) {
+  .use-cases-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+.use-cases-section .content-div {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: left;
+  border: 1px solid lightgray;
+  border-radius: 18px;
+  margin-bottom: 0.875rem;
+}
+@media (min-width: 768px) {
+  .use-cases-section .content-div {
+    display: flex;
+    justify-content: space-between;
+    max-width: 60rem;
+    margin-bottom: 2rem;
+  }
+}
+.use-cases-section .content-div > div {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: left;
+  border: 1px solid lightgray;
+  border-radius: 18px;
+  margin-bottom: 0.875rem;
+}
+@media (min-width: 768px) {
+  .use-cases-section .content-div > div {
+    display: flex;
+    justify-content: space-between;
+    max-width: 60rem;
+    margin-bottom: 2rem;
+  }
+}
+.use-cases-section .content-div > div h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 768px) {
+  .use-cases-section .content-div > div h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+  }
+}
+.use-cases-section .content-div > div p {
+  font-size: 1rem;
+  line-height: 155%;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 768px) {
+  .use-cases-section .content-div > div p {
+    font-size: 1.125rem;
+    line-height: 155%;
+  }
+}
+.use-cases-section .content-div > img {
+  height: 12rem;
+  width: auto;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+@media (min-width: 768px) {
+  .use-cases-section .content-div > img {
+    height: 20rem;
+    width: auto;
+    margin: 1.5rem 3.5rem 1.5rem 0;
+  }
+}
+@media (min-width: 768px) {
+  .use-cases-section #flip {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .use-cases-section #flip > img {
+    height: 20rem;
+    margin-left: 3.75rem;
+    margin-right: 5rem;
+  }
+}/*# sourceMappingURL=use-cases.css.map */
