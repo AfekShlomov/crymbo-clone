@@ -63,27 +63,20 @@ p {
   font-family: "Intertight", sans-serif;
 }
 
-.max-width-containter {
-  width: 100%;
-}
-@media (max-width: 1024px) {
-  .max-width-containter {
-    padding: 0 1rem;
-  }
-  .max-width-containter .header > div {
-    padding: 0;
-  }
+.max-width-container {
+  width: 76rem;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .max-width-containter {
-    max-width: 100%;
+  .max-width-container {
+    width: 100%;
   }
 }
-@media (min-width: 768px) {
-  .max-width-containter {
-    max-width: 76rem;
-    margin-left: auto;
-    margin-right: auto;
+@media (max-width: 767px) {
+  .max-width-container {
+    padding: 0 1rem;
+  }
+  .max-width-container .header > div {
+    padding: 0;
   }
 }
 

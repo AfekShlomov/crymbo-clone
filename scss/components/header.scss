@@ -11,6 +11,7 @@
   top: 0;
   padding: 0.5rem 0;
   z-index: 100;
+
   @media (min-width: 768px) {
     padding: 1rem 1.5rem;
   }
@@ -37,8 +38,36 @@
     cursor: pointer;
   }
 
-  #header-navigation {
+  .header-navigation {
     display: none;
+
+    @media (min-width: 1205px) {
+      display: flex;
+    }
+
+    > nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &:has(a:hover) a:not(:hover) {
+        color: rgb(73, 73, 73);
+        opacity: 0.8;
+        transition: color 0.2s, opacity 0.2s;
+      }
+
+      > a {
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+        font-family: "InterTight", sans-serif;
+        display: inline;
+        text-align: start;
+        padding: 0 1rem;
+        color: rgb(41, 41, 41);
+        transition: color 0.2s, opacity 0.2s;
+      }
+    }
   }
 
   #header-buttons-div {
@@ -67,7 +96,6 @@
     color: white;
     text-decoration: none;
     font-family: "InterTight", sans-serif;
-
 
     @media (max-width: 480px) {
       display: none;
@@ -142,7 +170,7 @@
       font-weight: 500;
     }
   }
-  
+
   #header-req-button {
     display: flex;
     align-items: center;

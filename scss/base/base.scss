@@ -67,24 +67,18 @@ p {
   font-family: "Intertight", sans-serif;
 }
 
-.max-width-containter {
-  width: 100%;
+.max-width-container {
+  width: 76rem;
 
-  @media (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
     padding: 0 1rem;
 
     .header > div {
       padding: 0;
     }
-  }
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    max-width: 100%;
-  }
-
-  @media (min-width: 768px) {
-    max-width: 76rem;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

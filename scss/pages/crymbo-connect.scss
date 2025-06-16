@@ -348,7 +348,7 @@ body {
 }
 
 .value-button {
-  @include arrowRaiseOnHover;
+  @include arrowRaise.arrowRaiseOnHover;
 
   display: flex;
   justify-content: space-between;
