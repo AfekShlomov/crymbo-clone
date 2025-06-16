@@ -66,7 +66,7 @@ body {
   }
 }
 
-.uni-layer-button-div {
+.button-div {
   display: flex;
   justify-content: center;
 }
@@ -144,7 +144,7 @@ body {
   text-decoration: none;
 }
 
-#integrations-button {
+#simple-button {
   border: none;
   cursor: pointer;
   width: 100%;
@@ -165,7 +165,7 @@ body {
   }
 }
 
-.dev-buttons-section {
+.buttons-section {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -184,7 +184,7 @@ body {
   }
 }
 
-.dev-buttons-content-div {
+.content-div {
   display: block;
   align-items: start;
   flex-direction: column;
@@ -209,7 +209,7 @@ body {
   background-color: yellow;
 }
 
-.dev-buttons-images-div {
+.images-div {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.5rem;
@@ -372,23 +372,17 @@ body {
   }
 }
 
-.ecosystem-buttons-div button {
-  font-size: 1rem;
-  font-weight: 400;
-  border: none;
-  border-radius: 40px;
-  background: white;
-  border: 2px solid white;
-  padding: 0.65rem 1rem;
-  margin-right: 0.2rem;
-  margin-bottom: 0.5rem;
-  cursor: pointer;
-  transition: border-color 0.4s cubic-bezier(0.4, 2, 0.6, 1);
+.ecosystem-buttons-div buttons-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 
   @media (min-width: 768px) {
-    font-size: 0.95rem;
-    padding: 0.8rem 1.125rem;
-    margin-right: 0.5rem;
+    flex-direction: row;
+    gap: 0;
+    margin-bottom: 5rem;
+    margin-right: 1.5rem;
   }
 }
 
@@ -401,7 +395,7 @@ body {
   border-color: black;
 }
 
-#reset-filters-button-div {
+#reset-button-div {
   display: flex;
   justify-content: start;
   align-items: center;
