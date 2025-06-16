@@ -1,5 +1,5 @@
 @use "../base/base.scss";
-@use "../animations/arrow-raise.scss";
+@use "../animations/arrow-raise.scss" as arrowRaise;
 
 .header {
   display: flex;
@@ -52,6 +52,7 @@
   }
 
   #header-req-button {
+    @include arrowRaise.arrowRaiseOnHover;
     font-size: 1rem;
     font-weight: 300;
     line-height: 150%;
@@ -67,7 +68,6 @@
     text-decoration: none;
     font-family: "InterTight", sans-serif;
 
-    @include arrowRaiseOnHover();
 
     @media (max-width: 480px) {
       display: none;

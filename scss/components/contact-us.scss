@@ -1,5 +1,5 @@
 @use "../base/base.scss";
-@use "../animations/arrow-raise.scss";
+@use "../animations/arrow-raise.scss" as arrowRaise;
 
 .contact-us-section {
   display: flex;
@@ -70,7 +70,7 @@
     }
 
     > button {
-      @include arrowRaiseOnHover;
+      @include arrowRaise.arrowRaiseOnHover;
       display: flex;
       justify-content: space-between;
       font-size: 1rem;

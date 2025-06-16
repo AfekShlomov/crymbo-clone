@@ -2,7 +2,7 @@
 @use "../components/header.scss";
 @use "../components/footer.scss";
 @use "../components/contact-us.scss";
-@use "../animations/arrow-raise.scss";
+@use "../animations/arrow-raise.scss" as arrowRaise;
 
 body {
   margin-top: 7.5rem;
@@ -223,8 +223,6 @@ body {
       }
 
       > button {
-        @include arrowRaiseOnHover();
-
         display: flex;
         align-items: center;
         font-size: 1rem;

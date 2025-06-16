@@ -4,7 +4,7 @@
 @use "../components/scroll-bar.scss";
 @use "../components/contact-us.scss";
 @use "../components/use-cases.scss";
-@use "../animations/arrow-raise.scss";
+@use "../animations/arrow-raise.scss" as arrowRaise;
 
 body {
   padding-top: 9rem;
@@ -348,7 +348,7 @@ body {
 }
 
 .value-button {
-  @include arrowRaiseOnHover();
+  @include arrowRaiseOnHover;
 
   display: flex;
   justify-content: space-between;
@@ -393,7 +393,7 @@ body {
 }
 
 .value-simple-button {
-  @include arrowRaiseOnHover();
+  @include arrowRaise.arrowRaiseOnHover;
 
   display: flex;
   justify-content: flex-start;

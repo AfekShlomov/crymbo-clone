@@ -4,7 +4,7 @@
 @use "../components/scroll-bar.scss";
 @use "../components/contact-us.scss";
 @use "../components/use-cases.scss";
-@use "../animations/arrow-raise.scss";
+@use "../animations/arrow-raise.scss" as arrowRaise;
 
 .hero-section {
   display: block;
@@ -261,7 +261,7 @@
     justify-content: center;
 
     button {
-      @include arrowRaiseOnHover();
+      @include arrowRaise.arrowRaiseOnHover;
       display: flex;
       justify-content: space-between;
       font-size: 1rem;
