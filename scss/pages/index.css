@@ -29,20 +29,23 @@
 
 html {
   font-size: 16px;
+}
+
+html {
   font-size: calc(0.625rem + 0.4166666667vw);
 }
 @media (max-width: 1920px) {
-  html html {
+  html {
     font-size: calc(0.625rem + 0.4166666667vw);
   }
 }
 @media (max-width: 1440px) {
-  html html {
+  html {
     font-size: calc(0.625rem + 0.4166666667vw);
   }
 }
 @media (max-width: 479px) {
-  html html {
+  html {
     font-size: calc(0.7494769874rem + 0.8368200837vw);
   }
 }
@@ -63,21 +66,33 @@ p {
   font-family: "Intertight", sans-serif;
 }
 
-.max-width-container {
-  width: 76rem;
-}
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .max-width-container {
     width: 100%;
-  }
-}
-@media (max-width: 767px) {
-  .max-width-container {
+    max-width: 100%;
     padding: 0 1rem;
   }
   .max-width-container .header > div {
     padding: 0;
   }
+}
+@media (min-width: 768px) {
+  .max-width-container {
+    width: 100%;
+    max-width: 76rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 76rem) {
+  .max-width-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.invert-img {
+  filter: invert(1);
 }
 
 @keyframes raiseUp {
@@ -137,6 +152,12 @@ p {
   align-items: center;
   cursor: pointer;
 }
+@media (max-width: 480px) {
+  .header .logo-div > img {
+    height: 1.5rem;
+    width: auto;
+  }
+}
 .header .header-navigation {
   display: none;
 }
@@ -190,20 +211,6 @@ p {
   padding: 0.8rem 1.5rem;
   cursor: pointer;
 }
-.header #header-req-button .arrow-raise {
-  animation: raiseUp 0.3 forwards;
-}
-.header #header-req-button .arrow-raise {
-  animation: raiseUp 0.3 forwards;
-}
-.header #header-req-button:hover .arrow-raise {
-  animation-play-state: running;
-  animation-direction: normal;
-}
-.header #header-req-button:hover .arrow-raise {
-  animation-play-state: running;
-  animation-direction: reverse;
-}
 @media (max-width: 480px) {
   .header #header-req-button {
     display: none;
@@ -226,15 +233,11 @@ p {
   opacity: 1;
   animation: none;
 }
-.header #header-req-button .arrow-raise-container > .invert-img {
-  filter: invert(1);
-}
 .header #dropdown-menu-button {
   justify-content: center;
-  align-items: center;
+  align-items: end;
   border: 1px solid black;
   border-radius: 50%;
-  min-width: none;
   aspect-ratio: 1/1;
   cursor: pointer;
 }
@@ -243,6 +246,10 @@ p {
     display: none;
   }
 }
+.header #dropdown-menu-button > img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
 
 .header-dropdown-navigation {
   display: flex;
@@ -250,6 +257,7 @@ p {
   align-self: center;
   position: fixed;
   top: var(--headerHeight);
+  background-color: white;
   left: 50%;
   transform: translate(-50%, -100%);
   transition: transform 0.2s ease;
@@ -257,7 +265,6 @@ p {
   pointer-events: none;
   z-index: 10;
   padding: 0 0 1rem 0;
-  background-color: white;
   border-radius: 0 0 10px 10px;
 }
 @media (min-width: 1205px) {
@@ -546,6 +553,7 @@ p {
 .contact-us-section > div > button {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 1rem;
   font-weight: 400;
   color: white;
@@ -554,20 +562,6 @@ p {
   cursor: pointer;
   padding: 0.55rem 0.5rem 0.55rem 1.2rem;
   gap: 2rem;
-}
-.contact-us-section > div > button .arrow-raise {
-  animation: raiseUp 0.3 forwards;
-}
-.contact-us-section > div > button .arrow-raise {
-  animation: raiseUp 0.3 forwards;
-}
-.contact-us-section > div > button:hover .arrow-raise {
-  animation-play-state: running;
-  animation-direction: normal;
-}
-.contact-us-section > div > button:hover .arrow-raise {
-  animation-play-state: running;
-  animation-direction: reverse;
 }
 @media (min-width: 768px) {
   .contact-us-section > div > button {
@@ -637,20 +631,17 @@ p {
   }
 }
 .use-cases-section .content-div > div {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(1, 1fr);
-  text-align: left;
-  border: 1px solid lightgray;
-  border-radius: 18px;
-  margin-bottom: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1em;
+  margin: 1rem;
 }
 @media (min-width: 768px) {
   .use-cases-section .content-div > div {
-    display: flex;
-    justify-content: space-between;
-    max-width: 60rem;
-    margin-bottom: 2rem;
+    width: 50%;
+    margin: 1.5rem;
+    padding: 1rem 0 0 0;
   }
 }
 .use-cases-section .content-div > div h3 {
@@ -765,6 +756,7 @@ p {
   width: 100%;
   overflow-y: visible;
   overflow-x: visible;
+  z-index: 0;
 }
 @media (max-width: 768px) {
   .hero-section .video-div {
@@ -777,7 +769,7 @@ p {
   pointer-events: none;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: 1;
+  z-index: 0;
   width: 110%;
   overflow: hidden;
 }
@@ -860,6 +852,7 @@ p {
 .uni-layer-section .background {
   width: 110%;
   overflow-x: hidden;
+  z-index: 0;
 }
 @media (min-width: 768px) {
   .uni-layer-section .background {
@@ -867,7 +860,6 @@ p {
     width: 100vw;
     max-width: 100vw;
     height: auto;
-    z-index: 1;
     top: 2%;
     pointer-events: none;
   }
@@ -876,6 +868,7 @@ p {
   display: block;
   justify-items: center;
   text-align: center;
+  z-index: inherit;
 }
 @media (min-width: 768px) {
   .uni-layer-section .title-div {
@@ -914,7 +907,8 @@ p {
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(1, 1fr);
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  z-index: inherit;
 }
 @media (min-width: 480px) {
   .uni-layer-section .main-div {
@@ -934,12 +928,13 @@ p {
 }
 @media (min-width: 768px) {
   .uni-layer-section .content-div {
-    padding: 9% 8%;
+    padding: 1.5rem;
     border-radius: 20px;
   }
 }
 .uni-layer-section .content-div h3 {
   font-size: 1.25rem;
+  font-weight: 500;
   margin-bottom: 1.15rem;
 }
 @media (min-width: 768px) {
@@ -966,6 +961,7 @@ p {
 .uni-layer-section .button-div button {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 1rem;
   font-weight: 400;
   color: white;
@@ -977,26 +973,44 @@ p {
   gap: 1.8rem;
   cursor: pointer;
 }
-.uni-layer-section .button-div button .arrow-raise {
-  animation: raiseUp 0.3 forwards;
-}
-.uni-layer-section .button-div button .arrow-raise {
-  animation: raiseUp 0.3 forwards;
-}
-.uni-layer-section .button-div button:hover .arrow-raise {
-  animation-play-state: running;
-  animation-direction: normal;
-}
-.uni-layer-section .button-div button:hover .arrow-raise {
-  animation-play-state: running;
-  animation-direction: reverse;
-}
 @media (min-width: 768px) {
   .uni-layer-section .button-div button {
     font-size: 1rem;
     padding: 0.5rem 0.5rem 0.5rem 1.125rem;
     gap: 2rem;
   }
+}
+.uni-layer-section .button-div button #uni-layer-arrow {
+  background: white;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .uni-layer-section .button-div button #uni-layer-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+.uni-layer-section .button-div button #uni-layer-arrow .arrow-raise-container {
+  width: 1.25rem;
+  height: auto;
+  padding: 0.25rem;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+.uni-layer-section .button-div button #uni-layer-arrow .arrow-raise-container .arrow-raise {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: none;
+  transform: translateY(0);
+  opacity: 1;
+  animation: none;
 }
 
 .compliance-section {

@@ -70,9 +70,9 @@
     }
 
     > button {
-      @include arrowRaise.arrowRaiseOnHover;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       font-size: 1rem;
       font-weight: 400;
       color: white;

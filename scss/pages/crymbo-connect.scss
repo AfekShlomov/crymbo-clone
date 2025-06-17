@@ -169,7 +169,7 @@ body {
     }
   }
 
-  .content-div {
+  .content-divs {
     z-index: 1;
     @media (min-width: 768px) {
       display: flex;
@@ -188,7 +188,7 @@ body {
         width: 27%;
       }
 
-      > img {
+      img {
         width: 1.25rem;
         margin-bottom: 1.75rem;
       }
@@ -266,6 +266,10 @@ body {
       font-weight: 500;
       cursor: pointer;
       color: lightgray;
+
+      &.active {
+        color: black;
+      }
     }
 
     &.active {
@@ -325,12 +329,15 @@ body {
         padding: 0.45rem 0.825rem;
       }
 
-      > .buttons-div {
-        > h3 {
-          font-size: 2rem;
-          font-weight: 500;
-          color: lightgray;
-          cursor: pointer;
+      > .buttons-div > h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        color: lightgray;
+        padding-bottom: 1rem;
+        cursor: pointer;
+
+        &.active {
+          color: black;
         }
       }
     }
@@ -348,8 +355,6 @@ body {
 }
 
 .value-button {
-  @include arrowRaise.arrowRaiseOnHover;
-
   display: flex;
   justify-content: space-between;
   font-size: 1rem;
@@ -393,8 +398,6 @@ body {
 }
 
 .value-simple-button {
-  @include arrowRaise.arrowRaiseOnHover;
-
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -431,16 +434,6 @@ body {
       align-items: center;
       width: 1.5rem;
     }
-
-    > img {
-      width: 80%;
-      height: 80%;
-
-      @media (min-width: 768px) {
-        height: 70%;
-        width: 70%;
-      }
-    }
   }
 }
 
@@ -460,8 +453,6 @@ body {
 
   > img {
     display: block;
-    width: 40%;
-    height: 40%;
     margin: 0 auto;
   }
 }

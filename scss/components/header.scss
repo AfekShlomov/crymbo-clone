@@ -36,6 +36,13 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+
+    > img {
+      @media (max-width: 480px) {
+        height: 1.5rem;
+        width: auto;
+      }
+    }
   }
 
   .header-navigation {
@@ -81,8 +88,6 @@
   }
 
   #header-req-button {
-    @include arrowRaise.arrowRaiseOnHover;
-
     display: flex;
     align-items: center;
     font-size: 1rem;
@@ -119,24 +124,24 @@
         opacity: 1;
         animation: none;
       }
-
-      > .invert-img {
-        filter: invert(1);
-      }
     }
   }
 
   #dropdown-menu-button {
     justify-content: center;
-    align-items: center;
+    align-items: end;
     border: 1px solid black;
     border-radius: 50%;
-    min-width: none;
     aspect-ratio: 1 / 1;
     cursor: pointer;
 
     @media (min-width: 1205px) {
       display: none;
+    }
+
+    > img {
+      height: 1.5rem;
+      width: 1.5rem;
     }
   }
 }
@@ -147,6 +152,7 @@
   align-self: center;
   position: fixed;
   top: var(--headerHeight);
+  background-color: white;
   left: 50%;
   transform: translate(-50%, -100%);
   transition: transform 0.2s ease;
@@ -154,7 +160,6 @@
   pointer-events: none;
   z-index: 10;
   padding: 0 0 1rem 0;
-  background-color: white;
   border-radius: 0 0 10px 10px;
 
   @media (min-width: 1205px) {
