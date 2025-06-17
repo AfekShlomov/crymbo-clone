@@ -1,11 +1,11 @@
-const form = document.querySelector(".form-main-div form");
+const form = document.querySelector(".form-div form");
 const fields = form.querySelectorAll('input:not([type="checkbox"]), textarea');
 const errorMessages = form.querySelectorAll(".error-message");
 const confirmationMessage = document.querySelector(".confirmation-message");
 const connectCheckbox = form.querySelector('input[name="connect-checkbox"]');
 const oracleCheckbox = form.querySelector('input[name="oracle-checkbox"]');
 const checkboxError = connectCheckbox
-  .closest(".form-main-div-checkbox")
+  .closest(".form-checkbox-div")
   .querySelector(".error-message");
 const formData = {};
 

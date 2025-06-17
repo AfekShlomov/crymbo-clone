@@ -38,7 +38,27 @@ body {
     margin-bottom: 1rem;
     max-width: 27rem;
 
-    .form-row-div {
+    label {
+      color: rgb(44, 44, 44);
+      font-size: 0.75rem;
+      font-family: Intertight, sans-serif;
+      letter-spacing: 0.5px;
+    }
+
+    > h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: black;
+      margin-bottom: 2.75rem;
+
+      @media (min-width: 768px) {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+      }
+    }
+
+    .form-row-div,
+    .form-email-div {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -61,32 +81,15 @@ body {
           gap: 0.25rem;
         }
 
-        > h2 {
-          margin-bottom: 2.75rem;
-          font-size: 1.5rem;
-          color: black;
-          font-weight: 500;
-
-          @media (min-width: 768px) {
-            font-size: 2rem;
-            margin-bottom: 4rem;
-          }
-        }
-
         > label {
-          font-size: 0.75rem;
-          font-family: Intertight, sans-serif;
-          letter-spacing: 0.5px;
           margin-bottom: 0.25rem;
-          color: rgb(44, 44, 44);
 
           @media (min-width: 768px) {
-            font-size: 0.75rem;
             margin-bottom: 0.4rem;
           }
         }
 
-        > .form-input {
+        .form-input {
           font-family: Intertight, sans-serif;
           font-weight: 400;
           font-size: 1rem;
@@ -103,7 +106,7 @@ body {
       }
     }
 
-    > .form-email-div {
+    .form-email-div {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -121,8 +124,6 @@ body {
         gap: 0.5rem;
 
         > label {
-          color: rgb(44, 44, 44);
-          font-size: 0.75rem;
           word-spacing: 1px;
 
           @media (min-width: 768px) {
@@ -153,6 +154,7 @@ body {
         min-width: 95%;
         min-height: 7rem;
         padding: 1.5rem;
+        margin-top: 0.5rem;
 
         @media (min-width: 768px) {
           max-width: 100%;
@@ -181,13 +183,18 @@ body {
           gap: 0.5rem;
         }
 
+        > label {
+          letter-spacing: 0.5px;
+          margin-bottom: 0.5rem;
+        }
+
         > .checkbox-label {
           font-size: 1rem;
           margin-left: 0.2rem;
+          margin-bottom: 0;
           color: black;
 
           @media (min-width: 768px) {
-            font-size: 1rem;
             margin: 0;
             font-family: "main-bold", Arial, sans-serif;
           }
@@ -212,7 +219,7 @@ body {
       }
     }
 
-    > .form-submit-div {
+    .form-submit-div {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -226,12 +233,13 @@ body {
         display: flex;
         align-items: center;
         font-size: 1rem;
+        font-family: Intertight, sans-serif;
         white-space: nowrap;
         background-color: black;
         color: white;
         border-radius: 50px;
         gap: 0.75rem;
-        padding: 0.65rem 1.5rem;
+        padding: 0.9rem 1.5rem;
         cursor: pointer;
 
         @media (min-width: 768px) {

@@ -154,7 +154,7 @@ p {
 }
 @media (max-width: 480px) {
   .header .logo-div > img {
-    height: 1.5rem;
+    height: 1.45rem;
     width: auto;
   }
 }
@@ -235,7 +235,7 @@ p {
 }
 .header #dropdown-menu-button {
   justify-content: center;
-  align-items: end;
+  align-content: end;
   border: 1px solid black;
   border-radius: 50%;
   aspect-ratio: 1/1;
@@ -575,7 +575,26 @@ body {
   margin-bottom: 1rem;
   max-width: 27rem;
 }
-.form-section .form-div > form .form-row-div {
+.form-section .form-div > form label {
+  color: rgb(44, 44, 44);
+  font-size: 0.75rem;
+  font-family: Intertight, sans-serif;
+  letter-spacing: 0.5px;
+}
+.form-section .form-div > form > h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 2.75rem;
+}
+@media (min-width: 768px) {
+  .form-section .form-div > form > h2 {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+.form-section .form-div > form .form-row-div,
+.form-section .form-div > form .form-email-div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -583,49 +602,38 @@ body {
   gap: 1.5rem;
 }
 @media (min-width: 768px) {
-  .form-section .form-div > form .form-row-div {
+  .form-section .form-div > form .form-row-div,
+  .form-section .form-div > form .form-email-div {
     justify-content: flex-start;
     flex-direction: row;
     margin-bottom: 2.15rem;
     gap: 1.5rem;
   }
 }
-.form-section .form-div > form .form-row-div > div {
+.form-section .form-div > form .form-row-div > div,
+.form-section .form-div > form .form-email-div > div {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 @media (min-width: 768px) {
-  .form-section .form-div > form .form-row-div > div {
+  .form-section .form-div > form .form-row-div > div,
+  .form-section .form-div > form .form-email-div > div {
     gap: 0.25rem;
   }
 }
-.form-section .form-div > form .form-row-div > div > h2 {
-  margin-bottom: 2.75rem;
-  font-size: 1.5rem;
-  color: black;
-  font-weight: 500;
-}
-@media (min-width: 768px) {
-  .form-section .form-div > form .form-row-div > div > h2 {
-    font-size: 2rem;
-    margin-bottom: 4rem;
-  }
-}
-.form-section .form-div > form .form-row-div > div > label {
-  font-size: 0.75rem;
-  font-family: Intertight, sans-serif;
-  letter-spacing: 0.5px;
+.form-section .form-div > form .form-row-div > div > label,
+.form-section .form-div > form .form-email-div > div > label {
   margin-bottom: 0.25rem;
-  color: rgb(44, 44, 44);
 }
 @media (min-width: 768px) {
-  .form-section .form-div > form .form-row-div > div > label {
-    font-size: 0.75rem;
+  .form-section .form-div > form .form-row-div > div > label,
+  .form-section .form-div > form .form-email-div > div > label {
     margin-bottom: 0.4rem;
   }
 }
-.form-section .form-div > form .form-row-div > div > .form-input {
+.form-section .form-div > form .form-row-div > div .form-input,
+.form-section .form-div > form .form-email-div > div .form-input {
   font-family: Intertight, sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -635,12 +643,13 @@ body {
   width: 95%;
 }
 @media (min-width: 768px) {
-  .form-section .form-div > form .form-row-div > div > .form-input {
+  .form-section .form-div > form .form-row-div > div .form-input,
+  .form-section .form-div > form .form-email-div > div .form-input {
     padding: 1rem 1.5rem;
     width: 100%;
   }
 }
-.form-section .form-div > form > .form-email-div {
+.form-section .form-div > form .form-email-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -648,23 +657,21 @@ body {
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
-  .form-section .form-div > form > .form-email-div {
+  .form-section .form-div > form .form-email-div {
     margin-bottom: 1.75rem;
     width: 100%;
   }
 }
-.form-section .form-div > form > .form-email-div > div {
+.form-section .form-div > form .form-email-div > div {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-.form-section .form-div > form > .form-email-div > div > label {
-  color: rgb(44, 44, 44);
-  font-size: 0.75rem;
+.form-section .form-div > form .form-email-div > div > label {
   word-spacing: 1px;
 }
 @media (min-width: 768px) {
-  .form-section .form-div > form > .form-email-div > div > label {
+  .form-section .form-div > form .form-email-div > div > label {
     font-size: 0.75rem;
   }
 }
@@ -690,6 +697,7 @@ body {
   min-width: 95%;
   min-height: 7rem;
   padding: 1.5rem;
+  margin-top: 0.5rem;
 }
 @media (min-width: 768px) {
   .form-section .form-div > form .additional-info-div textarea {
@@ -719,14 +727,18 @@ body {
     gap: 0.5rem;
   }
 }
+.form-section .form-div > form .form-checkbox-div > div > label {
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
 .form-section .form-div > form .form-checkbox-div > div > .checkbox-label {
   font-size: 1rem;
   margin-left: 0.2rem;
+  margin-bottom: 0;
   color: black;
 }
 @media (min-width: 768px) {
   .form-section .form-div > form .form-checkbox-div > div > .checkbox-label {
-    font-size: 1rem;
     margin: 0;
     font-family: "main-bold", Arial, sans-serif;
   }
@@ -748,37 +760,38 @@ body {
     margin-bottom: 0;
   }
 }
-.form-section .form-div > form > .form-submit-div {
+.form-section .form-div > form .form-submit-div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 1rem 0;
 }
 @media (min-width: 768px) {
-  .form-section .form-div > form > .form-submit-div {
+  .form-section .form-div > form .form-submit-div {
     margin-top: 1rem;
   }
 }
-.form-section .form-div > form > .form-submit-div > button {
+.form-section .form-div > form .form-submit-div > button {
   display: flex;
   align-items: center;
   font-size: 1rem;
+  font-family: Intertight, sans-serif;
   white-space: nowrap;
   background-color: black;
   color: white;
   border-radius: 50px;
   gap: 0.75rem;
-  padding: 0.65rem 1.5rem;
+  padding: 0.9rem 1.5rem;
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  .form-section .form-div > form > .form-submit-div > button {
+  .form-section .form-div > form .form-submit-div > button {
     font-size: 1rem;
     padding: 0.7rem 1.55rem;
     gap: 0.5rem;
   }
 }
-.form-section .form-div > form > .form-submit-div > button .arrow-raise {
+.form-section .form-div > form .form-submit-div > button .arrow-raise {
   width: 100%;
   height: 100%;
   display: block;
