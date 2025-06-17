@@ -154,7 +154,7 @@ p {
 }
 @media (max-width: 480px) {
   .header .logo-div > img {
-    height: 1.5rem;
+    height: 1.45rem;
     width: auto;
   }
 }
@@ -235,7 +235,7 @@ p {
 }
 .header #dropdown-menu-button {
   justify-content: center;
-  align-items: end;
+  align-content: end;
   border: 1px solid black;
   border-radius: 50%;
   aspect-ratio: 1/1;
@@ -698,7 +698,7 @@ body {
 }
 @media (max-width: 768px) {
   body {
-    padding-top: 7.5rem;
+    padding-top: 8rem;
   }
 }
 
@@ -772,24 +772,24 @@ body {
 
 .scroll-bar-section {
   border: none;
-  padding: 3rem 0;
+  padding: 3rem 0 6rem 0;
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
   .scroll-bar-section {
-    padding: 1.5rem 0;
+    padding: 4rem 0;
   }
 }
 
 .problem-section {
   position: relative;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
   z-index: 0;
   overflow-x: hidden;
 }
 @media (min-width: 768px) {
   .problem-section {
-    padding-bottom: 3rem;
+    margin-bottom: 10rem;
   }
 }
 .problem-section .title-div {

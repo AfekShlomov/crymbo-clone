@@ -10,7 +10,7 @@ body {
   padding-top: 9rem;
 
   @media (max-width: 768px) {
-    padding-top: 7.5rem;
+    padding-top: 8rem;
   }
 }
 
@@ -82,22 +82,22 @@ body {
 
 .scroll-bar-section {
   border: none;
-  padding: 3rem 0;
+  padding: 3rem 0 6rem 0;
   margin-bottom: 0;
 
   @media (min-width: 768px) {
-    padding: 1.5rem 0;
+    padding: 4rem 0;
   }
 }
 
 .problem-section {
   position: relative;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
   z-index: 0;
   overflow-x: hidden;
 
   @media (min-width: 768px) {
-    padding-bottom: 3rem;
+    margin-bottom: 10rem;
   }
 
   .title-div {

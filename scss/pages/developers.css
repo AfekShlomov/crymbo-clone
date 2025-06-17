@@ -154,7 +154,7 @@ p {
 }
 @media (max-width: 480px) {
   .header .logo-div > img {
-    height: 1.5rem;
+    height: 1.45rem;
     width: auto;
   }
 }
@@ -235,7 +235,7 @@ p {
 }
 .header #dropdown-menu-button {
   justify-content: center;
-  align-items: end;
+  align-content: end;
   border: 1px solid black;
   border-radius: 50%;
   aspect-ratio: 1/1;
@@ -622,13 +622,12 @@ body {
   padding-left: 1rem;
   border: none;
   border-radius: 50px;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.25rem;
   cursor: pointer;
 }
 @media (min-width: 768px) {
   .title-section > div .button {
     font-size: 1rem;
-    padding: 0.5rem 0.5rem 0.5rem 1.25rem;
     gap: 2rem;
   }
 }
@@ -638,7 +637,11 @@ body {
   justify-content: center;
   text-align: center;
 }
-.title-section > div .button #button-arrow {
+.title-section > div .button #button-div > div {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.title-section > div .button #div-arrow {
   background: white;
   border-radius: 50%;
   width: 2.5rem;
@@ -648,15 +651,15 @@ body {
   justify-content: center;
 }
 @media (min-width: 768px) {
-  .title-section > div .button #button-arrow {
+  .title-section > div .button #div-arrow {
     width: 2.5rem;
     height: 2.5rem;
   }
 }
-.title-section > div .button #button-arrow > img {
+.title-section > div .button #div-arrow img {
   display: block;
-  width: 40%;
-  height: 40%;
+  width: 35%;
+  height: 35%;
   margin: 0 auto;
 }
 .title-section > div > #simple-button {
@@ -746,22 +749,23 @@ body {
     display: none;
   }
 }
-.buttons-section .content-div > .content-div > h2 {
+.buttons-section .content-div h2 {
   font-size: 1.5rem;
+  font-weight: 500;
   margin-bottom: 0.5rem;
   font-weight: 400;
 }
 @media (min-width: 768px) {
-  .buttons-section .content-div > .content-div > h2 {
+  .buttons-section .content-div h2 {
     margin-bottom: 0.25rem;
   }
 }
-.buttons-section .content-div > .content-div > p {
+.buttons-section .content-div p {
   font-size: 1rem;
   line-height: 155%;
 }
 @media (min-width: 768px) {
-  .buttons-section .content-div > .content-div > p {
+  .buttons-section .content-div p {
     font-size: 1.125rem;
   }
 }
@@ -859,8 +863,9 @@ body {
 .dev-ecosystem-section .search-div .buttons-div {
   display: flex;
   flex-direction: column;
+  align-content: center;
   gap: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
   .dev-ecosystem-section .search-div .buttons-div {
@@ -869,6 +874,10 @@ body {
     margin-bottom: 5rem;
     margin-right: 1.5rem;
   }
+}
+.dev-ecosystem-section .search-div .buttons-div .filter-buttons {
+  display: flex;
+  align-items: center;
 }
 .dev-ecosystem-section .search-div .buttons-div .filter-buttons > button {
   font-size: 1rem;
@@ -899,11 +908,11 @@ body {
 .dev-ecosystem-section .search-div #reset-button-div {
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-content: center;
 }
 @media (min-width: 768px) {
   .dev-ecosystem-section .search-div #reset-button-div {
-    margin-left: -0.5rem;
+    margin-left: 0.5rem;
     justify-content: end;
   }
 }
@@ -912,6 +921,7 @@ body {
   border-radius: none;
   white-space: nowrap;
   border: none;
+  font-size: 1rem;
 }
 .dev-ecosystem-section > .content-div {
   display: grid;
@@ -981,7 +991,7 @@ body {
 }
 @media (min-width: 768px) {
   .dev-ecosystem-section > .content-div > .item-div > .item-header-div > .ecosystem-arrow {
-    transform: translateX(0.5rem) translateY(0.75rem);
+    transform: translateX(-0.5rem) translateY(0.75rem);
   }
 }
 .dev-ecosystem-section > .content-div > .item-div > .item-header-div:hover .ecosystem-arrow {
@@ -1065,7 +1075,7 @@ body {
   display: flex;
   justify-content: space-between;
   max-height: 1.5rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 @media (min-width: 768px) {
   .integration-section > .content-div .title-div {
@@ -1088,4 +1098,4 @@ body {
 .integration-section > .content-div > p {
   font-size: 1;
   color: gray;
-}/*# sourceMappingURL=developres.css.map */
+}/*# sourceMappingURL=developers.css.map */
