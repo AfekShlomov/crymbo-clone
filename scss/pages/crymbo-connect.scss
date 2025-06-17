@@ -402,19 +402,18 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  gap: 0.5rem;
   background-color: white;
   border: none;
   border-bottom: 1px solid black;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
-  cursor: pointer;
   width: 100%;
+  cursor: pointer;
 
   @media (min-width: 768px) {
     border-bottom: 1.5px solid black;
     padding-bottom: 0.25rem;
-    gap: 0;
+    gap: 0.5rem;
   }
 
   > #value-button-div div {
@@ -432,7 +431,7 @@ body {
     margin: 0;
     @media (min-width: 768px) {
       align-items: center;
-      width: 1.5rem;
+      width: 0.75rem;
     }
   }
 }
@@ -454,6 +453,7 @@ body {
   > img {
     display: block;
     margin: 0 auto;
+    height: 30%;
   }
 }
 

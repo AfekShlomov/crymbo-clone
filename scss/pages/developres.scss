@@ -255,7 +255,7 @@ body {
     }
   }
 
-  > .search-div {
+  .search-div {
     @media (min-width: 768px) {
       display: flex;
       flex-direction: row-reverse;
@@ -302,7 +302,7 @@ body {
         }
       }
 
-      > .search-icon {
+      .search-icon {
         position: absolute;
         right: 0.775rem;
         width: 1.2rem;
@@ -332,6 +332,24 @@ body {
       }
 
       .filter-buttons > button {
+        font-size: 1rem;
+        font-weight: 400;
+        border: none;
+        border-radius: 40px;
+        background: white;
+        border: 2px solid white;
+        padding: 0.65rem 1rem;
+        margin-right: 0.2rem;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+        transition: border-color 0.4s cubic-bezier(0.4, 2, 0.6, 1);
+
+        @media (min-width: 768px) {
+          font-size: 0.95rem;
+          padding: 0.8rem 1.125rem;
+          margin-right: 0.5rem;
+        }
+
         &:hover {
           border-color: lightgray;
         }
@@ -343,13 +361,13 @@ body {
       }
     }
 
-    > #reset-button-div {
+    #reset-button-div {
       display: flex;
       justify-content: start;
       align-items: center;
-      margin-left: -0.5rem;
-
+      
       @media (min-width: 768px) {
+        margin-left: -0.5rem;
         justify-content: end;
       }
 

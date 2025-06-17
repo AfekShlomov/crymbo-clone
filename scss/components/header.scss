@@ -39,7 +39,7 @@
 
     > img {
       @media (max-width: 480px) {
-        height: 1.5rem;
+        height: 1.45rem;
         width: auto;
       }
     }
@@ -129,7 +129,7 @@
 
   #dropdown-menu-button {
     justify-content: center;
-    align-items: end;
+    align-content: end;
     border: 1px solid black;
     border-radius: 50%;
     aspect-ratio: 1 / 1;

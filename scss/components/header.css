@@ -154,7 +154,7 @@ p {
 }
 @media (max-width: 480px) {
   .header .logo-div > img {
-    height: 1.5rem;
+    height: 1.45rem;
     width: auto;
   }
 }
@@ -235,7 +235,7 @@ p {
 }
 .header #dropdown-menu-button {
   justify-content: center;
-  align-items: end;
+  align-content: end;
   border: 1px solid black;
   border-radius: 50%;
   aspect-ratio: 1/1;

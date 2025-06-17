@@ -50,7 +50,7 @@ buttons.Wallet.addEventListener("click", handleClick);
 buttons.Custody.addEventListener("click", handleClick);
 buttons.Liquidity.addEventListener("click", handleClick);
 
-const items = document.querySelectorAll(".ecosystem-content-div > .item-div");
+const items = document.querySelectorAll(".dev-ecosystem-section .content-div > .item-div");
 
 function filterItems() {
   if (selectedButtons.length === 0 && searchTerm === "") {

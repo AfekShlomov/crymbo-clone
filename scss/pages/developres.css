@@ -790,13 +790,13 @@ body {
   }
 }
 @media (min-width: 768px) {
-  .dev-ecosystem-section > .search-div {
+  .dev-ecosystem-section .search-div {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
 }
-.dev-ecosystem-section > .search-div > .search-bar-div {
+.dev-ecosystem-section .search-div > .search-bar-div {
   position: relative;
   display: flex;
   align-items: center;
@@ -809,13 +809,13 @@ body {
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
-  .dev-ecosystem-section > .search-div > .search-bar-div {
+  .dev-ecosystem-section .search-div > .search-bar-div {
     width: 16rem;
     height: 3rem;
     margin-bottom: 0;
   }
 }
-.dev-ecosystem-section > .search-div > .search-bar-div > input {
+.dev-ecosystem-section .search-div > .search-bar-div > input {
   flex: 1;
   border: none;
   outline: none;
@@ -825,23 +825,23 @@ body {
   padding-right: 2rem;
 }
 @media (min-width: 768px) {
-  .dev-ecosystem-section > .search-div > .search-bar-div > input {
+  .dev-ecosystem-section .search-div > .search-bar-div > input {
     font-size: 1.125em;
     padding-right: 2.5rem;
     margin-left: 0.25rem;
   }
 }
-.dev-ecosystem-section > .search-div > .search-bar-div > input::-moz-placeholder {
+.dev-ecosystem-section .search-div > .search-bar-div > input::-moz-placeholder {
   font-family: "Intertight", sans-serif;
   font-size: 1rem;
   color: gray;
 }
-.dev-ecosystem-section > .search-div > .search-bar-div > input::placeholder {
+.dev-ecosystem-section .search-div > .search-bar-div > input::placeholder {
   font-family: "Intertight", sans-serif;
   font-size: 1rem;
   color: gray;
 }
-.dev-ecosystem-section > .search-div > .search-bar-div > .search-icon {
+.dev-ecosystem-section .search-div > .search-bar-div .search-icon {
   position: absolute;
   right: 0.775rem;
   width: 1.2rem;
@@ -849,45 +849,65 @@ body {
   pointer-events: none;
 }
 @media (min-width: 768px) {
-  .dev-ecosystem-section > .search-div > .search-bar-div > .search-icon {
+  .dev-ecosystem-section .search-div > .search-bar-div .search-icon {
     right: 1rem;
     width: 1.25rem;
     height: 1.25rem;
     right: 1.2rem;
   }
 }
-.dev-ecosystem-section > .search-div .buttons-div {
+.dev-ecosystem-section .search-div .buttons-div {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
-  .dev-ecosystem-section > .search-div .buttons-div {
+  .dev-ecosystem-section .search-div .buttons-div {
     flex-direction: row;
     gap: 0;
     margin-bottom: 5rem;
     margin-right: 1.5rem;
   }
 }
-.dev-ecosystem-section > .search-div .buttons-div .filter-buttons > button:hover {
+.dev-ecosystem-section .search-div .buttons-div .filter-buttons > button {
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 40px;
+  background: white;
+  border: 2px solid white;
+  padding: 0.65rem 1rem;
+  margin-right: 0.2rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: border-color 0.4s cubic-bezier(0.4, 2, 0.6, 1);
+}
+@media (min-width: 768px) {
+  .dev-ecosystem-section .search-div .buttons-div .filter-buttons > button {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.125rem;
+    margin-right: 0.5rem;
+  }
+}
+.dev-ecosystem-section .search-div .buttons-div .filter-buttons > button:hover {
   border-color: lightgray;
 }
-.dev-ecosystem-section > .search-div .buttons-div .filter-buttons > button.active, .dev-ecosystem-section > .search-div .buttons-div .filter-buttons > button.active:hover {
+.dev-ecosystem-section .search-div .buttons-div .filter-buttons > button.active, .dev-ecosystem-section .search-div .buttons-div .filter-buttons > button.active:hover {
   border-color: black;
 }
-.dev-ecosystem-section > .search-div > #reset-button-div {
+.dev-ecosystem-section .search-div #reset-button-div {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-left: -0.5rem;
 }
 @media (min-width: 768px) {
-  .dev-ecosystem-section > .search-div > #reset-button-div {
+  .dev-ecosystem-section .search-div #reset-button-div {
+    margin-left: -0.5rem;
     justify-content: end;
   }
 }
-.dev-ecosystem-section > .search-div > #reset-button-div > button {
+.dev-ecosystem-section .search-div #reset-button-div > button {
   background-color: transparent;
   border-radius: none;
   white-space: nowrap;
