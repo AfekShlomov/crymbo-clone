@@ -1,7 +1,9 @@
-export {};
-
-const menu = document.querySelector(".header-dropdown-navigation") as HTMLDivElement;
-const menuButton = document.querySelector("#dropdown-menu-button") as HTMLButtonElement;
+const menu = document.querySelector(
+  ".header-dropdown-navigation"
+) as HTMLDivElement;
+const menuButton = document.querySelector(
+  "#dropdown-menu-button"
+) as HTMLButtonElement;
 
 menuButton.addEventListener("click", () => {
   menu.classList.toggle("open");
@@ -12,3 +14,4 @@ logoDiv.addEventListener("click", () => {
   window.location.href = "/";
 });
 
+export {};
