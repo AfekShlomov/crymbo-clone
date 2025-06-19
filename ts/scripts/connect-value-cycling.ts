@@ -1,10 +1,4 @@
-type dbItem = {
-  title: string;
-  paragraph: string;
-  img: string;
-  button: string;
-  buttonClass: string;
-};
+import { dbItem } from "../types";
 
 const db: { [key: number]: dbItem } = {
   0: {
