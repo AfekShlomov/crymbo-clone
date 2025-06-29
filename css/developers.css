@@ -69,6 +69,10 @@ body {
   }
 }
 
+.pixel-font {
+  font-family: "PPNeueBit", sans-serif;
+}
+
 .invert-img {
   filter: invert(1);
 }
@@ -510,7 +514,6 @@ body {
   }
 }
 .contact-us-section > div > h2 > span {
-  font-family: "PPNeueBit", sans-serif;
   font-size: 145%;
   letter-spacing: -0.5px;
 }
@@ -716,7 +719,6 @@ body {
   }
 }
 .title-section > h1 > span {
-  font-family: "PPNeuebit", sans-serif;
   font-size: 3.75rem;
 }
 @media (min-width: 768px) {

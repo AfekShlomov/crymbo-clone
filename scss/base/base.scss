@@ -28,8 +28,6 @@
   }
 }
 
-
-
 html {
   font-size: calc(0.625rem + 0.41666666666666663vw);
 
@@ -54,7 +52,7 @@ body {
   max-width: 76rem;
   width: 100%;
   padding: 0 1rem;
-  
+
   @media (min-width: 768px) {
     margin-left: auto;
     margin-right: auto;
@@ -63,6 +61,10 @@ body {
   @media (min-width: 1216px) {
     padding: 0;
   }
+}
+
+.pixel-font {
+  font-family: "PPNeueBit", sans-serif;
 }
 
 .invert-img {

@@ -69,6 +69,10 @@ body {
   }
 }
 
+.pixel-font {
+  font-family: "PPNeueBit", sans-serif;
+}
+
 .invert-img {
   filter: invert(1);
 }
@@ -510,7 +514,6 @@ body {
   }
 }
 .contact-us-section > div > h2 > span {
-  font-family: "PPNeueBit", sans-serif;
   font-size: 145%;
   letter-spacing: -0.5px;
 }
@@ -734,8 +737,7 @@ body {
   }
 }
 .hero-section > div h1 > span {
-  font-size: 139.2%;
-  font-family: "PPNeueBit", sans-serif;
+  font-size: 139%;
 }
 @media (min-width: 768px) {
   .hero-section > div h1 > span {
@@ -799,7 +801,6 @@ body {
 }
 .problem-section .title-div > h2 > span {
   font-size: 2.25rem;
-  font-family: "PPNeueBit", sans-serif;
   font-weight: 400;
   z-index: 1;
 }

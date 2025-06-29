@@ -69,6 +69,10 @@ body {
   }
 }
 
+.pixel-font {
+  font-family: "PPNeueBit", sans-serif;
+}
+
 .invert-img {
   filter: invert(1);
 }
@@ -510,7 +514,6 @@ body {
   }
 }
 .contact-us-section > div > h2 > span {
-  font-family: "PPNeueBit", sans-serif;
   font-size: 145%;
   letter-spacing: -0.5px;
 }
@@ -808,13 +811,12 @@ body {
   }
 }
 .summup-section > div h2 > span > span {
-  font-family: "PPNeueBit", sans-serif;
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   font-weight: 400;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .summup-section > div h2 > span > span {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
   }
 }
 
