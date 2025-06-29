@@ -1,0 +1,38 @@
+@mixin arrowRaiseOnHover() {
+  .arrow-raise {
+    animation: raiseUp 0.3 forwards;
+  }
+
+  .arrow-raise {
+    animation: raiseUp 0.3 forwards;
+  }
+
+  &:hover .arrow-raise {
+    animation-play-state: running;
+    animation-direction: normal;
+  }
+
+  &:hover .arrow-raise {
+    animation-play-state: running;
+    animation-direction: reverse;
+  }
+}
+
+@keyframes raiseUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  41% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

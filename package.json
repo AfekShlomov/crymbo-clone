@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:scss": "node js/scripts/build-scss.js"
   },
   "devDependencies": {
+    "sass": "^1.89.2",
+    "sass-embedded": "^1.89.2",
     "vite": "^6.2.0"
   }
 }

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crymbo.com Clone</title>
+    <link rel="stylesheet" href="css/crymbo-connect.css" />
+
+    <script src="js/scripts/connect-value-cycling.js" defer></script>
+    <script src="js/scripts/connect-quotes-cycle.js" defer></script>
+    <script src="js/scripts/navigation-dropdown.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="max-width-container">
+        <div class="logo-div">
+          <img src="/media/svg/logo.svg" alt="logo" href="/index.html" />
+        </div>
+        <div class="header-navigation">
+          <nav>
+            <a id="highligthed" href="/">Crymbo Oracle</a>
+            <a href="/crymbo-connect">Crymbo Connect</a>
+            <a href="#">Documentation</a>
+            <a href="/developers">Ecosystem</a>
+            <a href="#">Pricing</a>
+            <a href="#">Blog</a>
+          </nav>
+        </div>
+        <div>
+          <div id="header-buttons-div">
+            <a id="header-req-button" href="/request-demo"
+              >Request demo
+              <div class="arrow-raise-container">
+                <img
+                  src="/media/svg/button-arrow.svg"
+                  class="arrow-raise invert-img"
+                /></div
+            ></a>
+            <button id="dropdown-menu-button">
+              <img
+                id="dropdown-menu-img"
+                type="button"
+                src="/media/svg/hamburger-menu.svg"
+                alt="menu"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="header-dropdown-navigation">
+      <nav>
+        <a href="/">Crymbo Oracle</a>
+        <a href="/crymbo-connect">Crymbo Connect</a>
+        <a href="#">Documentation</a>
+        <a href="/developers">Ecosystem</a>
+        <a href="#">Pricing</a>
+        <a href="#">Blog</a>
+        <div>
+          <a id="header-req-button" href="/request-demo"
+            >Request demo
+            <div class="arrow-raise-container">
+              <img
+                src="/media/svg/button-arrow.svg"
+                class="arrow-raise invert-img"
+              /></div
+          ></a>
+        </div>
+      </nav>
+    </div>
+
+    <section class="max-width-container hero-section">
+      <img src="/media/crymbo-connect-hero.webp" />
+      <div>
+        <h1>Add <span>Digital Assets</span> services to your Fintech, fast.</h1>
+        <p>
+          Securely launch crypto payments, trading, compliance or portfolio
+          management products into your fintech/VC/payments business with just a
+          single API.
+        </p>
+      </div>
+    </section>
+
+    <section class="scroll-bar-section">
+      <div class="scroll-bar-slider">
+        <div class="scroll-bar-track">
+          <img src="/media/svg/logo1.svg" />
+          <img src="/media/svg/logo2.svg" />
+          <img src="/media/svg/logo3.svg" />
+          <img src="/media/svg/logo4.svg" />
+          <img src="/media/svg/logo5.svg" />
+          <img src="/media/svg/logo6.svg" />
+          <img src="/media/svg/logo7.svg" />
+          <img src="/media/svg/logo8.svg" />
+          <img src="/media/svg/logo9.svg" />
+          <img src="/media/svg/logo10.svg" />
+          <img src="/media/svg/logo11.svg" />
+          <img src="/media/svg/logo12.svg" />
+          <img src="/media/svg/logo1.svg" />
+          <img src="/media/svg/logo2.svg" />
+          <img src="/media/svg/logo3.svg" />
+          <img src="/media/svg/logo4.svg" />
+          <img src="/media/svg/logo5.svg" />
+          <img src="/media/svg/logo6.svg" />
+          <img src="/media/svg/logo7.svg" />
+          <img src="/media/svg/logo8.svg" />
+          <img src="/media/svg/logo9.svg" />
+          <img src="/media/svg/logo10.svg" />
+          <img src="/media/svg/logo11.svg" />
+          <img src="/media/svg/logo12.svg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="max-width-container use-cases-section">
+      <h2>Use Cases</h2>
+      <div class="content-div">
+        <div>
+          <h3>Crymbo Pay - Payments</h3>
+          <p>
+            Crymbo Pay integrates TradFi, CeFi, and DeFi into a single API,
+            simplifying payment processes and expanding settlement options with
+            digital assets. Offering fast execution, robust security, and full
+            compliance with KYT and KYC requirements, Crymbo enables businesses
+            to scale efficiently.
+          </p>
+        </div>
+        <img
+          src="/media/svg/next-gen-travel-rule.svg"
+          alt="next gen travel rule"
+        />
+      </div>
+      <div class="content-div" id="flip">
+        <div>
+          <h3>Crymbo Broker - Trading</h3>
+          <p>
+            Crymbo simplifies access to crypto markets through seamless
+            integration with OTC platforms and white-label trading solutions.
+            Featuring advanced orchestration and full compliance, it delivers
+            flexibility, security, and a tailored experience for financial
+            platforms.
+          </p>
+        </div>
+        <img src="/media/compliant-defi.png" />
+      </div>
+      <div class="content-div">
+        <div>
+          <h3>Crymbo Portfolio - Illiquid token management</h3>
+          <p class="short-width-para">
+            Seamlessly manage your liquid and illiquid assets with built-in risk
+            management and advanced orchestration. Consolidate everything in one
+            platform, designed to simplify trading and streamline your portfolio
+            management.
+          </p>
+        </div>
+        <img
+          src="/media/svg/explore-auditable-data.svg"
+          alt="explore auditable data"
+        />
+      </div>
+    </section>
+
+    <section class="problem-section">
+      <img src="/media/white-block-backgroud.webp" class="background" />
+      <div class="max-width-container title-div">
+        <p>THE PROBLEM</p>
+        <h2>Crypto infrastructure is <span>fragmented</span></h2>
+        <p id="description">
+          making it hard to talk to each other leaving you open to risk
+          breaches, siloed data and manual processes held together by humans.
+        </p>
+      </div>
+      <div class="max-width-container content-divs">
+        <div>
+          <img src="/media/svg/connect-problem-1.svg" />
+          <p>
+            You can't build a compliant, scalable, digital assets business for
+            onchain and fiat assets on fragmented infrastructure.
+          </p>
+        </div>
+        <div>
+          <img src="/media/svg/connect-problem-2.svg" />
+          <p>
+            Combining CeFi, DeFi with our TradFi businesses require manual
+            integrations, spreadsheets and teams of people to stitch data
+            together.
+          </p>
+        </div>
+        <div>
+          <img src="/media/svg/connect-problem-3.svg" />
+          <p>
+            Crypto market structure is constantly shifting. Pivoting & scaling
+            crypto infrastructure can be slow, expensive and risky.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-width-container value-section">
+      <div class="title-div">
+        <div>VALUE</div>
+      </div>
+      <div class="img-div">
+        <img src="/media/connect-value-1.png" />
+      </div>
+      <div class="buttons-div">
+        <h3>Eliminiate Integrations</h3>
+        <h3>Become captial efficient</h3>
+        <h3>End manual work</h3>
+      </div>
+      <div class="para-div">
+        <p>
+          See the end of bilateral infrastructure integrations with Crymbo's
+          unified API. Integrate once to build your complete digital assets
+          stack across pre-trade, trade and post trade functions.
+        </p>
+      </div>
+      <div>
+        <button class="value-button">
+          <div id="value-button-div">
+            <div>Request Demo</div>
+          </div>
+          <div class="arrow-raise-container" id="value-arrow">
+            <img src="/media/svg/button-arrow.svg" class="arrow-raise" />
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <section class="full-value-section max-width-container">
+      <div class="img-div">
+        <img src="/media/connect-value-1.png" />
+      </div>
+      <div class="content-div">
+        <div class="title-div">
+          <div></div>
+          <div class="title">
+            <div>VALUE</div>
+          </div>
+          <div class="buttons-div">
+            <h3 class="active">Eliminiate Integrations</h3>
+            <h3>Become captial efficient</h3>
+            <h3>End manual work</h3>
+          </div>
+        </div>
+        <div class="para-div">
+          <p>
+            See the end of bilateral infrastructure integrations with Crymbo's
+            unified API. Integrate once to build your complete digital assets
+            stack across pre-trade, trade and post trade functions.
+          </p>
+        </div>
+        <div>
+          <button class="value-button">
+            <div id="value-button-div">
+              <div>Request Demo</div>
+            </div>
+            <div class="arrow-raise-container" id="value-arrow">
+              <img src="/media/svg/button-arrow.svg" class="arrow-raise" />
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="quotes-section">
+      <div class="quote-div first">
+        <div>
+          <img src="/media/connect-quotes.png" id="first-quote-img" />
+        </div>
+        <div>
+          <h3>
+            We choose Crymbo as a solution to address our need to scale and
+            optimize Horizon’s crypto trading services from both aspects,
+            technology and operationally, plus having the ability to use and
+            interconnect with multiple vendors and solutions seamlessly.
+          </h3>
+        </div>
+        <div class="second-img-div">
+          <img src="/media/connect-quotes.png" id="second-quote-img" />
+        </div>
+        <div class="quoter-div">
+          <p>Ilan Sterk</p>
+          <p id="job-para">CEO</p>
+          <p id="company-para">Horizon Altshuler-Shaham</p>
+        </div>
+      </div>
+
+      <div class="quote-div second">
+        <div>
+          <img src="/media/connect-quotes.png" id="first-quote-img" />
+        </div>
+        <div>
+          <h3>
+            Banks and financial institutions are looking for more solutions like
+            Crymbo to enable them to simplify access to adopt new financial
+            technologies, mainly in the Web 3.0 markets
+          </h3>
+        </div>
+        <div class="second-img-div">
+          <img src="/media/connect-quotes.png" id="second-quote-img" />
+        </div>
+        <div class="quoter-div">
+          <p>Otni Oron</p>
+          <p id="job-para">Innovation Lab Strategic Lead</p>
+          <p>Bank Hapoalim</p>
+        </div>
+      </div>
+
+      <div class="quote-div third">
+        <div>
+          <img src="/media/connect-quotes.png" id="first-quote-img" />
+        </div>
+        <div>
+          <h3>
+            Businesses like Crymbo take crypto asset management to the next
+            level, making the complex task of handling digital asset operations
+            more accessible and user-friendly.
+          </h3>
+        </div>
+        <div class="second-img-div">
+          <img src="/media/connect-quotes.png" id="second-quote-img" />
+        </div>
+        <div class="quoter-div">
+          <p>Evald-Hannes Kree</p>
+          <p id="job-para">CEO and Founder</p>
+          <p>Swapin</p>
+        </div>
+      </div>
+
+      <div class="buttons-div">
+        <button class="first-button">
+          <img class="arrow-img rotate" src="/media/svg/connect-arrow.svg" />
+        </button>
+        <button class="second-button">
+          <img class="arrow-img" src="/media/svg/connect-arrow.svg" />
+        </button>
+      </div>
+    </section>
+
+    <section class="max-width-container itr-section">
+      <div class="itr-div big-div" id="div-yellow">
+        <div class="arrow-raise-container">
+          <img src="/media/svg/button-arrow.svg" class="arrow-raise" />
+        </div>
+        <h2>Navigating the Crypto Landscape: Read Crymbo's Latest Insights</h2>
+        <p>News & Insights</p>
+      </div>
+      <div class="small-divs">
+        <div class="itr-div" id="small-div">
+          <div class="arrow-raise-container">
+            <img src="/media/svg/button-arrow.svg" class="arrow-raise" />
+          </div>
+          <h2>Meet our team</h2>
+          <p>Team</p>
+        </div>
+        <div class="itr-div" id="small-div">
+          <div class="arrow-raise-container">
+            <img src="/media/svg/button-arrow.svg" class="arrow-raise" />
+          </div>
+          <h2>See open roles</h2>
+          <p>Careers</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us-section">
+      <div class="max-width-container contact-us-div">
+        <p>CONTACT US NOW</p>
+        <h2>Ready to optimize your <span>digital asset compliance?</span></h2>
+        <button>
+          <div id="uni-button-div">
+            <div>Request Demo</div>
+          </div>
+          <div class="arrow-raise-container" id="uni-layer-arrow">
+            <img src="/media/svg/button-arrow.svg" class="arrow-raise" />
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="max-width-container footer-div">
+        <div class="footer-adress wide-col">
+          <h4>COMPANY</h4>
+          <p>
+            3rd Floor 86-90 <br />
+            Paul Street,
+          </p>
+          <p>London, England,</p>
+          <p>EC2A 4NE</p>
+          <p>-</p>
+          <p>info@crymbo.com</p>
+          <p>-</p>
+          <p>X (Twitter)</p>
+          <p>LinkedIn</p>
+        </div>
+        <div class="short-col footer-linkable">
+          <h4>PRODUCTS</h4>
+          <p>Crymbo Oracle</p>
+          <p>Crymbo Connect</p>
+        </div>
+        <div class="short-col footer-linkable">
+          <h4>USE CASES</h4>
+          <p>Launch crypto products, fast</p>
+          <p>Scale operations & tech with ease</p>
+          <p>Control multiple wallets & custodians</p>
+          <p>Improve Capital Efficiency</p>
+          <p>Intelligent Risk Managament</p>
+          <p>Know your data</p>
+        </div>
+        <div class="short-col footer-linkable">
+          <h4>DEVELOPER</h4>
+          <p>Docs</p>
+          <p>API Reference</p>
+          <p id="margin-para">Join Crymbo Marketplace</p>
+          <h4>COMPANY</h4>
+          <p>Privacy Policy</p>
+          <p>© 2024 Crymbo Ltd.</p>
+        </div>
+      </div>
+      <img src="/media/svg/crymbo-footer-logo.svg" />
+    </footer>
+  </body>
+</html>

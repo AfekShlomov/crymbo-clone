@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "Intertight";
+  src: url("/media/fonts/InterTight-Regular.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Intertight";
+  src: url("/media/fonts/InterTight-Medium.woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "PPNeueBit";
+  src: url("/media/fonts/PPNeueBit-Bold.woff2");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --headerHeight: 3.5rem;
+}
+@media (min-width: 768px) {
+  :root {
+    --headerHeight: 5.125rem;
+  }
+}
+
+html {
+  font-size: calc(0.625rem + 0.4166666667vw);
+}
+@media (max-width: 1920px) {
+  html {
+    font-size: calc(0.625rem + 0.4166666667vw);
+  }
+}
+@media (max-width: 1440px) {
+  html {
+    font-size: calc(0.625rem + 0.4166666667vw);
+  }
+}
+@media (max-width: 479px) {
+  html {
+    font-size: calc(0.7494769874rem + 0.8368200837vw);
+  }
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Intertight", sans-serif;
+  font-weight: 400;
+}
+
+.max-width-container {
+  max-width: 76rem;
+  padding: 0 1rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .max-width-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1216px) {
+  .max-width-container {
+    width: 100%;
+    padding: 0;
+  }
+  .max-width-container .header > div {
+    padding: 0;
+  }
+}
+
+.invert-img {
+  filter: invert(1);
+}
+
+@keyframes raiseUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  41% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.contact-us-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem 5rem 1rem;
+  background-color: rgb(1, 226, 85);
+  border-radius: 15px;
+}
+@media (min-width: 768px) {
+  .contact-us-section {
+    margin: 0 1.5rem 8rem 1.5rem;
+  }
+}
+.contact-us-section > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3.5rem auto;
+}
+@media (min-width: 768px) {
+  .contact-us-section > div {
+    display: inline-block;
+    margin: 7rem 0;
+  }
+}
+.contact-us-section > div > h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: black;
+}
+@media (min-width: 768px) {
+  .contact-us-section > div > h2 {
+    font-size: 3rem;
+    line-height: 115%;
+    text-align: left;
+    max-width: 50%;
+    margin-bottom: 1.125rem;
+  }
+}
+.contact-us-section > div > h2 > span {
+  font-family: "PPNeueBit", sans-serif;
+  font-size: 145%;
+  letter-spacing: -0.5px;
+}
+@media (min-width: 768px) {
+  .contact-us-section > div > h2 > span {
+    font-size: 155%;
+  }
+}
+.contact-us-section > div > p {
+  display: inline-block;
+  font-size: 0.75em;
+  font-family: Intertight, sans-serif;
+  font-weight: 300;
+  border: 1px solid black;
+  border-radius: 100px;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.8rem;
+}
+@media (min-width: 768px) {
+  .contact-us-section > div > p {
+    font-size: 0.75rem;
+    padding: 0.45rem 0.75rem;
+  }
+}
+.contact-us-section > div > button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  background-color: black;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 0.55rem 0.5rem 0.55rem 1.2rem;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .contact-us-section > div > button {
+    font-size: 1rem;
+    gap: 1.75rem;
+  }
+}
+.contact-us-section > div > button .arrow-raise-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border-radius: 50%;
+  padding: 0.25rem;
+  overflow: hidden;
+}
+.contact-us-section > div > button .arrow-raise-container img {
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: 0 auto;
+}
