@@ -50,8 +50,8 @@ body {
 
 .max-width-container {
   max-width: 76rem;
-  padding: 0 1rem;
   width: 100%;
+  padding: 0 1rem;
 
   @media (min-width: 768px) {
     margin-left: auto;
@@ -59,12 +59,7 @@ body {
   }
 
   @media (min-width: 1216px) {
-    width: 100%;
     padding: 0;
-
-    .header > div {
-      padding: 0;
-    }
   }
 }
 

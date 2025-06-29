@@ -54,21 +54,22 @@ body {
 
 .max-width-container {
   max-width: 76rem;
-  width: 100%;
   padding: 0 1rem;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .max-width-container {
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
   }
 }
 @media (min-width: 1216px) {
   .max-width-container {
-    padding: 0;
+    width: 76rem;
   }
 }
 
 .invert-img {
   filter: invert(1);
-}
+}/*# sourceMappingURL=base.css.map */
