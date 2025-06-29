@@ -29,10 +29,6 @@
 }
 
 html {
-  font-size: 16px;
-}
-
-html {
   font-size: calc(0.625rem + 0.41666666666666663vw);
 
   @media (max-width: 1920px) {
@@ -48,41 +44,27 @@ html {
 
 body {
   overflow-x: hidden;
+  font-family: "Intertight", sans-serif;
   font-weight: 400;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Intertight", sans-serif;
-}
-
-p {
-  font-family: "Intertight", sans-serif;
-}
-
 .max-width-container {
-  @media (max-width: 1024px) {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 1rem;
-
-    .header > div {
-      padding: 0;
-    }
-  }
+  max-width: 76rem;
+  padding: 0 1rem;
+  width: 100%;
 
   @media (min-width: 768px) {
-    width: 100%;
-    max-width: 76rem;
     margin-left: auto;
     margin-right: auto;
   }
 
-  @media (max-width: 76rem) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  @media (min-width: 1216px) {
+    width: 100%;
+    padding: 0;
+
+    .header > div {
+      padding: 0;
+    }
   }
 }
 

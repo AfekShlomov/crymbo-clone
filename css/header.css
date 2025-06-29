@@ -28,10 +28,6 @@
 }
 
 html {
-  font-size: 16px;
-}
-
-html {
   font-size: calc(0.625rem + 0.4166666667vw);
 }
 @media (max-width: 1920px) {
@@ -52,42 +48,28 @@ html {
 
 body {
   overflow-x: hidden;
+  font-family: "Intertight", sans-serif;
   font-weight: 400;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Intertight", sans-serif;
-}
-
-p {
-  font-family: "Intertight", sans-serif;
-}
-
-@media (max-width: 1024px) {
-  .max-width-container {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 1rem;
-  }
-  .max-width-container .header > div {
-    padding: 0;
-  }
+.max-width-container {
+  max-width: 76rem;
+  padding: 0 1rem;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .max-width-container {
-    width: 100%;
-    max-width: 76rem;
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media (max-width: 76rem) {
+@media (min-width: 1216px) {
   .max-width-container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    width: 100%;
+    padding: 0;
+  }
+  .max-width-container .header > div {
+    padding: 0;
   }
 }
 
@@ -327,4 +309,4 @@ p {
   opacity: 1;
   transform: translate(-50%, 0);
   pointer-events: auto;
-}/*# sourceMappingURL=header.css.map */
+}
