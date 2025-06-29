@@ -78,11 +78,11 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
-  40% {
+  50% {
     transform: translateY(-100%);
     opacity: 0;
   }
-  41% {
+  51% {
     transform: translateY(100%);
     opacity: 0;
   }

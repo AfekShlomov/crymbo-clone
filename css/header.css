@@ -78,11 +78,11 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
-  40% {
+  50% {
     transform: translateY(-100%);
     opacity: 0;
   }
-  41% {
+  51% {
     transform: translateY(100%);
     opacity: 0;
   }
@@ -112,17 +112,17 @@ body {
   justify-content: space-between;
   align-content: center;
   height: auto;
-  min-height: 3rem;
+  min-height: 0;
   margin: 0 auto;
 }
-@media (max-width: 480px) {
-  .header > div {
-    min-height: 0;
-  }
-}
-@media (max-width: 1216px) {
+@media (min-width: 768px) {
   .header > div {
     padding: 0;
+  }
+}
+@media (min-width: 480px) {
+  .header > div {
+    min-height: 3rem;
   }
 }
 .header .logo-div {
@@ -132,7 +132,7 @@ body {
 }
 @media (max-width: 480px) {
   .header .logo-div > img {
-    height: 1.45rem;
+    height: 1.75rem;
     width: auto;
   }
 }
@@ -174,24 +174,33 @@ body {
   height: 1.5rem;
 }
 .header #header-req-button {
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: "InterTight", sans-serif;
-  line-height: 150%;
-  text-decoration: none;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 50px;
-  gap: 0.625rem;
-  padding: 0.8rem 1.5rem;
-  cursor: pointer;
+  display: none;
 }
-@media (max-width: 480px) {
+.header #header-req-button .arrow-raise {
+  animation: none;
+}
+.header #header-req-button:hover .arrow-raise {
+  animation: raiseUp 0.3s forwards normal;
+}
+.header #header-req-button:not(:hover) .arrow-raise {
+  animation: raiseUp 0.3s backwards reverse;
+}
+@media (min-width: 480px) {
   .header #header-req-button {
-    display: none;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "InterTight", sans-serif;
+    line-height: 150%;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    gap: 0.625rem;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
   }
 }
 .header #header-req-button .arrow-raise-container {
@@ -281,24 +290,24 @@ body {
   font-weight: 500;
 }
 .header-dropdown-navigation #header-req-button {
-  display: flex;
-  align-items: center;
-  gap: 0.625rem;
-  font-size: 1rem;
-  font-weight: 300;
-  font-family: "InterTight", sans-serif;
-  line-height: 150%;
-  text-decoration: none;
-  color: white;
-  background-color: black;
-  border: none;
-  border-radius: 50px;
-  padding: 0.8rem 1.5rem;
-  cursor: pointer;
+  display: none;
 }
-@media (min-width: 480px) {
+@media (max-width: 480px) {
   .header-dropdown-navigation #header-req-button {
-    display: none;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: "InterTight", sans-serif;
+    line-height: 150%;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
   }
 }
 .header-dropdown-navigation.open {

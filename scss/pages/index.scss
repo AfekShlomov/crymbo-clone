@@ -1,9 +1,4 @@
-@use "../base/base.scss";
-@use "../components/header.scss";
-@use "../components/footer.scss";
-@use "../components/scroll-bar.scss";
-@use "../components/contact-us.scss";
-@use "../components/use-cases.scss";
+@use "../base/loader.scss";
 @use "../animations/arrow-raise.scss" as arrowRaise;
 
 .hero-section {
@@ -101,10 +96,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 13rem 0 14rem 0;
-
-  @media (max-width: 768px) {
-    margin: 8rem 0 5.5rem 0;
+  margin: 8rem 0 5.5rem 0;
+  
+  @media (min-width: 768px) {
+    margin: 13rem 0 14rem 0;
   }
 
   > div {
@@ -121,12 +116,12 @@
 
     h2 {
       color: black;
-      font-size: 4rem;
+      font-size: 3rem;
       font-weight: 500;
       line-height: 118%;
-
-      @media (max-width: 768px) {
-        font-size: 3rem;
+      
+      @media (min-width: 768px) {
+        font-size: 4rem;
       }
 
       > span > span {
@@ -265,7 +260,6 @@
     justify-content: center;
 
     button {
-      
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -287,6 +281,8 @@
       }
 
       #uni-layer-arrow {
+        @include arrowRaise.arrowRaiseOnHover();
+
         background: white;
         border-radius: 50%;
         width: 2.5rem;
@@ -330,10 +326,6 @@
   align-items: center;
   padding-bottom: 8rem;
 
-  @media (max-width: 767px) {
-    padding-bottom: 8rem;
-  }
-
   .title-div {
     justify-items: center;
     text-align: center;
@@ -371,9 +363,10 @@
       justify-content: center;
       flex-direction: column;
       text-align: center;
+      width: 80%;
 
-      @media (max-width: 767px) {
-        width: 80%;
+      @media (min-width: 768px) {
+        width: 100%;
       }
 
       p {

@@ -1,8 +1,5 @@
-@use "../base/base.scss";
-@use "../components/header.scss";
-@use "../components/footer.scss";
-@use "../components/contact-us.scss";
-@use "../animations/arrow-raise.scss";
+@use "../base/loader.scss";
+@use "../animations/arrow-raise.scss" as arrowRaise;
 
 body {
   padding-top: 5.5rem;
@@ -399,7 +396,7 @@ body {
     gap: 1rem;
     width: 100%;
 
-    @media (max-width: 1023px) and (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 1023px) {
       grid-template-columns: repeat(2, 1fr);
     }
 

@@ -1,20 +1,14 @@
 @mixin arrowRaiseOnHover() {
   .arrow-raise {
-    animation: raiseUp 0.3 forwards;
-  }
-
-  .arrow-raise {
-    animation: raiseUp 0.3 forwards;
+    animation: none;
   }
 
   &:hover .arrow-raise {
-    animation-play-state: running;
-    animation-direction: normal;
+    animation: raiseUp 0.3s forwards normal;
   }
 
-  &:hover .arrow-raise {
-    animation-play-state: running;
-    animation-direction: reverse;
+  &:not(:hover) .arrow-raise {
+    animation: raiseUp 0.3s backwards reverse;
   }
 }
 
@@ -23,11 +17,11 @@
     transform: translateY(0);
     opacity: 1;
   }
-  40% {
+  50% {
     transform: translateY(-100%);
     opacity: 0;
   }
-  41% {
+  51% {
     transform: translateY(100%);
     opacity: 0;
   }

@@ -1,16 +1,11 @@
-@use "../base/base.scss";
-@use "../components/header.scss";
-@use "../components/footer.scss";
-@use "../components/scroll-bar.scss";
-@use "../components/contact-us.scss";
-@use "../components/use-cases.scss";
+@use "../base/loader.scss";
 @use "../animations/arrow-raise.scss" as arrowRaise;
 
 body {
-  padding-top: 9rem;
+  padding-top: 8rem;
 
-  @media (max-width: 768px) {
-    padding-top: 8rem;
+  @media (min-width: 768px) {
+    padding-top: 9rem;
   }
 }
 
@@ -390,7 +385,7 @@ body {
     height: 6%;
     width: 6%;
 
-    @media (mkin-width: 768px) {
+    @media (min-width: 768px) {
       height: 8%;
       width: 8%;
     }
