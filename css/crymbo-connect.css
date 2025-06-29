@@ -736,11 +736,11 @@ body {
     margin-bottom: 1rem;
   }
 }
-.hero-section > div h1 > span {
+.hero-section > div h1 span {
   font-size: 139%;
 }
 @media (min-width: 768px) {
-  .hero-section > div h1 > span {
+  .hero-section > div h1 span {
     font-size: 150%;
   }
 }
@@ -788,24 +788,24 @@ body {
     margin-bottom: 8rem;
   }
 }
-.problem-section .title-div > h2 {
+.problem-section .title-div h2 {
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 1.25rem;
   z-index: 1;
 }
 @media (min-width: 768px) {
-  .problem-section .title-div > h2 {
+  .problem-section .title-div h2 {
     font-size: 2rem;
   }
 }
-.problem-section .title-div > h2 > span {
+.problem-section .title-div h2 > span {
   font-size: 2.25rem;
   font-weight: 400;
   z-index: 1;
 }
 @media (min-width: 768px) {
-  .problem-section .title-div > h2 > span {
+  .problem-section .title-div h2 > span {
     font-size: 3rem;
   }
 }
@@ -911,10 +911,10 @@ body {
     display: none;
   }
 }
-.value-section > .title-div {
+.value-section .title-div {
   margin-bottom: 1rem;
 }
-.value-section > .title-div > div {
+.value-section .title-div > div {
   display: inline;
   font-size: 0.75rem;
   font-family: "Intertight", sans-serif;
@@ -930,28 +930,28 @@ body {
 .value-section .img-div img {
   width: 100%;
 }
-.value-section > .buttons-div {
+.value-section .buttons-div {
   display: flex;
   flex-direction: column;
   gap: 0.95rem;
   margin-bottom: 2.35rem;
 }
-.value-section > .buttons-div > h3 {
+.value-section .buttons-div h3 {
   font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer;
   color: lightgray;
 }
-.value-section > .buttons-div > h3.active {
+.value-section .buttons-div h3.active {
   color: black;
 }
-.value-section > .buttons-div.active {
+.value-section .buttons-div.active {
   color: black;
 }
-.value-section > .para-div {
+.value-section .para-div {
   margin-bottom: 2.125rem;
 }
-.value-section > .para-div > p {
+.value-section .para-div > p {
   font-size: 1rem;
   line-height: 155%;
   word-spacing: 0.5px;
@@ -974,20 +974,20 @@ body {
 .full-value-section img {
   width: 100%;
 }
-.full-value-section > .content-div {
+.full-value-section .content-div {
   display: flex;
   align-items: center;
   flex-direction: column;
   align-items: start;
   padding-left: 6.5rem;
 }
-.full-value-section > .content-div > .title-div {
+.full-value-section .content-div .title-div {
   display: flex;
   flex-direction: column;
   gap: 2.75rem;
   margin-bottom: 14rem;
 }
-.full-value-section > .content-div > .title-div > .title > div {
+.full-value-section .content-div .title-div .title > div {
   display: inline;
   font-size: 0.75rem;
   font-family: "Intertight";
@@ -996,21 +996,21 @@ body {
   border-radius: 50px;
   padding: 0.45rem 0.825rem;
 }
-.full-value-section > .content-div > .title-div > .buttons-div > h3 {
+.full-value-section .content-div .title-div .buttons-div > h3 {
   font-size: 2rem;
   font-weight: 500;
   color: lightgray;
   padding-bottom: 1rem;
   cursor: pointer;
 }
-.full-value-section > .content-div > .title-div > .buttons-div > h3.active {
+.full-value-section .content-div .title-div .buttons-div > h3.active {
   color: black;
 }
-.full-value-section > .content-div > .para-div {
+.full-value-section .content-div .para-div {
   margin-bottom: 3rem;
   width: 80%;
 }
-.full-value-section > .content-div > .para-div > p {
+.full-value-section .content-div .para-div p {
   font-size: 1.125rem;
   line-height: 155%;
 }
@@ -1221,7 +1221,7 @@ body {
     font-size: 1rem;
   }
 }
-.quotes-section > .buttons-div {
+.quotes-section .buttons-div {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -1230,13 +1230,13 @@ body {
   right: 20%;
 }
 @media (min-width: 768px) {
-  .quotes-section > .buttons-div {
+  .quotes-section .buttons-div {
     gap: 0.75rem;
     right: 30%;
     transform: translateX(200%);
   }
 }
-.quotes-section > .buttons-div > button {
+.quotes-section .buttons-div > button {
   align-items: center;
   justify-items: center;
   border-radius: 100px;
@@ -1245,14 +1245,14 @@ body {
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  .quotes-section > .buttons-div > button {
+  .quotes-section .buttons-div > button {
     padding: 0.5rem 0.7rem;
   }
 }
-.quotes-section > .buttons-div > button > .arrow-img {
+.quotes-section .buttons-div > button > .arrow-img {
   height: 1.5rem;
 }
-.quotes-section > .buttons-div > button > .rotate {
+.quotes-section .buttons-div > button > .rotate {
   transform: rotate(180deg);
 }
 
@@ -1279,26 +1279,18 @@ body {
     padding: 2rem 0 3rem 0;
   }
 }
-.itr-section .itr-div > h2 {
+.itr-section .itr-div h2 {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 1.55rem;
   margin-top: 1rem;
 }
 @media (min-width: 768px) {
-  .itr-section .itr-div > h2 {
+  .itr-section .itr-div h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
     margin-top: 1rem;
   }
-}
-.itr-section .itr-div:hover .arrow-raise {
-  animation-play-state: running;
-  animation-direction: normal;
-}
-.itr-section .itr-div:hover .arrow-raise {
-  animation-play-state: running;
-  animation-direction: reverse;
 }
 .itr-section .big-div {
   border-top: 1px lightgray solid;

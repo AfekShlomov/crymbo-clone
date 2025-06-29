@@ -23,7 +23,7 @@ body {
     margin-bottom: 6.5rem;
   }
 
-  > h1 {
+  h1 {
     font-size: 2.5rem;
     font-weight: 500;
     line-height: 116%;
@@ -122,7 +122,7 @@ body {
       }
     }
 
-    > #simple-button {
+    #simple-button {
       width: 100%;
       font-size: 1rem;
       font-weight: 400;
@@ -279,7 +279,7 @@ body {
         margin-bottom: 0;
       }
 
-      > input {
+      input {
         flex: 1;
         border: none;
         outline: none;
@@ -419,7 +419,7 @@ body {
         height: 100%;
       }
 
-      > .item-header-div {
+      .item-header-div {
         display: flex;
         flex-direction: row;
         align-items: space-between;
@@ -440,14 +440,14 @@ body {
             }
           }
 
-          > h3 {
+          h3 {
             font-size: 1.125rem;
             letter-spacing: -0.5px;
             font-weight: 500;
           }
         }
 
-        > .ecosystem-arrow {
+        .ecosystem-arrow {
           width: 0.75rem;
           height: 0.75rem;
           transform: translateY(0.425rem);
@@ -472,7 +472,7 @@ body {
         justify-content: space-between;
         height: 100%;
 
-        > .item-description {
+        .item-description {
           font-size: 1rem;
           font-weight: 400;
           line-height: 155%;
@@ -489,7 +489,7 @@ body {
         > div {
           display: inline-block;
 
-          > .item-tag {
+          .item-tag {
             display: inline-block;
             font-family: "Intertight", sans-serif;
             font-size: 0.7125rem;
@@ -518,7 +518,7 @@ body {
     padding: 8rem 0;
   }
 
-  > h2 {
+  h2 {
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 4rem;
@@ -530,7 +530,7 @@ body {
     }
   }
 
-  > .content-div {
+  .content-div {
     display: block;
     padding: 1.5rem 0;
     border: 1px solid rgb(231, 231, 231);
@@ -552,12 +552,12 @@ body {
         margin-bottom: 0.25rem;
       }
 
-      > h2 {
+      h2 {
         font-size: 1rem;
         font-weight: 400;
       }
 
-      > img {
+      img {
         display: inline;
         height: 0.75rem;
 
@@ -567,7 +567,7 @@ body {
       }
     }
 
-    > p {
+    p {
       font-size: 1;
       color: gray;
     }

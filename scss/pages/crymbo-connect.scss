@@ -52,7 +52,7 @@ body {
         margin-bottom: 1rem;
       }
 
-      > span {
+      span {
         font-size: 139%;
 
         @media (min-width: 768px) {
@@ -103,7 +103,7 @@ body {
       margin-bottom: 8rem;
     }
 
-    > h2 {
+    h2 {
       font-size: 1.5rem;
       font-weight: 400;
       margin-bottom: 1.25rem;
@@ -225,7 +225,7 @@ body {
     display: none;
   }
 
-  > .title-div {
+  .title-div {
     margin-bottom: 1rem;
 
     > div {
@@ -248,13 +248,13 @@ body {
     }
   }
 
-  > .buttons-div {
+  .buttons-div {
     display: flex;
     flex-direction: column;
     gap: 0.95rem;
     margin-bottom: 2.35rem;
 
-    > h3 {
+    h3 {
       font-size: 1.5rem;
       font-weight: 500;
       cursor: pointer;
@@ -270,7 +270,7 @@ body {
     }
   }
 
-  > .para-div {
+  .para-div {
     margin-bottom: 2.125rem;
 
     > p {
@@ -299,20 +299,20 @@ body {
     width: 100%;
   }
 
-  > .content-div {
+  .content-div {
     display: flex;
     align-items: center;
     flex-direction: column;
     align-items: start;
     padding-left: 6.5rem;
 
-    > .title-div {
+    .title-div {
       display: flex;
       flex-direction: column;
       gap: 2.75rem;
       margin-bottom: 14rem;
 
-      > .title > div {
+      .title > div {
         display: inline;
         font-size: 0.75rem;
         font-family: "Intertight";
@@ -322,7 +322,7 @@ body {
         padding: 0.45rem 0.825rem;
       }
 
-      > .buttons-div > h3 {
+      .buttons-div > h3 {
         font-size: 2rem;
         font-weight: 500;
         color: lightgray;
@@ -335,11 +335,11 @@ body {
       }
     }
 
-    > .para-div {
+    .para-div {
       margin-bottom: 3rem;
       width: 80%;
 
-      > p {
+      p {
         font-size: 1.125rem;
         line-height: 155%;
       }
@@ -557,7 +557,7 @@ body {
     }
   }
 
-  > .buttons-div {
+  .buttons-div {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -615,7 +615,7 @@ body {
       padding: 2rem 0 3rem 0;
     }
 
-    > h2 {
+    h2 {
       font-size: 1.5rem;
       font-weight: 500;
       margin-bottom: 1.55rem;
@@ -626,16 +626,6 @@ body {
         margin-bottom: 2rem;
         margin-top: 1rem;
       }
-    }
-
-    &:hover .arrow-raise {
-      animation-play-state: running;
-      animation-direction: normal;
-    }
-
-    &:hover .arrow-raise {
-      animation-play-state: running;
-      animation-direction: reverse;
     }
   }
 

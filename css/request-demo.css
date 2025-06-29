@@ -966,18 +966,18 @@ body {
     margin-top: 1.5rem;
   }
 }
-.form-section > .form-info {
+.form-section .form-info {
   border-bottom: 1px solid lightgray;
   width: 96%;
 }
 @media (min-width: 768px) {
-  .form-section > .form-info {
+  .form-section .form-info {
     width: 100%;
     padding-bottom: 0;
     border-bottom: none;
   }
 }
-.form-section > .form-info > .form-info-section-div {
+.form-section .form-info .form-info-section-div {
   display: flex;
   flex-direction: column;
   gap: 0.875rem;
@@ -988,25 +988,25 @@ body {
   border-radius: 12px;
 }
 @media (min-width: 768px) {
-  .form-section > .form-info > .form-info-section-div {
+  .form-section .form-info .form-info-section-div {
     padding: 3rem 0 0 0;
     border-radius: 20px;
   }
 }
-.form-section > .form-info > .form-info-section-div .footer {
+.form-section .form-info .form-info-section-div .footer {
   border-top: 1px solid lightgray;
   padding-top: 6rem;
 }
 @media (min-width: 768px) {
-  .form-section > .form-info > .form-info-section-div .footer {
+  .form-section .form-info .form-info-section-div .footer {
     padding-top: 8rem;
   }
 }
-.form-section > .form-info > .form-info-section-div > img {
+.form-section .form-info .form-info-section-div > img {
   display: none;
 }
 @media (min-width: 768px) {
-  .form-section > .form-info > .form-info-section-div > img {
+  .form-section .form-info .form-info-section-div > img {
     display: inline;
     align-self: end;
     width: 100%;
@@ -1014,55 +1014,55 @@ body {
     height: auto;
   }
 }
-.form-section > .form-info > .form-info-section-div > h2 {
+.form-section .form-info .form-info-section-div h2 {
   font-size: 1.5rem;
   margin-bottom: 0.45rem;
   font-weight: 400;
   color: white;
 }
 @media (min-width: 768px) {
-  .form-section > .form-info > .form-info-section-div > h2 {
+  .form-section .form-info .form-info-section-div h2 {
     font-size: 2rem;
     margin-left: 3rem;
     margin-bottom: 1.25rem;
   }
 }
-.form-section > .form-info > .form-info-section-div > div {
+.form-section .form-info .form-info-section-div > div {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
 }
 @media (min-width: 768px) {
-  .form-section > .form-info > .form-info-section-div > div {
+  .form-section .form-info .form-info-section-div > div {
     margin-right: 3rem;
     margin-left: 3rem;
   }
 }
-.form-section > .form-info > .form-info-section-div > div > .checkmark-green {
+.form-section .form-info .form-info-section-div > div > .checkmark-green {
   margin-right: 0.25rem;
   width: 1.5rem;
   height: 1.5rem;
   filter: brightness(3) invert(41%) sepia(97%) saturate(900%) hue-rotate(74deg) brightness(180%) contrast(92%);
 }
 @media (min-width: 768px) {
-  .form-section > .form-info > .form-info-section-div > div > .checkmark-green {
+  .form-section .form-info .form-info-section-div > div > .checkmark-green {
     width: 1.5rem;
     height: 1.5rem;
   }
 }
-.form-section > .form-info > .form-info-section-div > div > p {
+.form-section .form-info .form-info-section-div > div > p {
   font-size: 1rem;
   font-weight: 400;
   line-height: 155%;
   color: white;
 }
 @media (min-width: 768px) {
-  .form-section > .form-info > .form-info-section-div > div > p {
+  .form-section .form-info .form-info-section-div > div > p {
     font-size: 1rem;
   }
 }
 @media (min-width: 768px) {
-  .form-section > .form-info > .form-info-section-div > div > #longer-p {
+  .form-section .form-info .form-info-section-div > div > #longer-p {
     margin-bottom: 4rem;
   }
 }

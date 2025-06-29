@@ -284,7 +284,7 @@ body {
     }
   }
 
-  > .form-info {
+  .form-info {
     border-bottom: 1px solid lightgray;
     width: 96%;
 
@@ -294,7 +294,7 @@ body {
       border-bottom: none;
     }
 
-    > .form-info-section-div {
+    .form-info-section-div {
       display: flex;
       flex-direction: column;
       gap: 0.875rem;
@@ -329,7 +329,7 @@ body {
         }
       }
 
-      > h2 {
+      h2 {
         font-size: 1.5rem;
         margin-bottom: 0.45rem;
         font-weight: 400;

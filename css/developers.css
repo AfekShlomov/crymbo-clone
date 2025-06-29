@@ -705,24 +705,24 @@ body {
     margin-bottom: 6.5rem;
   }
 }
-.title-section > h1 {
+.title-section h1 {
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 116%;
   margin-bottom: 0.5rem;
 }
 @media (min-width: 768px) {
-  .title-section > h1 {
+  .title-section h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     text-align: left;
   }
 }
-.title-section > h1 > span {
+.title-section h1 > span {
   font-size: 3.75rem;
 }
 @media (min-width: 768px) {
-  .title-section > h1 > span {
+  .title-section h1 > span {
     font-size: 4.75rem;
   }
 }
@@ -802,7 +802,7 @@ body {
   height: 35%;
   margin: 0 auto;
 }
-.title-section > div > #simple-button {
+.title-section > div #simple-button {
   width: 100%;
   font-size: 1rem;
   font-weight: 400;
@@ -816,7 +816,7 @@ body {
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  .title-section > div > #simple-button {
+  .title-section > div #simple-button {
     font-size: 1rem;
     padding-bottom: 0.75rem;
     padding-right: 0.3rem;
@@ -959,7 +959,7 @@ body {
     margin-bottom: 0;
   }
 }
-.dev-ecosystem-section .search-div > .search-bar-div > input {
+.dev-ecosystem-section .search-div > .search-bar-div input {
   flex: 1;
   border: none;
   outline: none;
@@ -969,13 +969,13 @@ body {
   padding-right: 2rem;
 }
 @media (min-width: 768px) {
-  .dev-ecosystem-section .search-div > .search-bar-div > input {
+  .dev-ecosystem-section .search-div > .search-bar-div input {
     font-size: 1.125em;
     padding-right: 2.5rem;
     margin-left: 0.25rem;
   }
 }
-.dev-ecosystem-section .search-div > .search-bar-div > input::placeholder {
+.dev-ecosystem-section .search-div > .search-bar-div input::placeholder {
   font-family: "Intertight", sans-serif;
   font-size: 1rem;
   color: gray;
@@ -1094,7 +1094,7 @@ body {
     height: 100%;
   }
 }
-.dev-ecosystem-section > .content-div > .item-div > .item-header-div {
+.dev-ecosystem-section > .content-div > .item-div .item-header-div {
   display: flex;
   flex-direction: row;
   align-items: space-between;
@@ -1102,25 +1102,25 @@ body {
   width: 100%;
   gap: 2.25rem;
 }
-.dev-ecosystem-section > .content-div > .item-div > .item-header-div > div {
+.dev-ecosystem-section > .content-div > .item-div .item-header-div > div {
   display: flex;
   gap: 0.65rem;
   align-items: center;
 }
-.dev-ecosystem-section > .content-div > .item-div > .item-header-div > div > img {
+.dev-ecosystem-section > .content-div > .item-div .item-header-div > div > img {
   width: 2rem;
 }
 @media (min-width: 768px) {
-  .dev-ecosystem-section > .content-div > .item-div > .item-header-div > div > img {
+  .dev-ecosystem-section > .content-div > .item-div .item-header-div > div > img {
     width: 2.5rem;
   }
 }
-.dev-ecosystem-section > .content-div > .item-div > .item-header-div > div > h3 {
+.dev-ecosystem-section > .content-div > .item-div .item-header-div > div h3 {
   font-size: 1.125rem;
   letter-spacing: -0.5px;
   font-weight: 500;
 }
-.dev-ecosystem-section > .content-div > .item-div > .item-header-div > .ecosystem-arrow {
+.dev-ecosystem-section > .content-div > .item-div .item-header-div .ecosystem-arrow {
   width: 0.75rem;
   height: 0.75rem;
   transform: translateY(0.425rem);
@@ -1128,11 +1128,11 @@ body {
   transition: filter 0.3s cubic-bezier(0.4, 2, 0.6, 1);
 }
 @media (min-width: 768px) {
-  .dev-ecosystem-section > .content-div > .item-div > .item-header-div > .ecosystem-arrow {
+  .dev-ecosystem-section > .content-div > .item-div .item-header-div .ecosystem-arrow {
     transform: translateX(-0.5rem) translateY(0.75rem);
   }
 }
-.dev-ecosystem-section > .content-div > .item-div > .item-header-div:hover .ecosystem-arrow {
+.dev-ecosystem-section > .content-div > .item-div .item-header-div:hover .ecosystem-arrow {
   filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0) contrast(1);
 }
 .dev-ecosystem-section > .content-div > .item-div > .item-content {
@@ -1141,7 +1141,7 @@ body {
   justify-content: space-between;
   height: 100%;
 }
-.dev-ecosystem-section > .content-div > .item-div > .item-content > .item-description {
+.dev-ecosystem-section > .content-div > .item-div > .item-content .item-description {
   font-size: 1rem;
   font-weight: 400;
   line-height: 155%;
@@ -1149,7 +1149,7 @@ body {
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
-  .dev-ecosystem-section > .content-div > .item-div > .item-content > .item-description {
+  .dev-ecosystem-section > .content-div > .item-div > .item-content .item-description {
     font-size: 1.125rem;
     margin-top: 1.25rem;
     margin-bottom: 1rem;
@@ -1158,7 +1158,7 @@ body {
 .dev-ecosystem-section > .content-div > .item-div > .item-content > div {
   display: inline-block;
 }
-.dev-ecosystem-section > .content-div > .item-div > .item-content > div > .item-tag {
+.dev-ecosystem-section > .content-div > .item-div > .item-content > div .item-tag {
   display: inline-block;
   font-family: "Intertight", sans-serif;
   font-size: 0.7125rem;
@@ -1169,7 +1169,7 @@ body {
   padding: 0.2125rem 0.65rem;
 }
 @media (min-width: 768px) {
-  .dev-ecosystem-section > .content-div > .item-div > .item-content > div > .item-tag {
+  .dev-ecosystem-section > .content-div > .item-div > .item-content > div .item-tag {
     font-size: 0.75rem;
     padding: 0.35rem 0.75rem;
   }
@@ -1184,19 +1184,19 @@ body {
     padding: 8rem 0;
   }
 }
-.integration-section > h2 {
+.integration-section h2 {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 4rem;
 }
 @media (min-width: 768px) {
-  .integration-section > h2 {
+  .integration-section h2 {
     font-size: 2rem;
     word-spacing: 0.5px;
     margin-bottom: 4rem;
   }
 }
-.integration-section > .content-div {
+.integration-section .content-div {
   display: block;
   padding: 1.5rem 0;
   border: 1px solid rgb(231, 231, 231);
@@ -1205,35 +1205,35 @@ body {
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  .integration-section > .content-div {
+  .integration-section .content-div {
     padding: 1.6rem 0;
   }
 }
-.integration-section > .content-div .title-div {
+.integration-section .content-div .title-div {
   display: flex;
   justify-content: space-between;
   max-height: 1.5rem;
   margin-bottom: 0.5rem;
 }
 @media (min-width: 768px) {
-  .integration-section > .content-div .title-div {
+  .integration-section .content-div .title-div {
     margin-bottom: 0.25rem;
   }
 }
-.integration-section > .content-div .title-div > h2 {
+.integration-section .content-div .title-div h2 {
   font-size: 1rem;
   font-weight: 400;
 }
-.integration-section > .content-div .title-div > img {
+.integration-section .content-div .title-div img {
   display: inline;
   height: 0.75rem;
 }
 @media (min-width: 768px) {
-  .integration-section > .content-div .title-div > img {
+  .integration-section .content-div .title-div img {
     height: 0.75rem;
   }
 }
-.integration-section > .content-div > p {
+.integration-section .content-div p {
   font-size: 1;
   color: gray;
 }
