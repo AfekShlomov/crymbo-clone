@@ -38,7 +38,6 @@ body {
     label {
       color: rgb(44, 44, 44);
       font-size: 0.75rem;
-      font-family: Intertight, sans-serif;
       letter-spacing: 0.5px;
     }
 
@@ -87,7 +86,6 @@ body {
         }
 
         .form-input {
-          font-family: Intertight, sans-serif;
           font-weight: 400;
           font-size: 1rem;
           border: 1.5px solid rgb(214, 214, 214);
@@ -144,7 +142,6 @@ body {
 
       textarea {
         font-size: 1rem;
-        font-family: intertight, sans-serif;
         border: 1px solid rgb(190, 190, 190);
         border-radius: 20px;
         max-width: 95%;
@@ -193,7 +190,6 @@ body {
 
           @media (min-width: 768px) {
             margin: 0;
-            font-family: "main-bold", Arial, sans-serif;
           }
         }
 
@@ -230,7 +226,6 @@ body {
         display: flex;
         align-items: center;
         font-size: 1rem;
-        font-family: Intertight, sans-serif;
         white-space: nowrap;
         background-color: black;
         color: white;
