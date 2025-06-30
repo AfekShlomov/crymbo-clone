@@ -66,12 +66,11 @@
       </nav>
     </div>
 
-    <section class="max-width-container form-section">
-      <div class="form-div">
-        <form>
+    <section class="max-width-container form-container">
+      <div class="form-container--form">
+        <form> 
           <h2>Get Started with CRYMBO</h2>
-          <div>
-            <div class="form-row-div">
+            <div class="form--row">
               <div>
                 <label>First name* </label>
                 <input class="form-input" name="first name" />
@@ -83,7 +82,7 @@
                 <p class="error-message"></p>
               </div>
             </div>
-            <div class="form-row-div">
+            <div class="form--row">
               <div>
                 <label>Company name*</label>
                 <input class="form-input" name="company" name="company" />
@@ -95,14 +94,14 @@
                 <p class="error-message"></p>
               </div>
             </div>
-            <div class="form-email-div">
+            <div class="form--email-row"> 
               <div>
                 <label>Email*</label>
                 <input class="form-input" name="email" />
                 <p class="error-message"></p>
               </div>
             </div>
-            <div class="form-checkbox-div">
+            <div class="form--checkbox-container">
               <div id="checkbox-label-margin">
                 <label class="label-spacing">Select your use case</label>
               </div>
@@ -116,7 +115,7 @@
               </div>
               <p class="error-message"></p>
             </div>
-            <div class="additional-info-div textarea-margin-bottom">
+            <div class="form--info-row textarea-margin-bottom">
               <div>
                 <label class="label-spacing">
                   Any information that would help us prepare the meeting
@@ -125,7 +124,7 @@
                 <p class="error-message"></p>
               </div>
             </div>
-            <div class="form-submit-div">
+            <div class="form--submit-container">
               <button id="submitButton" type="submit">
                 Submit
                 <div class="arrow-raise-container">
@@ -138,8 +137,8 @@
         </form>
       </div>
 
-      <div class="form-info">
-        <div class="form-info-section-div">
+      <div class="form-container--info">
+        <div class="form-container--info--wrapper">
           <h2>Your demo will include:</h2>
           <div>
             <img src="/src/media/checkmark.png" class="checkmark-green" />
@@ -157,7 +156,7 @@
           </div>
           <div>
             <img src="/src/media/checkmark.png" class="checkmark-green" />
-            <p id="longer-p">
+            <p class="longer">
               Interactive discussion – This is not simply a demo. We want to
               have a conversation with you to learn more about your business and
               how we can work with you to get the most out of the Crymbo

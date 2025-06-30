@@ -9,7 +9,7 @@ body {
   }
 }
 
-.form-section {
+.form-container {
   padding-bottom: 6rem;
 
   @media (min-width: 768px) {
@@ -20,15 +20,15 @@ body {
     padding-bottom: 12rem;
   }
 
-  .form-div,
-  .form-info {
+  &--form,
+  &--info {
     @media (min-width: 768px) {
       flex: 1 1 50%;
       max-width: 50%;
     }
   }
 
-  .form-div > form {
+  &--form > form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -41,7 +41,7 @@ body {
       letter-spacing: 0.5px;
     }
 
-    > h2 {
+    h2 {
       font-size: 1.5rem;
       font-weight: 500;
       color: black;
@@ -53,8 +53,8 @@ body {
       }
     }
 
-    .form-row-div,
-    .form-email-div {
+    .form--row,
+    .form--email-row {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -68,7 +68,7 @@ body {
         gap: 1.5rem;
       }
 
-      > div {
+      div {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
@@ -77,7 +77,7 @@ body {
           gap: 0.25rem;
         }
 
-        > label {
+        label {
           margin-bottom: 0.25rem;
 
           @media (min-width: 768px) {
@@ -91,17 +91,16 @@ body {
           border: 1.5px solid rgb(214, 214, 214);
           border-radius: 50px;
           padding: 0.95rem 1.5rem;
-          width: 95%;
+          width: 100%;
 
           @media (min-width: 768px) {
             padding: 1rem 1.5rem;
-            width: 100%;
           }
         }
       }
     }
 
-    .form-email-div {
+    .form--email-row {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -113,12 +112,12 @@ body {
         width: 100%;
       }
 
-      > div {
+      div {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
 
-        > label {
+        label {
           word-spacing: 1px;
 
           @media (min-width: 768px) {
@@ -128,7 +127,7 @@ body {
       }
     }
 
-    .additional-info-div {
+    .form--info-row {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -157,7 +156,7 @@ body {
       }
     }
 
-    .form-checkbox-div {
+    .form--checkbox-container {
       display: flex;
       flex-direction: column;
       margin-bottom: 1.5rem;
@@ -168,7 +167,7 @@ body {
         gap: 0.5rem;
       }
 
-      > div {
+      div {
         display: flex;
         align-items: center;
         gap: 0.4rem;
@@ -177,12 +176,12 @@ body {
           gap: 0.5rem;
         }
 
-        > label {
+        label {
           letter-spacing: 0.5px;
           margin-bottom: 0.5rem;
         }
 
-        > .checkbox-label {
+        .checkbox-label {
           font-size: 1rem;
           margin-left: 0.2rem;
           margin-bottom: 0;
@@ -193,7 +192,7 @@ body {
           }
         }
 
-        > input {
+        input {
           transform: scale(120%);
 
           @media (min-width: 768px) {
@@ -203,7 +202,7 @@ body {
         }
       }
 
-      > #checkbox-label-margin {
+      #checkbox-label-margin {
         margin-bottom: 0.15rem;
 
         @media (min-width: 768px) {
@@ -212,7 +211,7 @@ body {
       }
     }
 
-    .form-submit-div {
+    .form--submit-container {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -279,7 +278,7 @@ body {
     }
   }
 
-  .form-info {
+  &--info {
     border-bottom: 1px solid lightgray;
     width: 96%;
 
@@ -289,7 +288,7 @@ body {
       border-bottom: none;
     }
 
-    .form-info-section-div {
+    &--wrapper {
       display: flex;
       flex-direction: column;
       gap: 0.875rem;
@@ -304,14 +303,7 @@ body {
         border-radius: 20px;
       }
 
-      .footer {
-        border-top: 1px solid lightgray;
-        padding-top: 6rem;
-
-        @media (min-width: 768px) {
-          padding-top: 8rem;
-        }
-      }
+      
       > img {
         display: none;
 
@@ -337,7 +329,7 @@ body {
         }
       }
 
-      > div {
+      div {
         display: flex;
         flex-direction: row;
         gap: 0.5rem;
@@ -347,7 +339,7 @@ body {
           margin-left: 3rem;
         }
 
-        > .checkmark-green {
+        .checkmark-green {
           margin-right: 0.25rem;
           width: 1.5rem;
           height: 1.5rem;
@@ -360,7 +352,7 @@ body {
           }
         }
 
-        > p {
+        p {
           font-size: 1rem;
           font-weight: 400;
           line-height: 155%;
@@ -371,7 +363,7 @@ body {
           }
         }
 
-        > #longer-p {
+        p.longer{
           @media (min-width: 768px) {
             margin-bottom: 4rem;
           }
