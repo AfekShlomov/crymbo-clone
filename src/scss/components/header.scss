@@ -135,7 +135,7 @@
       display: none;
     }
 
-    > img {
+    img {
       height: 1.5rem;
       width: 1.5rem;
     }
@@ -206,8 +206,10 @@
     background-color: black;
     border: none;
     border-radius: 50px;
+    margin-top: 1rem;
     padding: 0.8rem 1.5rem;
     cursor: pointer;
+
     @media (min-width: 480px) {
       display: none;
     }
