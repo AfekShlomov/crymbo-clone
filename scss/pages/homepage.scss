@@ -1,7 +1,7 @@
 @use "../base/loader.scss";
 @use "../animations/arrow-raise.scss" as arrowRaise;
 
-.hero-section {
+.hero {
   display: block;
   background-color: white;
   justify-items: center;
@@ -16,7 +16,7 @@
     padding: 13rem 0 7rem 0;
   }
 
-  .hero-title-div {
+  &__title {
     display: block;
     z-index: 3;
     padding: 7.5rem 0 5rem 0;
@@ -55,7 +55,7 @@
     }
   }
 
-  .video-div {
+  .hero__video-div {
     position: relative;
     display: flex;
     justify-content: center;
