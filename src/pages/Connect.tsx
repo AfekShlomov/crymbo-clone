@@ -1,11 +1,11 @@
 import Header from "../components/Header"
 
-function CrymboConnect () {
+function Connect () {
     return (
         <>
-        <Header />
+        <div>connect</div>
         </>
     )
 }
 
-export default CrymboConnect;
+export default Connect;

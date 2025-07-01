@@ -3,8 +3,7 @@ import Header from "../components/Header";
 function Developers() {
   return (
     <>
-      <Header />
-      <p>hello</p>
+      <div>developers</div>
     </>
   );
 }

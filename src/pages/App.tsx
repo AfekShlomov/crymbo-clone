@@ -1,19 +1,22 @@
 import { Route, Routes } from "react-router-dom";
+import Layout from "../components/layout";
 import Header from "../components/Header";
-import "../scss/pages/homepage.scss";
+import Oracle from "./Oracle";
+import Connect from "./Connect";
+import Developers from "./developers";
+import RequestDemo from "./request-demo";
 
 function App() {
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="blogs" element={<Blogs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Oracle />} />
+        <Route path="/crymbo-connect" element={<Connect />} />
+        <Route path="/developers" element={<Developers />} />
+        <Route path="/request-demo" element={<RequestDemo />} />
+        <Route path="*" element={<Oracle />} />
+      </Route>
+    </Routes>
   );
 }
 

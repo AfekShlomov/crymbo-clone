@@ -1,18 +1,12 @@
-import { Link, Outlet } from "react-router-dom";
-
+import { Outlet } from "react-router-dom";
+import Header from "./Header";
 function Layout() {
   return (
     <>
-      <nav>
-        <Link to="/">Crymbo Oracle</Link>
-        <Link to="/crymbo-connect">Crymbo Connect</Link>
-        <Link to="#">Documentation</Link>
-        <Link to="/developers">Ecosystem</Link>
-        <Link to="#">Pricing</Link>
-        <Link to="#">Blog</Link>
-      </nav>
-
-      <Outlet/>
+      <Header />
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 }
