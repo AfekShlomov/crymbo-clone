@@ -602,7 +602,7 @@ body {
     padding-bottom: 12rem;
   }
 
-  .itr--container {
+  &--container {
     border-bottom: 1px lightgray solid;
     padding: 1.75rem 0 3rem 0;
 
@@ -635,27 +635,31 @@ body {
     }
   }
 
-  .small-divs {
+  .small-containers {
     @media (min-width: 768px) {
       flex: 0 0 28%;
       border-top: 1px lightgray solid;
       border-bottom: 1px lightgray solid;
-      padding: 0 2rem;
+      padding: 2rem 0 1rem;
     }
 
-    #small-div {
-      padding-bottom: 1.75rem;
+    .small-container {
+      padding: 2rem 0;
+      border-block: 1px solid lightgray;
       cursor: pointer;
 
       @media (min-width: 768px) {
-        padding-bottom: 2.475rem;
+        padding: 0 0 2.475rem 2.25rem;
         border: none;
       }
 
-      > h2 {
+      h2 {
+        margin-bottom: 1.75rem;
+        margin-top: 1.75rem;
+        font-weight: 500;
         @media (min-width: 768px) {
           margin-top: 1rem;
-          margin-bottom: 1.5rem;
+          font-size: 2rem;
         }
       }
     }
