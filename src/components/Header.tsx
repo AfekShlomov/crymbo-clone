@@ -1,21 +1,27 @@
-import "../scss/componenets/header.css";
 import imgLogo from "../assets/svg/logo.svg";
+import "../scss/pages/homepage.scss";
 
 function Header() {
   return (
-    <header>
+    <header className="max-width-container ">
       <div>
         <img src={imgLogo} />
       </div>
       <div>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
+        <a>Crymbo Oracle</a>
+        <a>Crymbo Connect</a>
+        <a>Documentation</a>
+        <a>Ecosystem</a>
+        <a>Pricing</a>
+        <a>Blog</a>
       </div>
       <div>
-        <a></a>
+        <a>
+          <div></div>
+          <div>
+            <img />
+          </div>
+        </a>
         <button></button>
       </div>
     </header>
