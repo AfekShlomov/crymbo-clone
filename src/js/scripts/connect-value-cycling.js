@@ -3,7 +3,7 @@ const db = {
     title: "Eliminiate Integrations",
     paragraph:
       "See the end of bilateral infrastructure integrations with Crymbo's unified API. Integrate once to build your complete digital assets stack across pre-trade, trade and post trade functions.",
-    img: "/media/connect-value-1.png",
+    img: "/src/media/connect-value-1.png",
     button: "Request Demo",
     buttonClass: "value-button",
   },
@@ -11,7 +11,7 @@ const db = {
     title: "Become captial efficient",
     paragraph:
       "Stop missed trading opportunities, trade breaks and transaction signing with Crymbo Omniwallet solutions. Control your multiple and custody providers using a single dashboard and interface to enable wallet rebalancing, capital allocation and risk recognition.",
-    img: "/media/connect-value-2.png",
+    img: "/src/media/connect-value-2.png",
     button: "Ready? Become capital efficient",
     buttonClass: "value-simple-button",
   },
@@ -19,25 +19,25 @@ const db = {
     title: "End manual work",
     paragraph:
       "Stop the reliance on spreadsheets, macros and staff to reconcile data across DeFi, CeFi and Tradfi business operations. With Crymbo, you can orchestrate data flows to risk and back office teams with ease.",
-    img: "/media/connect-value-3.png",
+    img: "/src/media/connect-value-3.png",
     button: "Ready? End manual work",
     buttonClass: "value-simple-button",
   },
 };
 
-const valueSection = document.querySelector(".value-section");
+const valueSection = document.querySelector(".value");
 const valueObj = {
-  img: valueSection.querySelector(".img-div img"),
-  buttonsDiv: valueSection.querySelectorAll(".buttons-div h3"),
-  para: valueSection.querySelector(".para-div p"),
+  img: valueSection.querySelector("img"),
+  buttonsDiv: valueSection.querySelectorAll(".value--buttons-container h3"),
+  para: valueSection.querySelector(".value--para-container p"),
   button: valueSection.querySelector(".value-button"),
 };
 
-const fullValueSection = document.querySelector(".full-value-section");
+const fullValueSection = document.querySelector(".full-value");
 const fullValueObj = {
-  img: fullValueSection.querySelector(".img-div img"),
-  buttonsDiv: fullValueSection.querySelectorAll(".buttons-div h3"),
-  para: fullValueSection.querySelector(".para-div p"),
+  img: fullValueSection.querySelector(".full-value--img-container img"),
+  buttonsDiv: fullValueSection.querySelectorAll("h3"),
+  para: fullValueSection.querySelector(".full-value--content-container--para-container p"),
   button: fullValueSection.querySelector(".value-button"),
 };
 

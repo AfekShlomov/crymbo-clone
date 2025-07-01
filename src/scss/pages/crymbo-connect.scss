@@ -138,26 +138,25 @@ body {
       }
     }
 
-    p {
+    &--tag {
       display: inline-block;
       font-size: 0.75rem;
       font-weight: 500;
       letter-spacing: 0.5px;
       border: 1px solid black;
       border-radius: 100px;
-      margin: 0 0 1rem 0;
       padding: 0.35rem 0.715rem 0.4rem 0.715rem;
+      margin: 0 0 1rem 0;
       z-index: 1;
 
       @media (min-width: 768px) {
         font-size: 0.75rem;
         padding: 0.4rem 0.75rem 0.4rem 0.75rem;
-        margin-bottom: 1rem;
-        margin-bottom: 0.75rem;
+        margin-bottom: 1rem 0;
       }
     }
 
-    .description {
+    &--description {
       font-size: 0.925rem;
       font-weight: 400;
       line-height: 155%;
@@ -397,7 +396,6 @@ body {
   border-bottom: 1px solid black;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
-  width: 100%;
   cursor: pointer;
 
   @media (min-width: 768px) {

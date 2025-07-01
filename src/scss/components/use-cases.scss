@@ -1,6 +1,6 @@
 @use "../base/base.scss";
 
-.use-cases-section {
+.use-cases {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +24,7 @@
     }
   }
 
-  .content-div {
+  &--content-container {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(1, 1fr);
@@ -40,7 +40,7 @@
       margin-bottom: 2rem;
     }
 
-    > div {
+    div {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -76,7 +76,7 @@
       }
     }
 
-    > img {
+    img {
       height: 12rem;
       width: auto;
       justify-content: center;
