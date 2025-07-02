@@ -1,4 +1,3 @@
-@use "../base/loader.scss";
 @use "../animations/arrow-raise.scss" as arrowRaise;
 
 body {
@@ -303,7 +302,6 @@ body {
         border-radius: 20px;
       }
 
-      
       > img {
         display: none;
 
@@ -363,7 +361,7 @@ body {
           }
         }
 
-        p.longer{
+        p.longer {
           @media (min-width: 768px) {
             margin-bottom: 4rem;
           }
