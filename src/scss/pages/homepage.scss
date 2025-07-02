@@ -15,7 +15,7 @@
     padding: 13rem 0 7rem 0;
   }
 
-  &__title {
+  &__title-container {
     display: block;
     z-index: 3;
     padding: 7.5rem 0 5rem 0;
@@ -53,7 +53,7 @@
     }
   }
 
-  .hero__video-div {
+  &__video-div {
     position: relative;
     display: flex;
     justify-content: center;
@@ -100,7 +100,7 @@
     margin: 13rem 0 14rem 0;
   }
 
-  div {
+  &__content {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -112,7 +112,7 @@
       padding: 0;
     }
 
-    h2 {
+    &__title {
       color: black;
       font-size: 3rem;
       font-weight: 500;
@@ -122,7 +122,7 @@
         font-size: 4rem;
       }
 
-      > span > span {
+      .pixel-font {
         font-size: 4.5rem;
         font-weight: 400;
 
@@ -148,7 +148,7 @@
     margin-bottom: 8rem;
   }
 
-  &--background {
+  &__background {
     width: 110%;
     overflow-x: hidden;
     z-index: 0;
@@ -163,7 +163,7 @@
     }
   }
 
-  &--title-container {
+  &__title-container {
     display: block;
     justify-items: center;
     text-align: center;
@@ -202,7 +202,7 @@
     }
   }
 
-  &--main-container {
+  &__main-container {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(1, 1fr);
@@ -218,7 +218,7 @@
     }
   }
 
-  &--content-container {
+  &__content-container {
     padding: 1.5rem;
     border: 1px solid lightgray;
     border-radius: 1rem;
@@ -252,11 +252,11 @@
     }
   }
 
-  &--button-container {
+  &__button-container {
     display: flex;
     justify-content: center;
 
-    button {
+    &__button {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -323,7 +323,7 @@
   align-items: center;
   padding-bottom: 8rem;
 
-  &--title-container {
+  &__title-container {
     justify-items: center;
     text-align: center;
     margin-bottom: 4rem;
@@ -344,7 +344,7 @@
     }
   }
 
-  &--data-container {
+  &__content-container {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(1, 1fr);
@@ -355,7 +355,7 @@
       gap: 7rem;
     }
 
-    div {
+    &__item {
       display: flex;
       justify-content: center;
       flex-direction: column;

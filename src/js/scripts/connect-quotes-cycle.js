@@ -1,4 +1,4 @@
-const quotes = document.querySelectorAll(".quotes--quote-container");
+const quotes = document.querySelectorAll(".quotes__quote-container");
 let currentQuoteIndex = 0;
 
 function showQuote(index) {

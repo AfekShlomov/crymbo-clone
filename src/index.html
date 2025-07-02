@@ -13,7 +13,7 @@
         <a class="header__logo-container" href="/">
           <img src="/media/svg/logo.svg" alt="logo" href="/index.html" />
         </a>
-        <div class="header--navigation">
+        <div class="header__navigation">
           <nav>
             <a id="highligthed" href="/">Crymbo Oracle</a>
             <a href="/crymbo-connect.html">Crymbo Connect</a>
@@ -24,8 +24,8 @@
           </nav>
         </div>
         <div>
-          <div class="header--buttons-container">
-            <a class="header--req-button" href="/request-demo.html"
+          <div class="header__buttons-container">
+            <a class="header__req-button" href="/request-demo.html"
               >Request demo
               <div class="arrow-raise-container">
                 <img
@@ -33,7 +33,7 @@
                   class="arrow-raise invert-img"
                 /></div
             ></a>
-            <button class="header--dropdown-menu-button">
+            <button class="header__dropdown-menu-button">
               <img
                 type="button"
                 src="/media/svg/hamburger-menu.svg"
@@ -54,7 +54,7 @@
         <a href="#">Pricing</a>
         <a href="#">Blog</a>
         <div>
-          <a class="dropdown-container--req-button" href="/request-demo.html"
+          <a class="dropdown-container__req-button" href="/request-demo.html"
             >Request demo
             <div class="arrow-raise-container">
               <img
@@ -67,7 +67,7 @@
     </div>
 
     <section class="max-width-container hero">
-      <div class="hero__title">
+      <div class="hero__title-container">
         <h1>Offer DeFi users automated on-chain compliance</h1>
         <p>
           Crymbo Oracle automates on-chain Travel Rule compliance, secure
@@ -85,8 +85,8 @@
     </section>
 
     <section class="scroll-bar">
-      <div class="scroll-bar--slider">
-        <div class="scroll-bar--slider--track">
+      <div class="scroll-bar__slider">
+        <div class="scroll-bar__slider__track">
           <img src="/media/svg/logo1.svg" />
           <img src="/media/svg/logo2.svg" />
           <img src="/media/svg/logo3.svg" />
@@ -116,8 +116,8 @@
     </section>
 
     <section class="summup">
-      <div>
-        <h2>
+      <div class="summup__content">
+        <h2 class="summup__content__title">
           <span
             >Today, <span class="pixel-font">DeFi</span>,
             <span class="pixel-font">CeFi</span>, &
@@ -131,17 +131,17 @@
     <section class="uni-layer">
       <img
         src="/media/white-block-backgroud.webp"
-        class="uni-layer--background"
+        class="uni-layer__background"
       />
-      <div class="max-width-container uni-layer--title-container">
+      <div class="max-width-container uni-layer__title-container">
         <h2>Crymbo's Unification Layer</h2>
         <p>
           Achieve real-time, on-chain, privacy-preserving regulatory compliance,
           interoperable across TradFi, CeFi, and DeFi markets.
         </p>
       </div>
-      <div class="max-width-container uni-layer--main-container">
-        <div class="uni-layer--content-container">
+      <div class="uni-layer__main-container max-width-container ">
+        <div class="uni-layer__content-container">
           <h3>Identity</h3>
           <p>
             By leveraging cryptographically secure identity binding, Crymbo
@@ -151,7 +151,7 @@
             while unlocking access to permissionless blockchain liquidity.
           </p>
         </div>
-        <div class="uni-layer--content-container">
+        <div class="uni-layer__content-container">
           <h3>PII Handling</h3>
           <p>
             Crymbo Oracle prioritizes privacy by ensuring Personally
@@ -161,7 +161,7 @@
             sensitive information and minimizing security risks.
           </p>
         </div>
-        <div class="uni-layer--content-container">
+        <div class="uni-layer__content-container">
           <h3>Auditable</h3>
           <p>
             The Crymbo Explorer provides a powerful tool for auditable
@@ -171,7 +171,7 @@
             compromising decentralized principles.
           </p>
         </div>
-        <div class="uni-layer--content-container">
+        <div class="uni-layer__content-container">
           <h3>Localised</h3>
           <p>
             Crymbo Oracle is designed to adapt to local regulations, enabling
@@ -182,8 +182,8 @@
           </p>
         </div>
       </div>
-      <div class="uni-layer--button-container">
-        <button>
+      <div class="uni-layer__button-container">
+        <button class="uni-layer__button-container__button">
           <div>
             <div>Integrate Today</div>
           </div>
@@ -195,20 +195,20 @@
     </section>
 
     <section class="max-width-container compliance">
-      <div class="compliance--title-container">
+      <div class="compliance__title-container">
         <h2>
           Today's compliance infrastructure is manual, incomplete & expensive
         </h2>
       </div>
-      <div class="compliance--data-container">
-        <div>
+      <div class="compliance__content-container">
+        <div class="compliance__content-container__item">
           <p>Today's Compliance Data Sharing</p>
           <img
             src="/media/svg/compliance-data-sharing.svg"
             alt="data sharing"
           />
         </div>
-        <div>
+        <div class="compliance__content-container__item">
           <p>With Crymbo Oracle Contextual real time on & off chain data</p>
           <img
             src="/media/svg/contextual-real-time-datasharing.svg"
@@ -220,7 +220,7 @@
 
     <section class="max-width-container use-cases">
       <h2>Use Cases</h2>
-      <div class="use-cases--content-container">
+      <div class="use-cases__content-container">
         <div>
           <h3>Next Gen Travel Rule</h3>
           <p>
@@ -234,7 +234,7 @@
           alt="next gen travel rule"
         />
       </div>
-      <div class="use-cases--content-container" id="flip">
+      <div class="use-cases__content-container" id="flip">
         <div>
           <h3>Compliant DeFi</h3>
           <p>
@@ -245,7 +245,7 @@
         </div>
         <img src="/media/compliant-defi.png" />
       </div>
-      <div class="use-cases--content-container">
+      <div class="use-cases__content-container">
         <div>
           <h3>Explore Auditable Data</h3>
           <p>
@@ -262,7 +262,7 @@
     </section>
 
     <section class="contact-us">
-      <div class="max-width-container contact-us--wrapper">
+      <div class="max-width-container contact-us__wrapper">
         <p>CONTACT US NOW</p>
         <h2>
           Ready to streamline your

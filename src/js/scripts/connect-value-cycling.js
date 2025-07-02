@@ -28,16 +28,16 @@ const db = {
 const valueSection = document.querySelector(".value");
 const valueObj = {
   img: valueSection.querySelector("img"),
-  buttonsDiv: valueSection.querySelectorAll(".value--buttons-container h3"),
-  para: valueSection.querySelector(".value--para-container p"),
+  buttonsDiv: valueSection.querySelectorAll(".value__buttons-container h3"),
+  para: valueSection.querySelector(".value__para-container p"),
   button: valueSection.querySelector(".value-button"),
 };
 
 const fullValueSection = document.querySelector(".full-value");
 const fullValueObj = {
-  img: fullValueSection.querySelector(".full-value--img-container img"),
+  img: fullValueSection.querySelector(".full-value__img-container img"),
   buttonsDiv: fullValueSection.querySelectorAll("h3"),
-  para: fullValueSection.querySelector(".full-value--content-container--para-container p"),
+  para: fullValueSection.querySelector(".full-value__content-container__para-container p"),
   button: fullValueSection.querySelector(".value-button"),
 };
 

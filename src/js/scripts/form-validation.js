@@ -5,7 +5,7 @@ const confirmationMessage = document.querySelector(".confirmation-message");
 const connectCheckbox = form.querySelector('input[name="connect-checkbox"]');
 const oracleCheckbox = form.querySelector('input[name="oracle-checkbox"]');
 const checkboxError = connectCheckbox
-  .closest(".form--checkbox-container")
+  .closest(".form__checkbox-container")
   .querySelector(".error-message");
 const formData = {};
 

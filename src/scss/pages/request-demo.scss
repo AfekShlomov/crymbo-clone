@@ -19,15 +19,15 @@ body {
     padding-bottom: 12rem;
   }
 
-  &--form,
-  &--info {
+  &__form,
+  &__info {
     @media (min-width: 768px) {
       flex: 1 1 50%;
       max-width: 50%;
     }
   }
 
-  &--form > form {
+  &__form > form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -52,8 +52,8 @@ body {
       }
     }
 
-    .form--row,
-    .form--email-row {
+    .form__row,
+    .form__email-row {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -99,7 +99,7 @@ body {
       }
     }
 
-    .form--email-row {
+    .form__email-row {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -126,7 +126,7 @@ body {
       }
     }
 
-    .form--info-row {
+    .form__info-row {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -155,7 +155,7 @@ body {
       }
     }
 
-    .form--checkbox-container {
+    .form__checkbox-container {
       display: flex;
       flex-direction: column;
       margin-bottom: 1.5rem;
@@ -210,7 +210,7 @@ body {
       }
     }
 
-    .form--submit-container {
+    .form__submit-container {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -277,7 +277,7 @@ body {
     }
   }
 
-  &--info {
+  &__info {
     border-bottom: 1px solid lightgray;
     width: 96%;
 
@@ -287,7 +287,7 @@ body {
       border-bottom: none;
     }
 
-    &--wrapper {
+    &__wrapper {
       display: flex;
       flex-direction: column;
       gap: 0.875rem;

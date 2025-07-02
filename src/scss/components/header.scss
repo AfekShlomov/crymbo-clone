@@ -5,7 +5,7 @@
   justify-content: center;
   position: fixed;
   background-color: white;
-  height: var(--headerHeight);
+  height: var(__headerHeight);
   width: 100%;
   top: 0;
   padding: 0.5rem 0;
@@ -44,7 +44,7 @@
     }
   }
 
-  &--navigation {
+  &__navigation {
     display: none;
 
     @media (min-width: 1205px) {
@@ -75,13 +75,13 @@
     }
   }
 
-  &--buttons-container {
+  &__buttons-container {
     display: flex;
     height: 100%;
     gap: 0.6rem;
   }
 
-  &--req-button {
+  &__req-button {
     @include arrowRaise.arrowRaiseOnHover();
     display: none;
 
@@ -122,7 +122,7 @@
     }
   }
 
-  &--dropdown-menu-button {
+  &__dropdown-menu-button {
     justify-content: center;
     align-content: end;
     border: 1px solid black;
@@ -193,7 +193,7 @@
     }
   }
 
-  &--req-button {
+  &__req-button {
     display: flex;
     align-items: center;
     gap: 0.625rem;

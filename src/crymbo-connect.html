@@ -13,7 +13,7 @@
         <a class="header__logo-container" href="/">
           <img src="/media/svg/logo.svg" alt="logo" href="/index.html" />
         </a>
-        <div class="header--navigation">
+        <div class="header__navigation">
           <nav>
             <a id="highligthed" href="/">Crymbo Oracle</a>
             <a href="/crymbo-connect.html">Crymbo Connect</a>
@@ -24,8 +24,8 @@
           </nav>
         </div>
         <div>
-          <div class="header--buttons-container">
-            <a class="header--req-button" href="/request-demo.html"
+          <div class="header__buttons-container">
+            <a class="header__req-button" href="/request-demo.html"
               >Request demo
               <div class="arrow-raise-container">
                 <img
@@ -33,7 +33,7 @@
                   class="arrow-raise invert-img"
                 /></div
             ></a>
-            <button class="header--dropdown-menu-button">
+            <button class="header__dropdown-menu-button">
               <img
                 type="button"
                 src="/media/svg/hamburger-menu.svg"
@@ -54,7 +54,7 @@
         <a href="#">Pricing</a>
         <a href="#">Blog</a>
         <div>
-          <a class="dropdown-container--req-button" href="/request-demo.html"
+          <a class="dropdown-container__req-button" href="/request-demo.html"
             >Request demo
             <div class="arrow-raise-container">
               <img
@@ -67,13 +67,13 @@
     </div>
 
     <section class="max-width-container hero">
-      <img src="/media/crymbo-connect-hero.webp" />
-      <div>
-        <h1>
+      <img class="hero__image" src="/media/crymbo-connect-hero.webp" />
+      <div class="hero__content-container">
+        <h1 class="hero__content-container__title">
           Add <span class="pixel-font">Digital Assets</span> services to your
           Fintech, fast.
         </h1>
-        <p>
+        <p class="hero__content-container__para">
           Securely launch crypto payments, trading, compliance or portfolio
           management products into your fintech/VC/payments business with just a
           single API.
@@ -82,8 +82,8 @@
     </section>
 
     <section class="scroll-bar">
-      <div class="scroll-bar--slider">
-        <div class="scroll-bar--slider--track">
+      <div class="scroll-bar__slider">
+        <div class="scroll-bar__slider__track">
           <img src="/media/svg/logo1.svg" />
           <img src="/media/svg/logo2.svg" />
           <img src="/media/svg/logo3.svg" />
@@ -114,7 +114,7 @@
 
     <section class="max-width-container use-cases">
       <h2>Use Cases</h2>
-      <div class="use-cases--content-container">
+      <div class="use-cases__content-container">
         <div>
           <h3>Crymbo Pay - Payments</h3>
           <p>
@@ -130,7 +130,7 @@
           alt="next gen travel rule"
         />
       </div>
-      <div class="use-cases--content-container" id="flip">
+      <div class="use-cases__content-container" id="flip">
         <div>
           <h3>Crymbo Broker - Trading</h3>
           <p>
@@ -143,7 +143,7 @@
         </div>
         <img src="/media/compliant-defi.png" />
       </div>
-      <div class="use-cases--content-container">
+      <div class="use-cases__content-container">
         <div>
           <h3>Crymbo Portfolio - Illiquid token management</h3>
           <p class="short-width-para">
@@ -163,37 +163,46 @@
     <section class="problem">
       <img
         src="/media/white-block-backgroud.webp"
-        class="problem--background"
+        class="problem__background"
       />
-      <div class="max-width-container problem--title-container">
-        <p class="problem--title-container--tag">THE PROBLEM</p>
+      <div class="max-width-container problem__title-container">
+        <p class="problem__title-container__tag">THE PROBLEM</p>
         <h2>
           Crypto infrastructure is <span class="pixel-font">fragmented</span>
         </h2>
-        <p class="problem--title-container--description">
+        <p class="problem__title-container__description">
           making it hard to talk to each other leaving you open to risk
           breaches, siloed data and manual processes held together by humans.
         </p>
       </div>
-      <div class="max-width-container problem--content">
-        <div>
-          <img src="/media/svg/connect-problem-1.svg" />
-          <p>
+      <div class="max-width-container problem__content">
+        <div class="problem__content__item">
+          <img
+            src="/media/svg/connect-problem-1.svg"
+            class="problem__content__item__image"
+          />
+          <p class="problem__content__item__para">
             You can't build a compliant, scalable, digital assets business for
             onchain and fiat assets on fragmented infrastructure.
           </p>
         </div>
-        <div>
-          <img src="/media/svg/connect-problem-2.svg" />
-          <p>
+        <div class="problem__content__item">
+          <img
+            src="/media/svg/connect-problem-2.svg"
+            class="problem__content__item__image"
+          />
+          <p class="problem__content__item__para">
             Combining CeFi, DeFi with our TradFi businesses require manual
             integrations, spreadsheets and teams of people to stitch data
             together.
           </p>
         </div>
-        <div>
-          <img src="/media/svg/connect-problem-3.svg" />
-          <p>
+        <div class="problem__content__item">
+          <img
+            src="/media/svg/connect-problem-3.svg"
+            class="problem__content__item__image"
+          />
+          <p class="problem__content__item__para">
             Crypto market structure is constantly shifting. Pivoting & scaling
             crypto infrastructure can be slow, expensive and risky.
           </p>
@@ -202,18 +211,18 @@
     </section>
 
     <section class="max-width-container value">
-      <div class="value--title-container">
-        <div>VALUE</div>
+      <div class="value__title-container">
+        <div class="value__title-container__content">VALUE</div>
       </div>
-      <div class="value--img-container">
+      <div class="value__image-container">
         <img src="/media/connect-value-1.png" />
       </div>
-      <div class="value--buttons-container">
-        <h3>Eliminiate Integrations</h3>
-        <h3>Become captial efficient</h3>
-        <h3>End manual work</h3>
+      <div class="value__buttons-container">
+        <button class="value__buttons-container__button">Eliminiate Integrations</button>
+        <button class="value__buttons-container__button">Become captial efficient</button>
+        <button class="value__buttons-container__button">End manual work</button>
       </div>
-      <div class="value--para-container">
+      <div class="value__para-container">
         <p>
           See the end of bilateral infrastructure integrations with Crymbo's
           unified API. Integrate once to build your complete digital assets
@@ -233,11 +242,11 @@
     </section>
 
     <section class="quotes">
-      <div class="quotes--quote-container">
+      <div class="quotes__quote-container">
         <div>
           <img
             src="/media/connect-quotes.png"
-            class="quotes--quote-container--first-img"
+            class="quotes__quote-container__first-img"
           />
         </div>
         <div>
@@ -248,21 +257,21 @@
             interconnect with multiple vendors and solutions seamlessly.
           </h3>
         </div>
-        <div class="quotes--quote-container--second-img-container">
+        <div class="quotes__quote-container__second-img-container">
           <img src="/media/connect-quotes.png" />
         </div>
-        <div class="quoter-div">
+        <div class="quotes__quote-container__quoter-container">
           <p>Ilan Sterk</p>
-          <p id="job-para">CEO</p>
-          <p id="company-para">Horizon Altshuler-Shaham</p>
+          <p class="quotes__quote-container__quoter-container__job-para">CEO</p>
+          <p class="quotes__quote-container__quoter-container__company-para">Horizon Altshuler-Shaham</p>
         </div>
       </div>
 
-      <div class="quotes--quote-container">
+      <div class="quotes__quote-container">
         <div>
           <img
             src="/media/connect-quotes.png"
-            class="quotes--quote-container--first-img"
+            class="quotes__quote-container__first-img"
           />
         </div>
         <div>
@@ -272,21 +281,21 @@
             technologies, mainly in the Web 3.0 markets
           </h3>
         </div>
-        <div class="quotes--quote-container--second-img-container">
+        <div class="quotes__quote-container__second-img-container">
           <img src="/media/connect-quotes.png" />
         </div>
-        <div class="quoter-div">
+        <div class="quotes__quote-container__quoter-container">
           <p>Otni Oron</p>
-          <p id="job-para">Innovation Lab Strategic Lead</p>
+          <p class="quotes__quote-container__quoter-container__job-para">Innovation Lab Strategic Lead</p>
           <p>Bank Hapoalim</p>
         </div>
       </div>
 
-      <div class="quotes--quote-container">
+      <div class="quotes__quote-container">
         <div>
           <img
             src="/media/connect-quotes.png"
-            class="quotes--quote-container--first-img"
+            class="quotes__quote-container__first-img"
           />
         </div>
         <div>
@@ -296,22 +305,19 @@
             more accessible and user-friendly.
           </h3>
         </div>
-        <div class="quotes--quote-container--second-img-container">
+        <div class="quotes__quote-container__second-img-container">
           <img src="/media/connect-quotes.png" />
         </div>
-        <div class="quoter-div">
+        <div class="quotes__quote-container__quoter-container">
           <p>Evald-Hannes Kree</p>
-          <p id="job-para">CEO and Founder</p>
+          <p class="quotes__quote-container__quoter-container__job-para">CEO and Founder</p>
           <p>Swapin</p>
         </div>
       </div>
 
-      <div class="quotes--buttons-container">
+      <div class="quotes__buttons-container">
         <button class="first-button">
-          <img
-            class="arrow-img rotate"
-            src="/media/svg/connect-arrow.svg"
-          />
+          <img class="arrow-img rotate" src="/media/svg/connect-arrow.svg" />
         </button>
         <button class="second-button">
           <img class="arrow-img" src="/media/svg/connect-arrow.svg" />
@@ -320,22 +326,22 @@
     </section>
 
     <section class="max-width-container itr">
-      <div class="itr--container big-container div-yellow">
+      <div class="itr__container itr__big-container itr__container--yellow">
         <div class="arrow-raise-container">
           <img src="/media/svg/button-arrow.svg" class="arrow-raise" />
         </div>
         <h2>Navigating the Crypto Landscape: Read Crymbo's Latest Insights</h2>
         <p>News & Insights</p>
       </div>
-      <div class="small-containers">
-        <div class="itr-div small-container">
+      <div class="itr__small-containers">
+        <div class="itr__container itr__small-containers__container">
           <div class="arrow-raise-container">
             <img src="/media/svg/button-arrow.svg" class="arrow-raise" />
           </div>
           <h2>Meet our team</h2>
-          <p>Team</p>
+          <p>Team</p> 
         </div>
-        <div class="itr-div small-container">
+        <div class="itr__container itr__small-containers__container">
           <div class="arrow-raise-container">
             <img src="/media/svg/button-arrow.svg" class="arrow-raise" />
           </div>
@@ -346,7 +352,7 @@
     </section>
 
     <section class="contact-us">
-      <div class="max-width-container contact-us--wrapper">
+      <div class="max-width-container contact-us__wrapper">
         <p>CONTACT US NOW</p>
         <h2>
           Ready to optimize your
