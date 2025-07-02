@@ -3,7 +3,7 @@ const db = {
     title: "Eliminiate Integrations",
     paragraph:
       "See the end of bilateral infrastructure integrations with Crymbo's unified API. Integrate once to build your complete digital assets stack across pre-trade, trade and post trade functions.",
-    img: "/src/media/connect-value-1.png",
+    img: "/media/connect-value-1.png",
     button: "Request Demo",
     buttonClass: "value-button",
   },
@@ -11,7 +11,7 @@ const db = {
     title: "Become captial efficient",
     paragraph:
       "Stop missed trading opportunities, trade breaks and transaction signing with Crymbo Omniwallet solutions. Control your multiple and custody providers using a single dashboard and interface to enable wallet rebalancing, capital allocation and risk recognition.",
-    img: "/src/media/connect-value-2.png",
+    img: "/media/connect-value-2.png",
     button: "Ready? Become capital efficient",
     buttonClass: "value-simple-button",
   },
@@ -19,7 +19,7 @@ const db = {
     title: "End manual work",
     paragraph:
       "Stop the reliance on spreadsheets, macros and staff to reconcile data across DeFi, CeFi and Tradfi business operations. With Crymbo, you can orchestrate data flows to risk and back office teams with ease.",
-    img: "/src/media/connect-value-3.png",
+    img: "/media/connect-value-3.png",
     button: "Ready? End manual work",
     buttonClass: "value-simple-button",
   },
