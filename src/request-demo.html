@@ -9,50 +9,68 @@
 
   <body style="visibility: hidden">
     <header class="header">
-      <div class="max-width-container">
+      <div class="header__wrapper max-width-container">
         <a class="header__logo-container" href="/">
-          <img src="/media/svg/logo.svg" alt="logo" href="/index.html" />
+          <img
+            class="header__logo-container__logo"
+            src="/media/svg/logo.svg"
+            alt="logo"
+            href="/index.html"
+          />
         </a>
-        <div class="header__navigation">
-          <nav>
-            <a id="highligthed" href="/">Crymbo Oracle</a>
-            <a href="/crymbo-connect.html">Crymbo Connect</a>
-            <a href="#">Documentation</a>
-            <a href="/developers.html">Ecosystem</a>
-            <a href="#">Pricing</a>
-            <a href="#">Blog</a>
+        <div class="header__navigation-wrapper">
+          <nav class="header__navigation-wrapper__navbar">
+            <a class="header__navigation-wrapper__navbar__link" href="/"
+              >Crymbo Oracle</a
+            >
+            <a
+              class="header__navigation-wrapper__navbar__link"
+              href="/crymbo-connect.html"
+              >Crymbo Connect</a
+            >
+            <a class="header__navigation-wrapper__navbar__link" href="#"
+              >Documentation</a
+            >
+            <a
+              class="header__navigation-wrapper__navbar__link"
+              href="/developers.html"
+              >Ecosystem</a
+            >
+            <a class="header__navigation-wrapper__navbar__link" href="#"
+              >Pricing</a
+            >
+            <a class="header__navigation-wrapper__navbar__link" href="#"
+              >Blog</a
+            >
           </nav>
         </div>
-        <div>
-          <div class="header__buttons-container">
-            <a class="header__req-button" href="/request-demo.html"
-              >Request demo
-              <div class="arrow-raise-container">
-                <img
-                  src="/media/svg/button-arrow.svg"
-                  class="arrow-raise invert-img"
-                /></div
-            ></a>
-            <button class="header__dropdown-menu-button">
+
+        <div class="header__buttons-container">
+          <a
+            class="header__buttons-container__req-button"
+            href="/request-demo.html"
+            >Request demo
+            <div class="arrow-raise-container">
               <img
-                type="button"
-                src="/media/svg/hamburger-menu.svg"
-                alt="menu"
-              />
-            </button>
-          </div>
+                src="/media/svg/button-arrow.svg"
+                class="arrow-raise invert-img"
+              /></div
+          ></a>
+          <button class="header__buttons-container__dropdown-menu-button">
+            <img type="button" src="/media/svg/hamburger-menu.svg" alt="menu" />
+          </button>
         </div>
       </div>
     </header>
 
     <div class="dropdown-container">
-      <nav>
-        <a href="/">Crymbo Oracle</a>
-        <a href="/crymbo-connect.html">Crymbo Connect</a>
-        <a href="#">Documentation</a>
-        <a href="/developers.html">Ecosystem</a>
-        <a href="#">Pricing</a>
-        <a href="#">Blog</a>
+      <nav class="dropdown-container__navbar">
+        <a class="dropdown-container__navbar__link" href="/">Crymbo Oracle</a>
+        <a class="dropdown-container__navbar__link" href="/crymbo-connect.html">Crymbo Connect</a>
+        <a class="dropdown-container__navbar__link" href="#">Documentation</a>
+        <a class="dropdown-container__navbar__link" href="/developers.html">Ecosystem</a>
+        <a class="dropdown-container__navbar__link" href="#">Pricing</a>
+        <a class="dropdown-container__navbar__link" href="#">Blog</a>
         <div>
           <a class="dropdown-container__req-button" href="/request-demo.html"
             >Request demo

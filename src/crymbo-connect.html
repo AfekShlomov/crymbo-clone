@@ -9,50 +9,72 @@
 
   <body style="visibility: hidden">
     <header class="header">
-      <div class="max-width-container">
+      <div class="header__wrapper max-width-container">
         <a class="header__logo-container" href="/">
-          <img src="/media/svg/logo.svg" alt="logo" href="/index.html" />
+          <img
+            class="header__logo-container__logo"
+            src="/media/svg/logo.svg"
+            alt="logo"
+            href="/index.html"
+          />
         </a>
-        <div class="header__navigation">
-          <nav>
-            <a id="highligthed" href="/">Crymbo Oracle</a>
-            <a href="/crymbo-connect.html">Crymbo Connect</a>
-            <a href="#">Documentation</a>
-            <a href="/developers.html">Ecosystem</a>
-            <a href="#">Pricing</a>
-            <a href="#">Blog</a>
+        <div class="header__navigation-wrapper">
+          <nav class="header__navigation-wrapper__navbar">
+            <a class="header__navigation-wrapper__navbar__link" href="/"
+              >Crymbo Oracle</a
+            >
+            <a
+              class="header__navigation-wrapper__navbar__link"
+              href="/crymbo-connect.html"
+              >Crymbo Connect</a
+            >
+            <a class="header__navigation-wrapper__navbar__link" href="#"
+              >Documentation</a
+            >
+            <a
+              class="header__navigation-wrapper__navbar__link"
+              href="/developers.html"
+              >Ecosystem</a
+            >
+            <a class="header__navigation-wrapper__navbar__link" href="#"
+              >Pricing</a
+            >
+            <a class="header__navigation-wrapper__navbar__link" href="#"
+              >Blog</a
+            >
           </nav>
         </div>
-        <div>
-          <div class="header__buttons-container">
-            <a class="header__req-button" href="/request-demo.html"
-              >Request demo
-              <div class="arrow-raise-container">
-                <img
-                  src="/media/svg/button-arrow.svg"
-                  class="arrow-raise invert-img"
-                /></div
-            ></a>
-            <button class="header__dropdown-menu-button">
+
+        <div class="header__buttons-container">
+          <a
+            class="header__buttons-container__req-button"
+            href="/request-demo.html"
+            >Request demo
+            <div class="arrow-raise-container">
               <img
-                type="button"
-                src="/media/svg/hamburger-menu.svg"
-                alt="menu"
-              />
-            </button>
-          </div>
+                src="/media/svg/button-arrow.svg"
+                class="arrow-raise invert-img"
+              /></div
+          ></a>
+          <button class="header__buttons-container__dropdown-menu-button">
+            <img type="button" src="/media/svg/hamburger-menu.svg" alt="menu" />
+          </button>
         </div>
       </div>
     </header>
 
     <div class="dropdown-container">
-      <nav>
-        <a href="/">Crymbo Oracle</a>
-        <a href="/crymbo-connect.html">Crymbo Connect</a>
-        <a href="#">Documentation</a>
-        <a href="/developers.html">Ecosystem</a>
-        <a href="#">Pricing</a>
-        <a href="#">Blog</a>
+      <nav class="dropdown-container__navbar">
+        <a class="dropdown-container__navbar__link" href="/">Crymbo Oracle</a>
+        <a class="dropdown-container__navbar__link" href="/crymbo-connect.html"
+          >Crymbo Connect</a
+        >
+        <a class="dropdown-container__navbar__link" href="#">Documentation</a>
+        <a class="dropdown-container__navbar__link" href="/developers.html"
+          >Ecosystem</a
+        >
+        <a class="dropdown-container__navbar__link" href="#">Pricing</a>
+        <a class="dropdown-container__navbar__link" href="#">Blog</a>
         <div>
           <a class="dropdown-container__req-button" href="/request-demo.html"
             >Request demo
@@ -113,11 +135,11 @@
     </section>
 
     <section class="max-width-container use-cases">
-      <h2>Use Cases</h2>
+      <h2 class="use-cases__title">Use Cases</h2>
       <div class="use-cases__content-container">
-        <div>
-          <h3>Crymbo Pay - Payments</h3>
-          <p>
+        <div class="use-cases__content-container__text-container"> 
+          <h3 class="use-cases__content-container__text-container__title">Crymbo Pay - Payments</h3>
+          <p class="use-cases__content-container__text-container__para">
             Crymbo Pay integrates TradFi, CeFi, and DeFi into a single API,
             simplifying payment processes and expanding settlement options with
             digital assets. Offering fast execution, robust security, and full
@@ -128,12 +150,12 @@
         <img
           src="/media/svg/next-gen-travel-rule.svg"
           alt="next gen travel rule"
-        />
+        /> 
       </div>
-      <div class="use-cases__content-container" id="flip">
-        <div>
-          <h3>Crymbo Broker - Trading</h3>
-          <p>
+      <div class="use-cases__content-container flip" >
+        <div class="use-cases__content-container__text-container">
+          <h3 class="use-cases__content-container__text-container__title">Crymbo Broker - Trading</h3>
+          <p class="use-cases__content-container__text-container__para">
             Crymbo simplifies access to crypto markets through seamless
             integration with OTC platforms and white-label trading solutions.
             Featuring advanced orchestration and full compliance, it delivers
@@ -144,9 +166,9 @@
         <img src="/media/compliant-defi.png" />
       </div>
       <div class="use-cases__content-container">
-        <div>
-          <h3>Crymbo Portfolio - Illiquid token management</h3>
-          <p class="short-width-para">
+        <div class="use-cases__content-container__text-container">
+          <h3 class="use-cases__content-container__text-container__title">Crymbo Portfolio - Illiquid token management</h3>
+          <p class="short-width-para use-cases__content-container__text-container__para ">
             Seamlessly manage your liquid and illiquid assets with built-in risk
             management and advanced orchestration. Consolidate everything in one
             platform, designed to simplify trading and streamline your portfolio
@@ -218,9 +240,15 @@
         <img src="/media/connect-value-1.png" />
       </div>
       <div class="value__buttons-container">
-        <button class="value__buttons-container__button">Eliminiate Integrations</button>
-        <button class="value__buttons-container__button">Become captial efficient</button>
-        <button class="value__buttons-container__button">End manual work</button>
+        <button class="value__buttons-container__button">
+          Eliminiate Integrations
+        </button>
+        <button class="value__buttons-container__button">
+          Become captial efficient
+        </button>
+        <button class="value__buttons-container__button">
+          End manual work
+        </button>
       </div>
       <div class="value__para-container">
         <p>
@@ -263,7 +291,9 @@
         <div class="quotes__quote-container__quoter-container">
           <p>Ilan Sterk</p>
           <p class="quotes__quote-container__quoter-container__job-para">CEO</p>
-          <p class="quotes__quote-container__quoter-container__company-para">Horizon Altshuler-Shaham</p>
+          <p class="quotes__quote-container__quoter-container__company-para">
+            Horizon Altshuler-Shaham
+          </p>
         </div>
       </div>
 
@@ -286,7 +316,9 @@
         </div>
         <div class="quotes__quote-container__quoter-container">
           <p>Otni Oron</p>
-          <p class="quotes__quote-container__quoter-container__job-para">Innovation Lab Strategic Lead</p>
+          <p class="quotes__quote-container__quoter-container__job-para">
+            Innovation Lab Strategic Lead
+          </p>
           <p>Bank Hapoalim</p>
         </div>
       </div>
@@ -310,7 +342,9 @@
         </div>
         <div class="quotes__quote-container__quoter-container">
           <p>Evald-Hannes Kree</p>
-          <p class="quotes__quote-container__quoter-container__job-para">CEO and Founder</p>
+          <p class="quotes__quote-container__quoter-container__job-para">
+            CEO and Founder
+          </p>
           <p>Swapin</p>
         </div>
       </div>
@@ -339,7 +373,7 @@
             <img src="/media/svg/button-arrow.svg" class="arrow-raise" />
           </div>
           <h2>Meet our team</h2>
-          <p>Team</p> 
+          <p>Team</p>
         </div>
         <div class="itr__container itr__small-containers__container">
           <div class="arrow-raise-container">
@@ -353,12 +387,12 @@
 
     <section class="contact-us">
       <div class="max-width-container contact-us__wrapper">
-        <p>CONTACT US NOW</p>
-        <h2>
+        <p class="contact-us__wrapper__tag">CONTACT US NOW</p>
+        <h2 class="contact-us__wrapper__title">
           Ready to optimize your
           <span class="pixel-font">digital asset compliance?</span>
         </h2>
-        <button>
+        <button class="contact-us__wrapper__button">
           <div id="uni-button-div">
             <div>Request Demo</div>
           </div>
