@@ -215,14 +215,16 @@ body {
 }
 
 .value {
-  display: flex;
-  flex-direction: column;
+  display: grid;
 
   @media (min-width: 768px) {
-    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    margin-bottom: 17rem;
   }
 
   &--title-container {
+    align-content: center;
     margin-bottom: 1rem;
 
     div {
@@ -242,13 +244,18 @@ body {
     img {
       width: 100%;
     }
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+      grid-row: 1 / 5;
+    }
   }
 
   &--buttons-container {
     display: flex;
     flex-direction: column;
     gap: 0.95rem;
-    margin-bottom: 2.35rem;
+    margin-bottom: 3rem;
 
     h3 {
       font-size: 1.5rem;
@@ -256,89 +263,41 @@ body {
       cursor: pointer;
       color: lightgray;
 
+      @media (min-width: 768px) {
+        font-size: 2rem;
+        margin-bottom: 0;
+      }
+
       &.active {
         color: black;
       }
     }
-
-    &.active {
-      color: black;
-    }
   }
 
   &--para-container {
-    margin-bottom: 2.125rem;
+    margin-bottom: 2rem;
+    @media (min-width: 768px) {
+      align-content: center;
+      margin-bottom: 0;
+    }
 
     p {
       font-size: 1rem;
       line-height: 155%;
       word-spacing: 0.5px;
-    }
-  }
-}
 
-.full-value {
-  display: flex;
-  margin: 0 auto;
-  padding-bottom: 16rem;
-
-  @media (max-width: 767px) {
-    display: none;
-  }
-
-  > div {
-    flex: 1 1 50%;
-    width: 50%;
-  }
-
-  img {
-    width: 100%;
-  }
-
-  &--content-container {
-    display: inline;
-    align-items: center;
-    flex-direction: column;
-    align-items: start;
-    padding-left: 6.5rem;
-
-    &--title-container {
-      display: flex;
-      flex-direction: column;
-      gap: 2.75rem;
-      margin-bottom: 12rem;
-
-      &--title {
-        display: flex;
-        align-self: flex-start;
-        font-size: 0.75rem;
-        font-weight: 500;
-        border: 1px solid black;
-        border-radius: 50px;
-        padding: 0.45rem 0.825rem;
-      }
-
-      &--buttons-container h3 {
-        font-size: 2rem;
-        font-weight: 500;
-        color: lightgray;
-        padding-bottom: 1rem;
-        cursor: pointer;
-
-        &.active {
-          color: black;
-        }
-      }
-    }
-
-    &--para-container {
-      margin-bottom: 3rem;
-      width: 80%;
-
-      p {
+      @media (min-width: 768px) {
         font-size: 1.125rem;
-        line-height: 155%;
+        width: 80%;
       }
+    }
+  }
+
+  &--para-container,
+  &--buttons-container,
+  &--title-container {
+    @media (min-width: 768px) {
+      margin-left: 6.25rem;
     }
   }
 }
@@ -421,6 +380,12 @@ body {
       align-items: center;
       width: 0.75rem;
     }
+  }
+}
+.value-button,
+.value-simple-button {
+  @media (min-width: 768px) {
+    margin-left: 6.25rem;
   }
 }
 
