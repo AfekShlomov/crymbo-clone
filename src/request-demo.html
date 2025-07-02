@@ -67,96 +67,136 @@
     </div>
 
     <section class="max-width-container form-container">
-      <div class="form-container__form">
-        <form> 
-          <h2>Get Started with CRYMBO</h2>
-            <div class="form__row">
-              <div>
-                <label>First name* </label>
-                <input class="form-input" name="first name" />
-                <p class="error-message">This field is required</p>
-              </div>
-              <div>
-                <label>Last name* </label>
-                <input name="last name" class="form-input" />
-                <p class="error-message"></p>
-              </div>
-            </div>
-            <div class="form__row">
-              <div>
-                <label>Company name*</label>
-                <input class="form-input" name="company" name="company" />
-                <p class="error-message"></p>
-              </div>
-              <div>
-                <label>Job</label>
-                <input name="job" class="form-input" />
-                <p class="error-message"></p>
-              </div>
-            </div>
-            <div class="form__email-row"> 
-              <div>
-                <label>Email*</label>
-                <input class="form-input" name="email" />
-                <p class="error-message"></p>
-              </div>
-            </div>
-            <div class="form__checkbox-container">
-              <div id="checkbox-label-margin">
-                <label class="label-spacing">Select your use case</label>
-              </div>
-              <div>
-                <input type="checkbox" name="connect-checkbox" />
-                <label class="checkbox-label">Crymbo Connect</label>
-              </div>
-              <div>
-                <input type="checkbox" name="oracle-checkbox" />
-                <label class="checkbox-label">Crymbo Oracle</label>
-              </div>
-              <p class="error-message"></p>
-            </div>
-            <div class="form__info-row textarea-margin-bottom">
-              <div>
-                <label class="label-spacing">
-                  Any information that would help us prepare the meeting
-                </label>
-                <textarea name="information"></textarea>
-                <p class="error-message"></p>
-              </div>
-            </div>
-            <div class="form__submit-container">
-              <button id="submitButton" type="submit">
-                Submit
-                <div class="arrow-raise-container">
-                  <img src="/media/svg/button-arrow.svg" class="invert-img" />
-                </div>
-              </button>
-              <p class="confirmation-message">Form Submitted</p>
-            </div>
+      <form class="form-container__form">
+        <h2>Get Started with CRYMBO</h2>
+        <div class="form__row">
+          <div class="form__row__input-container">
+            <label class="form__row__input-container__label"
+              >First name*
+            </label>
+            <input
+              class="form__row__input-container__input"
+              name="first name"
+            />
+            <p class="error-message">This field is required</p>
           </div>
-        </form>
-      </div>
+          <div class="form__row__input-container">
+            <label class="form__row__input-container__label">Last name* </label>
+            <input name="last name" class="form__row__input-container__input" />
+            <p class="error-message"></p>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__row__input-container">
+            <label class="form__row__input-container__label"
+              >Company name*</label
+            >
+            <input
+              class="form__row__input-container__input"
+              name="company"
+              name="company"
+            />
+            <p class="error-message"></p>
+          </div>
+          <div class="form__row__input-container">
+            <label class="form__row__input-container__label">Job</label>
+            <input name="job" class="form__row__input-container__input" />
+            <p class="error-message"></p>
+          </div>
+        </div>
+        <div class="form__email-row">
+          <div class="form__row__input-container">
+            <label class="form__row__input-container__label">Email*</label>
+            <input class="form__row__input-container__input" name="email" />
+            <p class="error-message"></p>
+          </div>
+        </div>
+        <div class="form__checkbox-container">
+          <div class="label-margin form__checkbox-container__row">
+            <label class="label-spacing">Select your use case</label>
+          </div>
+          <div class="form__checkbox-container__row">
+            <input
+              type="checkbox"
+              name="connect-checkbox"
+              class="form__checkbox-container__row__input"
+            />
+            <label class="form__checkbox-container__row__label"
+              >Crymbo Connect</label
+            >
+          </div>
+          <div class="form__checkbox-container__row">
+            <input
+              type="checkbox"
+              name="oracle-checkbox"
+              class="form__checkbox-container__row__input"
+            />
+            <label class="form__checkbox-container__row__label"
+              >Crymbo Oracle</label
+            >
+          </div>
+          <p class="error-message"></p>
+        </div>
+        <div class="form__info-row textarea-margin-bottom">
+          <div>
+            <label
+              class="label-spacing"
+              class="form__row__input-container__label"
+            >
+              Any information that would help us prepare the meeting
+            </label>
+            <textarea name="information"></textarea>
+            <p class="error-message"></p>
+          </div>
+        </div>
+        <div class="form__submit-container">
+          <button
+            id="submitButton"
+            type="submit"
+            class="form__submit-container__button"
+          >
+            Submit
+            <div class="arrow-raise-container">
+              <img src="/media/svg/button-arrow.svg" class="invert-img" />
+            </div>
+          </button>
+          <p class="confirmation-message">Form Submitted</p>
+        </div>
+      </form>
 
       <div class="form-container__info">
         <div class="form-container__info__wrapper">
-          <h2>Your demo will include:</h2>
-          <div>
-            <img src="/media/checkmark.png" class="checkmark-green" />
-            <p>
+          <h2 class="form-container__info__wrapper__title">
+            Your demo will include:
+          </h2>
+          <div class="form-container__info__wrapper__para-container">
+            <img
+              src="/media/checkmark.png"
+              class="form-container__info__wrapper__para-container__checkmark"
+            />
+            <p class="form-container__info__wrapper__para-container__para">
               A comprehensive walk-through - Navigate the features most relevant
               to you.
             </p>
           </div>
-          <div>
-            <img src="/media/checkmark.png" class="checkmark-green" />
-            <p>
+          <div class="form-container__info__wrapper__para-container">
+            <img
+              src="/media/checkmark.png"
+              class="form-container__info__wrapper__para-container__checkmark"
+            />
+            <p class="form-container__info__wrapper__para-container__para">
               Q&A session – Speak to a Crymbo expert and get immediate answers
               and insights for how Crymbo can best serve your business needs.
             </p>
           </div>
-          <div>
-            <img src="/media/checkmark.png" class="checkmark-green" />
-            <p class="longer">
+          <div class="form-container__info__wrapper__para-container">
+            <img
+              src="/media/checkmark.png"
+              class="form-container__info__wrapper__para-container__checkmark"
+            />
+            <p
+              class="form-container__info__wrapper__para-container__para longer"
+            >
               Interactive discussion – This is not simply a demo. We want to
               have a conversation with you to learn more about your business and
               how we can work with you to get the most out of the Crymbo
@@ -165,7 +205,7 @@
           </div>
           <img
             src="/media/form-description.webp"
-            class="form-info-section-img"
+            class="form-container__info__wrapper__background-image"
           />
         </div>
       </div>

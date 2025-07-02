@@ -27,7 +27,7 @@ body {
     }
   }
 
-  &__form > form {
+  &__form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -67,7 +67,7 @@ body {
         gap: 1.5rem;
       }
 
-      div {
+      &__input-container {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
@@ -76,7 +76,7 @@ body {
           gap: 0.25rem;
         }
 
-        label {
+        &__label {
           margin-bottom: 0.25rem;
 
           @media (min-width: 768px) {
@@ -84,7 +84,7 @@ body {
           }
         }
 
-        .form-input {
+        &__input {
           font-weight: 400;
           font-size: 1rem;
           border: 1.5px solid rgb(214, 214, 214);
@@ -111,7 +111,7 @@ body {
         width: 100%;
       }
 
-      div {
+      &__input-container {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
@@ -166,7 +166,7 @@ body {
         gap: 0.5rem;
       }
 
-      div {
+      &__row {
         display: flex;
         align-items: center;
         gap: 0.4rem;
@@ -175,23 +175,20 @@ body {
           gap: 0.5rem;
         }
 
-        label {
-          letter-spacing: 0.5px;
-          margin-bottom: 0.5rem;
-        }
-
-        .checkbox-label {
+        &__label {
           font-size: 1rem;
           margin-left: 0.2rem;
           margin-bottom: 0;
           color: black;
+          letter-spacing: 0.5px;
+          margin-bottom: 0.5rem;
 
           @media (min-width: 768px) {
             margin: 0;
           }
         }
 
-        input {
+        &__input {
           transform: scale(120%);
 
           @media (min-width: 768px) {
@@ -201,7 +198,7 @@ body {
         }
       }
 
-      #checkbox-label-margin {
+      .label-margin {
         margin-bottom: 0.15rem;
 
         @media (min-width: 768px) {
@@ -220,7 +217,7 @@ body {
         margin-top: 1rem;
       }
 
-      > button {
+      &__button {
         display: flex;
         align-items: center;
         font-size: 1rem;
@@ -302,7 +299,7 @@ body {
         border-radius: 20px;
       }
 
-      > img {
+      &__background-image {
         display: none;
 
         @media (min-width: 768px) {
@@ -314,7 +311,7 @@ body {
         }
       }
 
-      h2 {
+      &__title {
         font-size: 1.5rem;
         margin-bottom: 0.45rem;
         font-weight: 400;
@@ -327,7 +324,7 @@ body {
         }
       }
 
-      div {
+      &__para-container {
         display: flex;
         flex-direction: row;
         gap: 0.5rem;
@@ -337,7 +334,7 @@ body {
           margin-left: 3rem;
         }
 
-        .checkmark-green {
+        &__checkmark {
           margin-right: 0.25rem;
           width: 1.5rem;
           height: 1.5rem;
@@ -350,7 +347,7 @@ body {
           }
         }
 
-        p {
+        &__para {
           font-size: 1rem;
           font-weight: 400;
           line-height: 155%;
@@ -361,7 +358,7 @@ body {
           }
         }
 
-        p.longer {
+        .longer {
           @media (min-width: 768px) {
             margin-bottom: 4rem;
           }

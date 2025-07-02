@@ -8,7 +8,7 @@ body {
   }
 }
 
-.title {
+.hero {
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@ body {
     margin-bottom: 6.5rem;
   }
 
-  h1 {
+  &__title {
     font-size: 2.5rem;
     font-weight: 500;
     line-height: 116%;
@@ -34,7 +34,7 @@ body {
       text-align: left;
     }
 
-    > span {
+    .pixel-font {
       font-size: 3.75rem;
 
       @media (min-width: 768px) {
@@ -43,7 +43,7 @@ body {
     }
   }
 
-  p {
+  &__decription {
     font-size: 1rem;
     line-height: 155%;
     margin-bottom: 4rem;
@@ -194,12 +194,12 @@ body {
         margin-bottom: 1.5rem;
       }
 
-      > .icon-img {
+      .icon-img {
         height: 1.5rem;
         width: auto;
       }
 
-      > .arrow-img {
+      .arrow-img {
         height: 0.75rem;
         transform: translate(-0.35rem, 0.35rem);
 
@@ -209,7 +209,7 @@ body {
       }
     }
 
-    h2 {
+    &__title {
       font-size: 1.5rem;
       font-weight: 500;
       margin-bottom: 0.5rem;
@@ -220,7 +220,7 @@ body {
       }
     }
 
-    p {
+    &__description {
       font-size: 1rem;
       line-height: 155%;
 
@@ -241,148 +241,152 @@ body {
     padding: 8rem 0;
   }
 
-  h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 125%;
-    margin-bottom: 2rem;
-
-    @media (min-width: 768px) {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-  }
-
-  &__search-container {
-    @media (min-width: 768px) {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-    }
-
-    &__searchbar-container {
-      position: relative;
-      display: flex;
-      align-items: center;
-      width: 15rem;
-      height: 2.75rem;
-      background-color: white;
-      border-radius: 60px;
-      border: 1px solid white;
-      padding: 0.25rem 1rem 0.25rem 1.25rem;
-      margin-bottom: 1rem;
-
-      @media (min-width: 768px) {
-        width: 16rem;
-        height: 3rem;
-        margin-bottom: 0;
-      }
-
-      input {
-        flex: 1;
-        border: none;
-        outline: none;
-        height: 100%;
-        background: transparent;
-        font-size: 1rem;
-        padding-right: 2rem;
+  &__search-wrapper {
+    &__title-container {
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 125%;
+        margin-bottom: 2rem;
 
         @media (min-width: 768px) {
-          font-size: 1.125em;
-          padding-right: 2.5rem;
-          margin-left: 0.25rem;
-        }
-
-        &::placeholder {
-          font-size: 1rem;
-          color: gray;
-        }
-      }
-
-      &__search-icon {
-        position: absolute;
-        right: 0.775rem;
-        width: 1.2rem;
-        height: 1.2rem;
-        pointer-events: none;
-
-        @media (min-width: 768px) {
-          right: 1rem;
-          width: 1.25rem;
-          height: 1.25rem;
-          right: 1.2rem;
+          font-size: 2rem;
+          margin-bottom: 2rem;
         }
       }
     }
 
-    &__buttons-container {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      gap: 0.5rem;
-      margin-bottom: 2rem;
-
+    &__search-container {
       @media (min-width: 768px) {
-        flex-direction: row;
-        gap: 0;
-        margin-bottom: 5rem;
-        margin-right: 1.5rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
       }
 
-      &__filter-buttons {
+      &__search-bar-container {
+        position: relative;
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
+        width: 15rem;
+        height: 2.75rem;
+        background-color: white;
+        border-radius: 60px;
+        border: 1px solid white;
+        padding: 0.25rem 1rem 0.25rem 1.25rem;
+        margin-bottom: 1rem;
 
-        button {
-          font-size: 1rem;
-          font-weight: 400;
+        @media (min-width: 768px) {
+          width: 16rem;
+          height: 3rem;
+          margin-bottom: 0;
+        }
+
+        input {
+          flex: 1;
           border: none;
-          border-radius: 40px;
-          background: white;
-          border: 2px solid white;
-          padding: 0.65rem 1rem;
-          margin-right: 0.2rem;
-          margin-bottom: 0.5rem;
-          white-space: nowrap;
-          cursor: pointer;
-          transition: border-color 0.4s cubic-bezier(0.4, 2, 0.6, 1);
+          outline: none;
+          height: 100%;
+          background: transparent;
+          font-size: 1rem;
+          padding-right: 2rem;
 
           @media (min-width: 768px) {
-            font-size: 0.95rem;
-            padding: 0.8rem 1.125rem;
-            margin-right: 0.5rem;
+            font-size: 1.125em;
+            padding-right: 2.5rem;
+            margin-left: 0.25rem;
           }
 
-          &:hover {
-            border-color: lightgray;
+          &::placeholder {
+            font-size: 1rem;
+            color: gray;
           }
+        }
 
-          &.active,
-          &.active:hover {
-            border-color: black;
+        &__search-icon {
+          position: absolute;
+          right: 0.775rem;
+          width: 1.2rem;
+          height: 1.2rem;
+          pointer-events: none;
+
+          @media (min-width: 768px) {
+            right: 1rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            right: 1.2rem;
           }
         }
       }
-    }
 
-    &__reset-button-div {
-      display: flex;
-      justify-content: start;
-      align-content: center;
+      &__buttons-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
 
-      @media (min-width: 768px) {
-        margin-left: 0.5rem;
-        justify-content: end;
+        @media (min-width: 768px) {
+          flex-direction: row;
+          gap: 0;
+          margin-bottom: 5rem;
+          margin-right: 1.5rem;
+        }
+
+        &__filter-buttons {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 100%;
+
+          button {
+            font-size: 1rem;
+            font-weight: 400;
+            border: none;
+            border-radius: 40px;
+            background: white;
+            border: 2px solid white;
+            padding: 0.65rem 1rem;
+            margin-right: 0.2rem;
+            margin-bottom: 0.5rem;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: border-color 0.4s cubic-bezier(0.4, 2, 0.6, 1);
+
+            @media (min-width: 768px) {
+              font-size: 0.95rem;
+              padding: 0.8rem 1.125rem;
+              margin-right: 0.5rem;
+            }
+
+            &:hover {
+              border-color: lightgray;
+            }
+
+            &.active,
+            &.active:hover {
+              border-color: black;
+            }
+          }
+        }
       }
 
-      > button {
-        background-color: transparent;
-        border-radius: none;
-        white-space: nowrap;
-        border: none;
-        font-size: 1rem;
+      &__reset-button-div {
+        display: flex;
+        justify-content: start;
+        align-content: center;
+
+        @media (min-width: 768px) {
+          margin-left: 0.5rem;
+          justify-content: end;
+        }
+
+        > button {
+          background-color: transparent;
+          border-radius: none;
+          white-space: nowrap;
+          border: none;
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -515,7 +519,7 @@ body {
     padding: 8rem 0;
   }
 
-  h2 {
+  &__title {
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 4rem;
@@ -549,12 +553,12 @@ body {
         margin-bottom: 0.25rem;
       }
 
-      h2 {
+      &__title {
         font-size: 1rem;
         font-weight: 400;
       }
 
-      img {
+      &__image {
         display: inline;
         height: 0.75rem;
 
@@ -564,7 +568,7 @@ body {
       }
     }
 
-    p {
+    &__para {
       font-size: 1;
       color: gray;
     }
