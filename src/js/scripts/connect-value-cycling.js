@@ -1,104 +1,56 @@
-const db = {
-  0: {
-    title: "Eliminiate Integrations",
-    paragraph:
-      "See the end of bilateral infrastructure integrations with Crymbo's unified API. Integrate once to build your complete digital assets stack across pre-trade, trade and post trade functions.",
-    img: "/media/connect-value-1.png",
-    button: "Request Demo",
-    buttonClass: "value-button",
-  },
-  1: {
-    title: "Become captial efficient",
-    paragraph:
-      "Stop missed trading opportunities, trade breaks and transaction signing with Crymbo Omniwallet solutions. Control your multiple and custody providers using a single dashboard and interface to enable wallet rebalancing, capital allocation and risk recognition.",
-    img: "/media/connect-value-2.png",
-    button: "Ready? Become capital efficient",
-    buttonClass: "value-simple-button",
-  },
-  2: {
-    title: "End manual work",
-    paragraph:
-      "Stop the reliance on spreadsheets, macros and staff to reconcile data across DeFi, CeFi and Tradfi business operations. With Crymbo, you can orchestrate data flows to risk and back office teams with ease.",
-    img: "/media/connect-value-3.png",
-    button: "Ready? End manual work",
-    buttonClass: "value-simple-button",
-  },
-};
+const valueCollection = document.getElementsByClassName("value__item");
 
-const valueSection = document.querySelector(".value");
-const valueObj = {
-  img: valueSection.querySelector("img"),
-  buttonsDiv: valueSection.querySelectorAll(".value__buttons-container h3"),
-  para: valueSection.querySelector(".value__para-container p"),
-  button: valueSection.querySelector(".value-button"),
-};
-
-const fullValueSection = document.querySelector(".full-value");
-const fullValueObj = {
-  img: fullValueSection.querySelector(".full-value__img-container img"),
-  buttonsDiv: fullValueSection.querySelectorAll("h3"),
-  para: fullValueSection.querySelector(".full-value__content-container__para-container p"),
-  button: fullValueSection.querySelector(".value-button"),
-};
-
-let currentValueIndex = 0;
-
-function showValue(index) {
-  const dbItem = db[index];
-  if (!dbItem) return;
-
-  fullValueObj.img.src = dbItem.img;
-  valueObj.img.src = dbItem.img;
-
-  fullValueObj.para.textContent = dbItem.paragraph;
-  valueObj.para.textContent = dbItem.paragraph;
-
-  fullValueObj.button.className = "";
-  fullValueObj.button.classList.add(dbItem.buttonClass);
-  valueObj.button.className = "";
-  valueObj.button.classList.add(dbItem.buttonClass);
-
-  fullValueObj.button.querySelector("#value-button-div div").textContent =
-    dbItem.button;
-
-  valueObj.button.querySelector("#value-button-div div").textContent =
-    dbItem.button;
-
-  fullValueObj.buttonsDiv.forEach((buttonItem, buttonIndex) => {
-    buttonItem.className = "";
-    if (dbItem.title === buttonItem.textContent) {
-      buttonItem.classList.add("active");
-    }
-  });
-  valueObj.buttonsDiv.forEach((buttonItem, buttonIndex) => {
-    buttonItem.className = "";
-    if (dbItem.title === buttonItem.textContent) {
-      buttonItem.classList.add("active");
-    }
-  });
+if (!valueCollection) {
+  throw new Error("cannot find value items");
 }
 
-function handleCycle() {
-  currentValueIndex = (currentValueIndex + 1) % Object.keys(db).length;
-  showValue(currentValueIndex);
-}
-showValue(currentValueIndex);
-let interval = setInterval(handleCycle, 5000);
+const valueItems = Array.from(valueCollection);
 
-fullValueObj.buttonsDiv.forEach((buttonItem, index) => {
-  buttonItem.addEventListener("click", () => {
-    showValue(index);
-    currentValueIndex = index;
-    clearInterval(interval);
-    interval = setInterval(handleCycle, 5000);
+valueItems.forEach((item, i) => {
+  item.buttons = item.querySelectorAll(".value__buttons-container__button");
+  item.next = i === valueItems.length - 1 ? 0 : i + 1;
+  if (!item.buttons) {
+    throw new Error("cannot find value buttons in " + i);
+  }
+  if (!item.next && item.next !== 0) {
+    throw new Error("cannot find value next item in " + i);
+  }
+});
+
+let currentDisplayedItem = 0;
+let timer;
+
+function resetTimer() {
+  clearTimeout(timer);
+
+  timer = setTimeout(() => {
+    handleCycle(valueItems[currentDisplayedItem].next);
+  }, 5000);
+}
+
+function handleCycle(index) {
+  currentDisplayedItem = index;
+
+  showItem();
+}
+
+function showItem() {
+  valueItems.forEach((item, index) => {
+    index === currentDisplayedItem
+      ? item.classList.add("visible")
+      : item.classList.remove("visible");
+  });
+
+  resetTimer();
+}
+
+valueItems.forEach((item) => {
+  item.buttons.forEach((button, buttonIndex) => {
+    button.addEventListener("click", () => {
+      handleCycle(buttonIndex);
+    });
   });
 });
 
-valueObj.buttonsDiv.forEach((buttonItem, index) => {
-  buttonItem.addEventListener("click", () => {
-    showValue(index);
-    currentValueIndex = index;
-    clearInterval(interval);
-    interval = setInterval(handleCycle, 5000);
-  });
-});
+showItem();
+resetTimer();
