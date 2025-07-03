@@ -9,6 +9,7 @@ const valueItems = Array.from(valueCollection);
 valueItems.forEach((item, i) => {
   item.buttons = item.querySelectorAll(".value__buttons-container__button");
   item.next = i === valueItems.length - 1 ? 0 : i + 1;
+
   if (!item.buttons) {
     throw new Error("cannot find value buttons in " + i);
   }
