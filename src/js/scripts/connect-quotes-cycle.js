@@ -1,47 +1,65 @@
-const quotes = document.querySelectorAll(".quotes__quote-container");
-let currentQuoteIndex = 0;
+const quotesCollection = document.getElementsByClassName(
+  "quotes__quote-container"
+);
+const nextButton = document.getElementById("first-button");
+const prevButton = document.getElementById("second-button");
 
-function showQuote(index) {
-  quotes.forEach((quote, i) => {
-    if (i === index) {
-      quote.style.display = "flex";
-      void quote.offsetWidth;
+if (!quotesCollection) {
+  throw new Error("failed to find quotues elements");
+}
+if (!nextButton || !prevButton) {
+  throw new Error("failed to find button element");
+}
+const quotes = Array.from(quotesCollection);
+
+quotes.forEach((quote, i) => {
+  quote.nextQuote = i === quotes.length - 1 ? quotes[0] : quotes[i + 1];
+  quote.prevQuote = i === 0 ? quotes[quotes.length - 1] : quotes[i - 1];
+});
+
+let currentDisplayedQuote = quotes[0];
+let timer;
+
+function resetTimer() {
+  clearTimeout(timer);
+
+  timer = setTimeout(() => {
+    handleCycle(true);
+  }, 5000);
+}
+
+function handleCycle(forward) {
+  if (forward) {
+    currentDisplayedQuote = currentDisplayedQuote.nextQuote;
+  }
+  if (!forward) {
+    currentDisplayedQuote = currentDisplayedQuote.prevQuote;
+  }
+
+  showQuote();
+}
+
+function showQuote() {
+  quotes.forEach((quote) => {
+    if (quote === currentDisplayedQuote) {
       quote.classList.add("visible");
-    } else {
+    }
+    if (quote !== currentDisplayedQuote) {
       quote.classList.remove("visible");
-      setTimeout(() => {
-        if (!quote.classList.contains("visible")) {
-          quote.style.display = "none";
-        }
-      }, 250);
     }
   });
+
+  resetTimer();
 }
-
-function handleCycle() {
-  currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
-  showQuote(currentQuoteIndex);
-}
-
-function resetInterval() {
-  clearInterval(quotesInterval);
-  quotesInterval = setInterval(handleCycle, 5000);
-}
-
-showQuote(currentQuoteIndex);
-let quotesInterval = setInterval(handleCycle, 5000);
-
-const nextButton = document.querySelector(".first-button");
-const prevButton = document.querySelector(".second-button");
 
 nextButton.addEventListener("click", () => {
-  currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
-  showQuote(currentQuoteIndex);
-  resetInterval();
+  handleCycle(true);
+  resetTimer();
+});
+prevButton.addEventListener("click", () => {
+  handleCycle(false);
+  resetTimer();
 });
 
-prevButton.addEventListener("click", () => {
-  currentQuoteIndex = (currentQuoteIndex - 1 + quotes.length) % quotes.length;
-  showQuote(currentQuoteIndex);
-  resetInterval();
-});
+showQuote();
+resetTimer(true);

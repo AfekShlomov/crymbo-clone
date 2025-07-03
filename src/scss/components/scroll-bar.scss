@@ -18,10 +18,10 @@
     display: flex;
   }
 
-  &--slider {
+  &__slider {
     overflow: hidden;
 
-    &--track {
+    &__track {
       display: flex;
       width: max-content;
       animation: scroll 40s linear infinite;
