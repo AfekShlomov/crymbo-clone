@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crymbo.com Clone</title>
+    <script type="module" src="/js/request-demo.js"></script>
+  </head>
+
+  <body style="visibility: hidden">
+    <header class="header">
+      <div class="header__wrapper max-width-container">
+        <a class="header__logo-container" href="/">
+          <img
+            class="header__logo-container__logo"
+            src="/media/svg/logo.svg"
+            alt="logo"
+            href="/index.html"
+          />
+        </a>
+        <div class="header__navigation-wrapper">
+          <nav class="header__navigation-wrapper__navbar">
+            <a class="header__navigation-wrapper__navbar__link" href="/"
+              >Crymbo Oracle</a
+            >
+            <a
+              class="header__navigation-wrapper__navbar__link"
+              href="/crymbo-connect.html"
+              >Crymbo Connect</a
+            >
+            <a class="header__navigation-wrapper__navbar__link" href="#"
+              >Documentation</a
+            >
+            <a
+              class="header__navigation-wrapper__navbar__link"
+              href="/developers.html"
+              >Ecosystem</a
+            >
+            <a class="header__navigation-wrapper__navbar__link" href="#"
+              >Pricing</a
+            >
+            <a class="header__navigation-wrapper__navbar__link" href="#"
+              >Blog</a
+            >
+          </nav>
+        </div>
+
+        <div class="header__buttons-container">
+          <a
+            class="header__buttons-container__req-button"
+            href="/request-demo.html"
+            >Request demo
+            <div class="arrow-raise-container">
+              <img
+                src="/media/svg/button-arrow.svg"
+                class="arrow-raise invert-img"
+              /></div
+          ></a>
+          <button class="header__buttons-container__dropdown-menu-button">
+            <img type="button" src="/media/svg/hamburger-menu.svg" alt="menu" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="dropdown-container">
+      <nav class="dropdown-container__navbar">
+        <a class="dropdown-container__navbar__link" href="/">Crymbo Oracle</a>
+        <a class="dropdown-container__navbar__link" href="/crymbo-connect.html">Crymbo Connect</a>
+        <a class="dropdown-container__navbar__link" href="#">Documentation</a>
+        <a class="dropdown-container__navbar__link" href="/developers.html">Ecosystem</a>
+        <a class="dropdown-container__navbar__link" href="#">Pricing</a>
+        <a class="dropdown-container__navbar__link" href="#">Blog</a>
+        <div>
+          <a class="dropdown-container__req-button" href="/request-demo.html"
+            >Request demo
+            <div class="arrow-raise-container">
+              <img
+                src="/media/svg/button-arrow.svg"
+                class="arrow-raise invert-img"
+              /></div
+          ></a>
+        </div>
+      </nav>
+    </div>
+
+    <section class="max-width-container form-container">
+      <form class="form-container__form">
+        <h2>Get Started with CRYMBO</h2>
+        <div class="form__row">
+          <div class="form__row__input-container">
+            <label class="form__row__input-container__label"
+              >First name*
+            </label>
+            <input
+              class="form__row__input-container__input"
+              name="first name"
+            />
+            <p class="error-message">This field is required</p>
+          </div>
+          <div class="form__row__input-container">
+            <label class="form__row__input-container__label">Last name* </label>
+            <input name="last name" class="form__row__input-container__input" />
+            <p class="error-message"></p>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__row__input-container">
+            <label class="form__row__input-container__label"
+              >Company name*</label
+            >
+            <input
+              class="form__row__input-container__input"
+              name="company"
+              name="company"
+            />
+            <p class="error-message"></p>
+          </div>
+          <div class="form__row__input-container">
+            <label class="form__row__input-container__label">Job</label>
+            <input name="job" class="form__row__input-container__input" />
+            <p class="error-message"></p>
+          </div>
+        </div>
+        <div class="form__email-row">
+          <div class="form__row__input-container">
+            <label class="form__row__input-container__label">Email*</label>
+            <input class="form__row__input-container__input" name="email" />
+            <p class="error-message"></p>
+          </div>
+        </div>
+        <div class="form__checkbox-container">
+          <div class="label-margin form__checkbox-container__row">
+            <label class="label-spacing">Select your use case</label>
+          </div>
+          <div class="form__checkbox-container__row">
+            <input
+              type="checkbox"
+              name="connect-checkbox"
+              class="form__checkbox-container__row__input"
+            />
+            <label class="form__checkbox-container__row__label"
+              >Crymbo Connect</label
+            >
+          </div>
+          <div class="form__checkbox-container__row">
+            <input
+              type="checkbox"
+              name="oracle-checkbox"
+              class="form__checkbox-container__row__input"
+            />
+            <label class="form__checkbox-container__row__label"
+              >Crymbo Oracle</label
+            >
+          </div>
+          <p class="error-message"></p>
+        </div>
+        <div class="form__info-row textarea-margin-bottom">
+          <div>
+            <label
+              class="label-spacing"
+              class="form__row__input-container__label"
+            >
+              Any information that would help us prepare the meeting
+            </label>
+            <textarea name="information"></textarea>
+            <p class="error-message"></p>
+          </div>
+        </div>
+        <div class="form__submit-container">
+          <button
+            id="submitButton"
+            type="submit"
+            class="form__submit-container__button"
+          >
+            Submit
+            <div class="arrow-raise-container">
+              <img src="/media/svg/button-arrow.svg" class="invert-img" />
+            </div>
+          </button>
+          <p class="confirmation-message">Form Submitted</p>
+        </div>
+      </form>
+
+      <div class="form-container__info">
+        <div class="form-container__info__wrapper">
+          <h2 class="form-container__info__wrapper__title">
+            Your demo will include:
+          </h2>
+          <div class="form-container__info__wrapper__para-container">
+            <img
+              src="/media/checkmark.png"
+              class="form-container__info__wrapper__para-container__checkmark"
+            />
+            <p class="form-container__info__wrapper__para-container__para">
+              A comprehensive walk-through - Navigate the features most relevant
+              to you.
+            </p>
+          </div>
+          <div class="form-container__info__wrapper__para-container">
+            <img
+              src="/media/checkmark.png"
+              class="form-container__info__wrapper__para-container__checkmark"
+            />
+            <p class="form-container__info__wrapper__para-container__para">
+              Q&A session – Speak to a Crymbo expert and get immediate answers
+              and insights for how Crymbo can best serve your business needs.
+            </p>
+          </div>
+          <div class="form-container__info__wrapper__para-container">
+            <img
+              src="/media/checkmark.png"
+              class="form-container__info__wrapper__para-container__checkmark"
+            />
+            <p
+              class="form-container__info__wrapper__para-container__para longer"
+            >
+              Interactive discussion – This is not simply a demo. We want to
+              have a conversation with you to learn more about your business and
+              how we can work with you to get the most out of the Crymbo
+              platform.
+            </p>
+          </div>
+          <img
+            src="/media/form-description.webp"
+            class="form-container__info__wrapper__background-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="max-width-container footer__container">
+        <div
+          class="footer-adress footer__container__col footer__container__col--wide"
+        >
+          <h4>COMPANY</h4>
+          <p>
+            3rd Floor 86-90 <br />
+            Paul Street,
+          </p>
+          <p>London, England,</p>
+          <p>EC2A 4NE</p>
+          <p>-</p>
+          <p>info@crymbo.com</p>
+          <p>-</p>
+          <p>X (Twitter)</p>
+          <p>LinkedIn</p>
+        </div>
+        <div
+          class="footer__container__col--short footer__container__col footer-linkable"
+        >
+          <h4>PRODUCTS</h4>
+          <p>Crymbo Oracle</p>
+          <p>Crymbo Connect</p>
+        </div>
+        <div
+          class="footer__container__col--short footer__container__col footer-linkable"
+        >
+          <h4>USE CASES</h4>
+          <p>Launch crypto products, fast</p>
+          <p>Scale operations & tech with ease</p>
+          <p>Control multiple wallets & custodians</p>
+          <p>Improve Capital Efficiency</p>
+          <p>Intelligent Risk Managament</p>
+          <p>Know your data</p>
+        </div>
+        <div
+          class="footer__container__col--short footer__container__col footer-linkable"
+        >
+          <h4>DEVELOPER</h4>
+          <p>Docs</p>
+          <p>API Reference</p>
+          <p class="margin-para">Join Crymbo Marketplace</p>
+          <h4>COMPANY</h4>
+          <p>Privacy Policy</p>
+          <p>© 2024 Crymbo Ltd.</p>
+        </div>
+      </div>
+      <img class="footer__image" src="/media/svg/crymbo-footer-logo.svg" />
+    </footer>
+  </body>
+</html>

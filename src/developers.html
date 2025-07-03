@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crymbo.com Clone</title>
+    <script type="module" src="js/developers.js" defer></script>
+  </head>
+
+  <body style="visibility: hidden">
+    <header class="header">
+      <div class="header__wrapper max-width-container">
+        <a class="header__logo-container" href="/">
+          <img
+            class="header__logo-container__logo"
+            src="/media/svg/logo.svg"
+            alt="logo"
+            href="/index.html"
+          />
+        </a>
+        <div class="header__navigation-wrapper">
+          <nav class="header__navigation-wrapper__navbar">
+            <a class="header__navigation-wrapper__navbar__link" href="/"
+              >Crymbo Oracle</a
+            >
+            <a
+              class="header__navigation-wrapper__navbar__link"
+              href="/crymbo-connect.html"
+              >Crymbo Connect</a
+            >
+            <a class="header__navigation-wrapper__navbar__link" href="#"
+              >Documentation</a
+            >
+            <a
+              class="header__navigation-wrapper__navbar__link"
+              href="/developers.html"
+              >Ecosystem</a
+            >
+            <a class="header__navigation-wrapper__navbar__link" href="#"
+              >Pricing</a
+            >
+            <a class="header__navigation-wrapper__navbar__link" href="#"
+              >Blog</a
+            >
+          </nav>
+        </div>
+
+        <div class="header__buttons-container">
+          <a
+            class="header__buttons-container__req-button"
+            href="/request-demo.html"
+            >Request demo
+            <div class="arrow-raise-container">
+              <img
+                src="/media/svg/button-arrow.svg"
+                class="arrow-raise invert-img"
+              /></div
+          ></a>
+          <button class="header__buttons-container__dropdown-menu-button">
+            <img type="button" src="/media/svg/hamburger-menu.svg" alt="menu" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="dropdown-container">
+      <nav class="dropdown-container__navbar">
+        <a class="dropdown-container__navbar__link" href="/">Crymbo Oracle</a>
+        <a class="dropdown-container__navbar__link" href="/crymbo-connect.html">Crymbo Connect</a>
+        <a class="dropdown-container__navbar__link" href="#">Documentation</a>
+        <a class="dropdown-container__navbar__link" href="/developers.html">Ecosystem</a>
+        <a class="dropdown-container__navbar__link" href="#">Pricing</a>
+        <a class="dropdown-container__navbar__link" href="#">Blog</a>
+        <div>
+          <a class="dropdown-container__req-button" href="/request-demo.html"
+            >Request demo
+            <div class="arrow-raise-container">
+              <img
+                src="/media/svg/button-arrow.svg"
+                class="arrow-raise invert-img"
+              /></div
+          ></a>
+        </div>
+      </nav>
+    </div>
+
+    <section class="hero">
+      <h1 class="hero__title">
+        Add new infrastructure to your <br />
+        business <span class="pixel-font">through a single API</span>
+      </h1>
+      <p class="hero__decription">
+        Add new applications, wallets, liquidity, yield and any infrastructure
+        to your digital assets business with just one easy integration.
+      </p>
+      <div class="hero__buttons-container">
+        <button class="hero__buttons-container__button">
+          <div class="button-div">
+            <div>Request Callback</div>
+          </div>
+          <div class="arrow-raise-container" id="div-arrow">
+            <img src="/media/svg/button-arrow.svg" class="arrow-raise" />
+          </div>
+        </button>
+        <button class="hero__buttons-container__simple-button">
+          See our Integrations
+        </button>
+      </div>
+    </section>
+
+    <section class="max-width-container buttons">
+      <div class="buttons__content-container">
+        <div class="buttons__content-container__images-container">
+          <img src="/media/svg/dev-buttons-1.svg" class="icon-img" />
+          <img src="/media/svg/button-arrow.svg" class="arrow-img" />
+        </div>
+        <h2 class="buttons__content-container__title">Don't see your name?</h2>
+        <p class="buttons__content-container__description">
+          Join out marketplace
+        </p>
+      </div>
+      <div class="buttons__content-container">
+        <div class="buttons__content-container__images-container">
+          <img src="/media/svg/dev-buttons-2.svg" class="icon-img" />
+          <img src="/media/svg/button-arrow.svg" class="arrow-img" />
+        </div>
+        <h2 class="buttons__content-container__title">API Reference</h2>
+        <p class="buttons__content-container__description">Browse the API</p>
+      </div>
+      <div class="buttons__content-container">
+        <div class="buttons__content-container__images-container">
+          <img src="/media/svg/dev-buttons-3.svg" class="icon-img" />
+          <img src="/media/svg/button-arrow.svg" class="arrow-img" />
+        </div>
+        <h2 class="buttons__content-container__title">Integration Guide</h2>
+        <p class="buttons__content-container__description">
+          Learn how to activate new infrastructure with the Crymbo API
+        </p>
+      </div>
+    </section>
+
+    <section class="ecosystem">
+      <div class="ecosystem__search-wrapper max-width-container">
+        <div class="ecosystem__search-wrapper__title-container">
+          <h2>
+            Explore CRYMBO ecosystem <br />
+            30+ ready integrations
+          </h2>
+        </div>
+        <div class="ecosystem__search-wrapper__search-container">
+          <div
+            class="ecosystem__search-wrapper__search-container__search-bar-container"
+          >
+            <input type="text" placeholder="Search" id="search-bar" /><img
+              src="/media/search-bar-logo.png"
+              class="ecosystem__search-wrapper__search-container__search-bar-container__search-icon"
+            />
+          </div>
+          <div
+            class="ecosystem__search-wrapper__search-container__buttons-container"
+          >
+            <div
+              class="ecosystem__search-wrapper__search-container__buttons-container__filter-buttons"
+            >
+              <button id="Oracle">CRYMBO Oracle</button>
+              <button id="Payment">Payment</button>
+              <button id="KYT">KYT</button>
+              <button id="Wallet">Wallet</button>
+              <button id="Custody">Custody</button>
+              <button id="Liquidity">Liquidity</button>
+            </div>
+
+            <div
+              class="ecosystem__search-wrapper__search-container__reset-button-div"
+            >
+              <button id="Reset">Reset Filters</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-width-container ecosystem__content-div">
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-1.png" />
+              <h3>Binance</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Binance is the world’s largest crypto exchange by trading volume.
+              Today, Binance is the world’s leading blockchain ecosystem, with a
+              product suite that includes the largest digital asset exchange.
+            </p>
+            <div><p class="item-tag">LIQUIDITY</p></div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-2.png" />
+              <h3>BitGo</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              BitGo provides regulated custody, financial services, and core
+              infrastructure for investors and builders alike.
+            </p>
+            <div><p class="item-tag">WALLET</p></div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-3.png" />
+              <h3>Bitstamp</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Bitstamp – the world's longest-standing crypto exchange. Low fees,
+              reliable service and simple setup.
+            </p>
+            <div><p class="item-tag">LIQUIDITY</p></div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-4.png" />
+              <h3>Chainalysis</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Blockchain analysis software and services to help law enforcement
+              investigate cryptocurrency crime
+            </p>
+            <div><p class="item-tag">KYT</p></div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-5.png" />
+              <h3>Cybavo</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              CYBAVO provides the complete solutions for crypto asset custody
+              and helps you build your web3 services.
+            </p>
+            <div><p class="item-tag">WALLET</p></div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-6.png" />
+              <h3>Deribit</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Deribit is an institutional-grade cryptocurrency derivatives
+              platform. High matching engine capacity, low latency, advanced
+              risk management, and high liquidity makes Deribit a unique player
+              in the market.
+            </p>
+            <div><p class="item-tag">LIQUIDITY</p></div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-7.png" />
+              <h3>Dropbox Sign</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              With Dropbox Sign, you can easily get contracts signed from
+              anywhere, at any time.
+            </p>
+            <div><p class="item-tag">KYT</p></div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-8.png" />
+              <h3>Fireblocks</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Fireblocks provides a suite of applications to manage digital
+              asset operations and a complete development platform to build your
+              business on the blockchain.
+            </p>
+            <div>
+              <p class="item-tag">WALLET</p>
+              <p class="item-tag">CUSTODY</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-9.png" />
+              <h3>GK8</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              GK8 is the world's most secure institutional digital asset custody
+              solution! 100% secure COLD VAULT, and PATENTED MPC solution. The
+              company’s Cold Vault is the only solution on the market that
+              enables users to create, sign, and send blockchain transactions
+              without connecting to the internet, eliminating all cyber attack
+              vectors.
+            </p>
+            <div>
+              <p class="item-tag">CUSTODY</p>
+              <p class="item-tag">WALLET</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-10.png" />
+              <h3>Gate.io</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Established in 2013, Gate.io is one of the world's leading
+              cryptocurrency exchanges, consistently ranking among the top 10
+              globally. Gate.io provides a secure, transparent, and
+              comprehensive trading platform to millions of users, supporting a
+              wide range of digital asset services.
+            </p>
+            <div>
+              <p class="item-tag">LIQUIDITY</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-11.png" />
+              <h3>Gemini</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Gemini is a simple and secure* platform to build your crypto
+              portfolio.
+            </p>
+            <div>
+              <p class="item-tag">LIQUIDITY</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-12.png" />
+              <h3>INX</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              One US regulated hub for cryptocurrencies & security tokens
+            </p>
+            <div>
+              <p class="item-tag">LIQUIDITY</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-13.png" />
+              <h3>Kraken</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Platform that allows users to buy, sell, and trade a variety of
+              cryptocurrencies.
+            </p>
+            <div>
+              <p class="item-tag">LIQUIDITY</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-14.png" />
+              <h3>Ledger</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Platform that allows users to buy, sell, and trade a variety of
+              cryptocurrencies.
+            </p>
+            <div>
+              <p class="item-tag">WALLET</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-15.png" />
+              <h3>Luxon Pay</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Luxon Pay is your multi-currency e-wallet for global payments,
+              instant peer to peer transfers and currency exchange.
+            </p>
+            <div>
+              <p class="item-tag">PAYMENT</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-16.png" />
+              <h3>OKX</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Platform that allows users to buy, sell, and trade a variety of
+              cryptocurrencies.
+            </p>
+            <div>
+              <p class="item-tag">LIQUIDITY</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-17.png" />
+              <h3>Pay.com</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Payments made simple
+            </p>
+            <div>
+              <p class="item-tag">PAYMENT</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-18.png" />
+              <h3>Plume</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Plume is a crypto-native platform designed to bring real-world
+              assets (RWA) into decentralized finance. It enables users to
+              tokenize traditional assets, transforming them into globally
+              accessible and tradable financial tools. With deep blockchain
+              integration, Plume unlocks true utility for RWAs across DeFi
+              ecosystems.
+            </p>
+            <div>
+              <p class="item-tag">CRYMBO ORACLE</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-19.png" />
+              <h3>PremierPay</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              PremierPay provides businesses around the world with a powerful
+              selection of standard and alternative payment processing services
+              and solutions, as well as the ability to integrate their own
+              existing ones.
+            </p>
+            <div>
+              <p class="item-tag">PAYMENT</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-20.png" />
+              <h3>Scorechain</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Easy-to-use and customizable risk-AML software for
+              cryptocurrencies.
+            </p>
+            <div>
+              <p class="item-tag">KYT</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-21.png" />
+              <h3>SignNow</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Electronic signature that delivers more for less Sign documents
+              online, generate agreements, negotiate contracts, and accept
+              payments with legally-binding eSignatures.
+            </p>
+            <div>
+              <p class="item-tag">KYT</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-22.png" />
+              <h3>Singularity Finance</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Singularity Finance is the first AI-centric EVM-compatible L2
+              blockchain bringing the AI economy on-chain. It offers a fully
+              compliant RWA tokenisation framework to tokenise and monetise the
+              AI value chain in its entirety.Stemming from the SingularityNET
+              ecosystem and closely tied to the Artificial Superintelligence
+              Alliance, Singularity Finance is poised to become the financial
+              chain for everything AI.
+            </p>
+            <div>
+              <p class="item-tag">CRYMBO ORACLE</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-23.png" />
+              <h3>SolidPayment</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Solid Payments is a global payment gateway connects to large
+              network of acquiring banks around the world. Multi acquiring
+              solutions for online merchants.
+            </p>
+            <div>
+              <p class="item-tag">PAYMENT</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-24.png" />
+              <h3>SumSub</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              This identity verification platform provides an extensive solution
+              for verifying users, businesses, and transactions. It offers
+              advanced ML algorithms for fraud detection, code-free
+              orchestration of verification checks, and global reach with
+              support for multiple countries.
+            </p>
+            <div>
+              <p class="item-tag">KYT</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-25.png" />
+              <h3>Swapin</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Ultra-fast payments between crypto and banks
+            </p>
+            <div>
+              <p class="item-tag">PAYMENT</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-26.png" />
+              <h3>Utila</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Manage your organization’s crypto strategy with non-custodial,
+              secure and chain agnostic wallet infrastructure
+            </p>
+            <div>
+              <p class="item-tag">WALLET</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-27.png" />
+              <h3>WalletConnect</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              WalletConnect is an open source protocol that allows you to
+              connect your crypto wallet to decentralized applications (dApps)
+              on the web.
+            </p>
+            <div>
+              <p class="item-tag">WALLET</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-28.png" />
+              <h3>Wallter</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Send and receive funds and payments from anywhere and at any time.
+            </p>
+            <div>
+              <p class="item-tag">PAYMENT</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-29.png" />
+              <h3>XBO</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Buy, trade, or swap cryptocurrencies with ease.
+            </p>
+            <div>
+              <p class="item-tag">LIQUIDITY</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-30.png" />
+              <h3>Zen</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              ZEN.com is a fintech company offering innovative digital financial
+              services, including payment processing, currency exchange, and a
+              multi-currency Mastercard®. Operating under a Central Bank of
+              Lithuania license, it provides secure, seamless solutions for
+              consumers and businesses across Europe.
+            </p>
+            <div>
+              <p class="item-tag">PAYMENT</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-31.png" />
+              <h3>connecx</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Connecx is a group of online retail, banking, and payment system
+              professionals from the US, Asia, and Africa, bringing together
+              extensive experience from diverse environments. The team has
+              developed systems addressing varying levels of technology, fraud
+              prevention, currency restrictions, and logistical challenges in
+              product delivery. This expertise uniquely positions Connecx to
+              manage the complexities of the modern payment and
+              order-fulfillment market effectively.
+            </p>
+            <div>
+              <p class="item-tag">PAYMENT</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecosystem__content-div__item-container">
+          <div class="ecosystem__content-div__item-container__header-container">
+            <div>
+              <img src="/media/ecosystem-logos/logo-32.png" />
+              <h3>copper.co</h3>
+            </div>
+            <img
+              src="/media/svg/button-arrow.svg"
+              class="ecosystem__content-div__item-container__header-container__arrow"
+            />
+          </div>
+          <div class="ecosystem__content-div__item-container__item-content">
+            <p
+              class="ecosystem__content-div__item-container__item-content__description"
+            >
+              Copper is a digital asset technology company dedicated to helping
+              institutional investors safely acquire, trade and store
+              cryptoassets.
+            </p>
+            <div>
+              <p class="item-tag">CUSTODY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-width-container integration">
+      <h2 class="integration__title">
+        Integration Gaps? No Worries! We'll Bridge It for You!
+      </h2>
+      <div class="integration__content-container">
+        <div class="integration__content-container__title-container">
+          <h2 class="integration__content-container__title-container__title">
+            Couldn't find the integrations you were looking for?
+          </h2>
+          <img
+            src="/media/svg/button-arrow.svg"
+            class="integration__content-container__title-container__image"
+          />
+        </div>
+        <p class="integration__content-container__para">Request Callback</p>
+      </div>
+    </section>
+
+    <section class="contact-us">
+      <div class="max-width-container contact-us__wrapper">
+        <p class="contact-us__wrapper__tag">CONTACT US NOW</p>
+        <h2 class="contact-us__wrapper__title">
+          Ready to optimize your
+          <span class="pixel-font">digital asset operations?</span>
+        </h2>
+        <button class="contact-us__wrapper__button">
+          <div id="uni-button-div">
+            <div>Request Demo</div>
+          </div>
+          <div class="arrow-raise-container" id="uni-layer-arrow">
+            <img src="/media/svg/button-arrow.svg" class="arrow-raise" />
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="max-width-container footer__container">
+        <div
+          class="footer-adress footer__container__col footer__container__col--wide"
+        >
+          <h4>COMPANY</h4>
+          <p>
+            3rd Floor 86-90 <br />
+            Paul Street,
+          </p>
+          <p>London, England,</p>
+          <p>EC2A 4NE</p>
+          <p>-</p>
+          <p>info@crymbo.com</p>
+          <p>-</p>
+          <p>X (Twitter)</p>
+          <p>LinkedIn</p>
+        </div>
+        <div
+          class="footer__container__col--short footer__container__col footer-linkable"
+        >
+          <h4>PRODUCTS</h4>
+          <p>Crymbo Oracle</p>
+          <p>Crymbo Connect</p>
+        </div>
+        <div
+          class="footer__container__col--short footer__container__col footer-linkable"
+        >
+          <h4>USE CASES</h4>
+          <p>Launch crypto products, fast</p>
+          <p>Scale operations & tech with ease</p>
+          <p>Control multiple wallets & custodians</p>
+          <p>Improve Capital Efficiency</p>
+          <p>Intelligent Risk Managament</p>
+          <p>Know your data</p>
+        </div>
+        <div
+          class="footer__container__col--short footer__container__col footer-linkable"
+        >
+          <h4>DEVELOPER</h4>
+          <p>Docs</p>
+          <p>API Reference</p>
+          <p class="margin-para">Join Crymbo Marketplace</p>
+          <h4>COMPANY</h4>
+          <p>Privacy Policy</p>
+          <p>© 2024 Crymbo Ltd.</p>
+        </div>
+      </div>
+      <img class="footer__image" src="/media/svg/crymbo-footer-logo.svg" />
+    </footer>
+  </body>
+</html>
