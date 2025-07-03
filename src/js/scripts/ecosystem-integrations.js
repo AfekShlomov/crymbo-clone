@@ -65,14 +65,12 @@ function handleClick(event) {
 
 function arrayToLowercase(array) {
   const lowercaseTags = [];
-  console.log(array);
 
   array.forEach((tag) => {
     tag.trim() === "Oracle"
       ? lowercaseTags.push("crymbo oracle")
       : lowercaseTags.push(tag.toLowerCase());
   });
-
   return lowercaseTags;
 }
 
@@ -116,6 +114,16 @@ function filterItems() {
   });
 }
 
+function filterReset() {
+  selectedButtons.forEach((buttonClass) => {
+    buttons[buttonClass].classList.remove("active");
+  });
+  selectedButtons.length = 0;
+  searchInput.value = "";
+  searchTerm = "";
+  filterItems();
+}
+
 Object.values(buttons).forEach((button) => {
   button.addEventListener("click", handleClick);
 });
@@ -125,14 +133,6 @@ searchInput.addEventListener("input", (event) => {
   filterItems();
 });
 
-resetBtn.addEventListener("click", () => {
-  selectedButtons.forEach((buttonClass) => {
-    buttons[buttonClass].classList.remove("active");
-  });
-  selectedButtons.length = 0;
-  searchInput.value = "";
-  searchTerm = "";
-  filterItems();
-});
+resetBtn.addEventListener("click", () => filterReset());
 
 filterItems();
